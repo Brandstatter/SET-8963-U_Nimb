@@ -1,0 +1,1586 @@
+[
+    {
+        "id": 0,
+        "name": "Abençoar Alimentos",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/001.jpg"]
+    },
+    {
+        "id": 1,
+        "name": "Acalmar Animal",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/002.jpg"]
+    },
+    {
+        "id": 2,
+        "name": "Adaga Mental",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/003.jpg"]
+    },
+    {
+        "id": 3,
+        "name": "Alarme",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/004.jpg"]
+    },
+    {
+        "id": 4,
+        "name": "Aliado Animal",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/005.jpg"]
+    },
+    {
+        "id": 5,
+        "name": "Alterar Destino",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/006.jpg"]
+    },
+    {
+        "id": 6,
+        "name": "Alterar Memória",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/007.jpg"]
+    },
+    {
+        "id": 7,
+        "name": "Alterar Tamanho",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/008.jpg"]
+    },
+    {
+        "id": 8,
+        "name": "Amarras Etéreas",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/009.jpg"]
+    },
+    {
+        "id": 9,
+        "name": "Amedontrar",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/010.jpg"]
+    },
+    {
+        "id": 10,
+        "name": "Âncora Dimensional",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/011.jpg"]
+    },
+    {
+        "id": 11,
+        "name": "Animar Objetos",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/012.jpg"]
+    },
+    {
+        "id": 12,
+        "name": "Anular a Luz",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/013.jpg"]
+    },
+    {
+        "id": 13,
+        "name": "Aparência Perfeita",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/014.jpg"]
+    },
+    {
+        "id": 14,
+        "name": "Aprisionamento",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/015.jpg", "Images/Magics/015b.jpg"]
+    },
+    {
+        "id": 15,
+        "name": "Área Escorregadia",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/016.jpg"]
+    },
+    {
+        "id": 16,
+        "name": "Arma Espiritual",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/017.jpg"]
+    },
+    {
+        "id": 17,
+        "name": "Arma Mágica",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 1,
+        "img": ["Images/Magics/018.jpg"]
+    },
+    {
+        "id": 18,
+        "name": "Armadura Arcana",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/019.jpg"]
+    },
+    {
+        "id": 19,
+        "name": "Armamento da Natureza",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/020.jpg"]
+    },
+    {
+        "id": 20,
+        "name": "Assassino Fantasmagórico",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/021.jpg"]
+    },
+    {
+        "id": 21,
+        "name": "Augúrio",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/022.jpg"]
+    },
+    {
+        "id": 22,
+        "name": "Aura Divina",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 5,
+        "img": ["Images/Magics/023.jpg"]
+    },
+    {
+        "id": 23,
+        "name": "Aviso",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 1,
+        "img": ["Images/Magics/024.jpg"]
+    },
+    {
+        "id": 24,
+        "name": "Banimento",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/025.jpg"]
+    },
+    {
+        "id": 25,
+        "name": "Barragem Elemental de Vectorius",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/026.jpg"]
+    },
+    {
+        "id": 26,
+        "name": "Benção",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/027.jpg"]
+    },
+    {
+        "id": 27,
+        "name": "Bola de Fogo",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/028.jpg"]
+    },
+    {
+        "id": 28,
+        "name": "Burraco Negro",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 5,
+        "img": ["Images/Magics/029.jpg"]
+    },
+    {
+        "id": 29,
+        "name": "Caminhos da Natureza",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/030.jpg"]
+    },
+    {
+        "id": 30,
+        "name": "Campo Antimagia",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/031.jpg"]
+    },
+    {
+        "id": 31,
+        "name": "Campo de Força",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/032.jpg"]
+    },
+    {
+        "id": 32,
+        "name": "Camuflagem Ilusória",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/033.jpg"]
+    },
+    {
+        "id": 33,
+        "name": "Chuva de Meteoros",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/034.jpg"]
+    },
+    {
+        "id": 34,
+        "name": "Círculo da Justiça",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/035.jpg"]
+    },
+    {
+        "id": 35,
+        "name": "Círculo da Restauração",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/036.jpg"]
+    },
+    {
+        "id": 36,
+        "name": "Cólera de Azgher",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/037.jpg"]
+    },
+    {
+        "id": 37,
+        "name": "Coluna de Chamas",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/038.jpg"]
+    },
+    {
+        "id": 38,
+        "name": "Comando",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/039.jpg"]
+    },
+    {
+        "id": 39,
+        "name": "Compreensão",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 1,
+        "img": ["Images/Magics/040.jpg"]
+    },
+    {
+        "id": 40,
+        "name": "Comunhão com a Natureza",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/041.jpg"]
+    },
+    {
+        "id": 41,
+        "name": "Conceder Milagre",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/042.jpg"]
+    },
+    {
+        "id": 42,
+        "name": "Concentração de Combate",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/043.jpg"]
+    },
+    {
+        "id": 43,
+        "name": "Condição",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/044.jpg"]
+    },
+    {
+        "id": 44,
+        "name": "Conjurar Elemental",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/045.jpg"]
+    },
+    {
+        "id": 45,
+        "name": "Conjurar Monstro",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/046.jpg", "Images/Magics/046b.jpg" ]
+    },
+    {
+        "id": 46,
+        "name": "Conjurar Mortos-Vivos",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 2,
+        "img": ["Images/Magics/047.jpg", "Images/Magics/047b.jpg"]
+    },
+    {
+        "id": 47,
+        "name": "Consagrar",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/048.jpg"]
+    },
+    {
+        "id": 48,
+        "name": "Contato Extraplanar",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/049.jpg"]
+    },
+    {
+        "id": 49,
+        "name": "Controlar a Gravidade",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/050.jpg"]
+    },
+    {
+        "id": 50,
+        "name": "Controlar Água",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/051.jpg"]
+    },
+    {
+        "id": 51,
+        "name": "Controlar Fogo",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/052.jpg"]
+    },
+    {
+        "id": 52,
+        "name": "Controlar Madeira",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/053.jpg"]
+    },
+    {
+        "id": 53,
+        "name": "Controlar Clima",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/054.jpg"]
+    },
+    {
+        "id": 54,
+        "name": "Controlar o Tempo",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/055.jpg"]
+    },
+    {
+        "id": 55,
+        "name": "Controlar Plantas",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/056.jpg"]
+    },
+    {
+        "id": 56,
+        "name": "Controlar Terra",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/057.jpg"]
+    },
+    {
+        "id": 57,
+        "name": "Convocação Instantânea",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/058.jpg"]
+    },
+    {
+        "id": 58,
+        "name": "Crânio Voador de Vladislav",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/059.jpg"]
+    },
+    {
+        "id": 59,
+        "name": "Criar Elementos",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/060.jpg"]
+    },
+    {
+        "id": 60,
+        "name": "Criar Ilusão",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/061.jpg", "Images/Magics/061b.jpg"]
+    },
+    {
+        "id": 61,
+        "name": "Cúpula de Repulsão",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/062.jpg"]
+    },
+    {
+        "id": 62,
+        "name": "Curar Ferimentos",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/063.jpg"]
+    },
+    {
+        "id": 63,
+        "name": "Deflagração de Mana",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/064.jpg"]
+    },
+    {
+        "id": 64,
+        "name": "Desejo",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/065.jpg"]
+    },
+    {
+        "id": 65,
+        "name": "Despero Esmagador",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/066.jpg"]
+    },
+    {
+        "id": 66,
+        "name": "Desintegrar",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/067.jpg"]
+    },
+    {
+        "id": 67,
+        "name": "Despedaçar",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/068.jpg"]
+    },
+    {
+        "id": 68,
+        "name": "Despertar Consciência",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/069.jpg"]
+    },
+    {
+        "id": 69,
+        "name": "Detectar Ameaças",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/070.jpg"]
+    },
+    {
+        "id": 70,
+        "name": "Dificultar Detecção",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/071.jpg"]
+    },
+    {
+        "id": 71,
+        "name": "Disfarce Ilusório",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/072.jpg"]
+    },
+    {
+        "id": 72,
+        "name": "Dispersar as Trevas",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/073.jpg"]
+    },
+    {
+        "id": 73,
+        "name": "Dissipar Magia",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 2,
+        "img": ["Images/Magics/074.jpg"]
+    },
+    {
+        "id": 74,
+        "name": "Duplicata Ilusória",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/075.jpg"]
+    },
+    {
+        "id": 75,
+        "name": "Enfeitiçar",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/076.jpg"]
+    },
+    {
+        "id": 76,
+        "name": "Engenho de Mana",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/077.jpg"]
+    },
+    {
+        "id": 77,
+        "name": "Enxame de Pestes",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/078.jpg"]
+    },
+    {
+        "id": 78,
+        "name": "Enxame Rubro de Ichabod",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/079.jpg"]
+    },
+    {
+        "id": 79,
+        "name": "Erupção Glacial",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/080.jpg"]
+    },
+    {
+        "id": 80,
+        "name": "Escudo de Fé",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/081.jpg"]
+    },
+    {
+        "id": 81,
+        "name": "Esculpir Sons",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/082.jpg"]
+    },
+    {
+        "id": 82,
+        "name": "Escuridão",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 1,
+        "img": ["Images/Magics/083.jpg"]
+    },
+    {
+        "id": 83,
+        "name": "Explosão Caleidoscópica",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/084.jpg"]
+    },
+    {
+        "id": 84,
+        "name": "Explosão de Chamas",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/085.jpg"]
+    },
+    {
+        "id": 85,
+        "name": "Ferver Sangue",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/086.jpg"]
+    },
+    {
+        "id": 86,
+        "name": "Físico Divino",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/087.jpg"]
+    },
+    {
+        "id": 87,
+        "name": "Flecha Ácida",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/088.jpg"]
+    },
+    {
+        "id": 88,
+        "name": "Forma Etérea",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/089.jpg"]
+    },
+    {
+        "id": 89,
+        "name": "Fúria do Panteão",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 5,
+        "img": ["Images/Magics/090.jpg"]
+    },
+    {
+        "id": 90,
+        "name": "Globo da Verdade de Gwen",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/091.jpg"]
+    },
+    {
+        "id": 91,
+        "name": "Globo de Invulnerabilidade",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/092.jpg"]
+    },
+    {
+        "id": 92,
+        "name": "Guardião Divino",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/093.jpg"]
+    },
+    {
+        "id": 93,
+        "name": "Heroismo",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/094.jpg"]
+    },
+    {
+        "id": 94,
+        "name": "Hipnotismo",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/095.jpg"]
+    },
+    {
+        "id": 95,
+        "name": "Ilusão Lacerante",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/096.jpg"]
+    },
+    {
+        "id": 96,
+        "name": "Imagem Espelhada",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/097.jpg"]
+    },
+    {
+        "id": 97,
+        "name": "Imobilizar",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 3,
+        "img": ["Images/Magics/098.jpg"]
+    },
+    {
+        "id": 98,
+        "name": "Infligir Ferimentos",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/099.jpg"]
+    },
+    {
+        "id": 99,
+        "name": "Intervenção Divina",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 5,
+        "img": ["Images/Magics/100.jpg"]
+    },
+    {
+        "id": 100,
+        "name": "Invisibilidade",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/101.jpg"]
+    },
+    {
+        "id": 101,
+        "name": "Invulnerabilidade",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 5,
+        "img": ["Images/Magics/102.jpg"]
+    },
+    {
+        "id": 102,
+        "name": "Lágrimas de Wynna",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 5,
+        "img": ["Images/Magics/103.jpg"]
+    },
+    {
+        "id": 103,
+        "name": "Lança Ígnea de Aleph",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/104.jpg"]
+    },
+    {
+        "id": 104,
+        "name": "Legião",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/105.jpg"]
+    },
+    {
+        "id": 105,
+        "name": "Lendas & Histórias",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 3,
+        "img": ["Images/Magics/106.jpg"]
+    },
+    {
+        "id": 106,
+        "name": "Leque Cromático",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/107.jpg"]
+    },
+    {
+        "id": 107,
+        "name": "Libertação",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 4,
+        "img": ["Images/Magics/108.jpg"]
+    },
+    {
+        "id": 108,
+        "name": "Ligação Sombria",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/109.jpg"]
+    },
+    {
+        "id": 109,
+        "name": "Ligação Telepática",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/110.jpg"]
+    },
+    {
+        "id": 110,
+        "name": "Localização",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/111.jpg"]
+    },
+    {
+        "id": 111,
+        "name": "Luz",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 1,
+        "img": ["Images/Magics/112.jpg", "Images/Magics/112b.jpg"]
+    },
+    {
+        "id": 112,
+        "name": "Manto de Sombras",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 3,
+        "img": ["Images/Magics/113.jpg"]
+    },
+    {
+        "id": 113,
+        "name": "Manto do Cruzado",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/114.jpg"]
+    },
+    {
+        "id": 114,
+        "name": "Mão Poderosa de Talude",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/115.jpg"]
+    },
+    {
+        "id": 115,
+        "name": "Mapear",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/116.jpg"]
+    },
+    {
+        "id": 116,
+        "name": "Marca da Obediência",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 2,
+        "img": ["Images/Magics/117.jpg"]
+    },
+    {
+        "id": 117,
+        "name": "Marionete",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/118.jpg"]
+    },
+    {
+        "id": 118,
+        "name": "Mata-Dragão",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/119.jpg"]
+    },
+    {
+        "id": 119,
+        "name": "Mente Divina",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/120.jpg"]
+    },
+    {
+        "id": 120,
+        "name": "Metamorfose",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/121.jpg", "Images/Magics/121b.jpg"]
+    },
+    {
+        "id": 121,
+        "name": "Miasma Mefítico",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/122.jpg"]
+    },
+    {
+        "id": 122,
+        "name": "Miragem",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/123.jpg"]
+    },
+    {
+        "id": 123,
+        "name": "Missão Divina",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/124.jpg"]
+    },
+    {
+        "id": 124,
+        "name": "Montaria Arcana",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/125.jpg"]
+    },
+    {
+        "id": 125,
+        "name": "Muralha de Ossos",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 4,
+        "img": ["Images/Magics/126.jpg"]
+    },
+    {
+        "id": 126,
+        "name": "Muralha Elemental",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/127.jpg"]
+    },
+    {
+        "id": 127,
+        "name": "Névoa",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 1,
+        "img": ["Images/Magics/128.jpg"]
+    },
+    {
+        "id": 128,
+        "name": "Oração",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/129.jpg"]
+    },
+    {
+        "id": 129,
+        "name": "Orientação",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/130.jpg"]
+    },
+    {
+        "id": 130,
+        "name": "Palavra Primordial",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 5,
+        "img": ["Images/Magics/131.jpg"]
+    },
+    {
+        "id": 131,
+        "name": "Pele de Pedra",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 3,
+        "img": ["Images/Magics/132.jpg"]
+    },
+    {
+        "id": 132,
+        "name": "Perdição",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/133.jpg"]
+    },
+    {
+        "id": 133,
+        "name": "Poeira da Podridão",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/134.jpg"]
+    },
+    {
+        "id": 134,
+        "name": "Possessão",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/135.jpg"]
+    },
+    {
+        "id": 135,
+        "name": "Potência Divina",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/136.jpg"]
+    },
+    {
+        "id": 136,
+        "name": "Premonição",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/137.jpg"]
+    },
+    {
+        "id": 137,
+        "name": "Primor Atlético",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/138.jpg"]
+    },
+    {
+        "id": 138,
+        "name": "Profanar",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/139.jpg"]
+    },
+    {
+        "id": 139,
+        "name": "Projetar Consciência",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 5,
+        "img": ["Images/Magics/140.jpg"]
+    },
+    {
+        "id": 140,
+        "name": "Proteção Contra Magia",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/141.jpg"]
+    },
+    {
+        "id": 141,
+        "name": "Proteção Divina",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/142.jpg"]
+    },
+    {
+        "id": 142,
+        "name": "Purificação",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/143.jpg"]
+    },
+    {
+        "id": 143,
+        "name": "Queda Suave",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/144.jpg"]
+    },
+    {
+        "id": 144,
+        "name": "Raio do Enfraquecimento",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/145.jpg"]
+    },
+    {
+        "id": 145,
+        "name": "Raio Polar",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/146.jpg"]
+    },
+    {
+        "id": 146,
+        "name": "Raio Solar",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/147.jpg"]
+    },
+    {
+        "id": 147,
+        "name": "Reanimação Impura",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 5,
+        "img": ["Images/Magics/148.jpg"]
+    },
+    {
+        "id": 148,
+        "name": "Refúgio",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/149.jpg"]
+    },
+    {
+        "id": 149,
+        "name": "Relâmpago",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/150.jpg"]
+    },
+    {
+        "id": 150,
+        "name": "Relâmpago Flamejante de Reynard",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/151.jpg"]
+    },
+    {
+        "id": 151,
+        "name": "Réquiem",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/152.jpg"]
+    },
+    {
+        "id": 152,
+        "name": "Resistência a Energia",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 1,
+        "img": ["Images/Magics/153.jpg"]
+    },
+    {
+        "id": 153,
+        "name": "Rogar Maldição",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/154.jpg"]
+    },
+    {
+        "id": 154,
+        "name": "Roubar Alma",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 5,
+        "img": ["Images/Magics/155.jpg"]
+    },
+    {
+        "id": 155,
+        "name": "Runa de Proteção",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 2,
+        "img": ["Images/Magics/156.jpg"]
+    },
+    {
+        "id": 156,
+        "name": "Salto Dimensional",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/157.jpg"]
+    },
+    {
+        "id": 157,
+        "name": "Santuário",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/158.jpg"]
+    },
+    {
+        "id": 158,
+        "name": "Segunda Chance",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 5,
+        "img": ["Images/Magics/159.jpg"]
+    },
+    {
+        "id": 159,
+        "name": "Selo de Mana",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 3,
+        "img": ["Images/Magics/160.jpg"]
+    },
+    {
+        "id": 160,
+        "name": "Semiplano",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/161.jpg"]
+    },
+    {
+        "id": 161,
+        "name": "Servo Divino",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/162.jpg"]
+    },
+    {
+        "id": 162,
+        "name": "Servo Morto-Vivo",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 3,
+        "img": ["Images/Magics/163.jpg"]
+    },
+    {
+        "id": 163,
+        "name": "Servos Invisíveis",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/164.jpg"]
+    },
+    {
+        "id": 164,
+        "name": "Seta Infalível de Talude",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/165.jpg"]
+    },
+    {
+        "id": 165,
+        "name": "Silêncio",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/166.jpg"]
+    },
+    {
+        "id": 166,
+        "name": "Soco de Arsenal",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/167.jpg"]
+    },
+    {
+        "id": 167,
+        "name": "Sombra Assassina",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 5,
+        "img": ["Images/Magics/168.jpg"]
+    },
+    {
+        "id": 168,
+        "name": "Sonho",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/169.jpg"]
+    },
+    {
+        "id": 169,
+        "name": "Sono",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/170.jpg"]
+    },
+    {
+        "id": 170,
+        "name": "Sopro da Salvação",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/171.jpg"]
+    },
+    {
+        "id": 171,
+        "name": "Sopro das Uivantes",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/172.jpg"]
+    },
+    {
+        "id": 172,
+        "name": "Suporte Ambiental",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/173.jpg"]
+    },
+    {
+        "id": 173,
+        "name": "Sussurros Insanos",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/174.jpg"]
+    },
+    {
+        "id": 174,
+        "name": "Talho Invisível de Edauros",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 4,
+        "img": ["Images/Magics/175.jpg"]
+    },
+    {
+        "id": 175,
+        "name": "Teia",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/176.jpg"]
+    },
+    {
+        "id": 176,
+        "name": "Telecinesia",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/177.jpg"]
+    },
+    {
+        "id": 177,
+        "name": "Teletransporte",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/178.jpg", "Images/Magics/178b.jpg"]
+    },
+    {
+        "id": 178,
+        "name": "Tempestade Divina",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/179.jpg"]
+    },
+    {
+        "id": 179,
+        "name": "Tentáculos de Trevas",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/180.jpg"]
+    },
+    {
+        "id": 180,
+        "name": "Terremoto",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 4,
+        "img": ["Images/Magics/181.jpg", "Images/Magics/181b.jpg"]
+    },
+    {
+        "id": 181,
+        "name": "Toque Chocante",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/182.jpg"]
+    },
+    {
+        "id": 182,
+        "name": "Toque da Morte",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 5,
+        "img": ["Images/Magics/183.jpg"]
+    },
+    {
+        "id": 183,
+        "name": "Toque Vampírico",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/184.jpg"]
+    },
+    {
+        "id": 184,
+        "name": "Tranca Arcana",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/185.jpg"]
+    },
+    {
+        "id": 185,
+        "name": "Tranquilidade",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 1,
+        "img": ["Images/Magics/186.jpg"]
+    },
+    {
+        "id": 186,
+        "name": "Transformação de Guerra",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/187.jpg"]
+    },
+    {
+        "id": 187,
+        "name": "Transmutar Objetos",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/188.jpg", "Images/Magics/188b.jpg"]
+    },
+    {
+        "id": 188,
+        "name": "Velocidade",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 2,
+        "img": ["Images/Magics/189.jpg"]
+    },
+    {
+        "id": 189,
+        "name": "Vestimenta da Fé",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/190.jpg"]
+    },
+    {
+        "id": 190,
+        "name": "Viagem Arbórea",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 3,
+        "img": ["Images/Magics/191.jpg"]
+    },
+    {
+        "id": 191,
+        "name": "Viagem Planar",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 4,
+        "img": ["Images/Magics/192.jpg"]
+    },
+    {
+        "id": 192,
+        "name": "Vidência",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 3,
+        "img": ["Images/Magics/193.jpg"]
+    },
+    {
+        "id": 193,
+        "name": "Visão da Verdade",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 4,
+        "img": ["Images/Magics/194.jpg"]
+    },
+    {
+        "id": 194,
+        "name": "Visão Mística",
+        "desc": "bla",
+        "type": "Universal",
+        "tier": 1,
+        "img": ["Images/Magics/195.jpg"]
+    },
+    {
+        "id": 195,
+        "name": "Vitalidade Fantasma",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 1,
+        "img": ["Images/Magics/196.jpg"]
+    },
+    {
+        "id": 196,
+        "name": "Voo",
+        "desc": "bla",
+        "type": "Arcana",
+        "tier": 3,
+        "img": ["Images/Magics/197.jpg"]
+    },
+    {
+        "id": 197,
+        "name": "Voz Divina",
+        "desc": "bla",
+        "type": "Divina",
+        "tier": 2,
+        "img": ["Images/Magics/198.jpg"]
+    }
+]

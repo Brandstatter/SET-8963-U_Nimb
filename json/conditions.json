@@ -1,0 +1,266 @@
+[
+    {
+        "id": 0,
+        "name": "Abalado",
+        "text": "O personagem sofre -2 em testes de perícia.",
+        "subtext": "Se ficar abalado novamente, em vez disso fica apavorado.",
+        "typeC": "Condição de Medo",
+        "img": "Images/Conditions/Abalado.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Agarrado",
+        "text": "O personagem fica desprevenido e imóvel, sofre -2 em testes de ataque e só pode atacar com armas leves.",
+        "subtext": "Um personagem fazendo um ataque à distância contra um alvo envolvido na manobra agarrar tem 50% de chance de acertar o alvo errado.",
+        "typeC": "Condição de Paralisia",
+        "img": "Images/Conditions/Agarrado.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Alquebrado",
+        "text": "O custo em PM das habilidades do personagem aumenta em +1",
+        "subtext": null,
+        "typeC": "Condição Mental",
+        "img": "Images/Conditions/Alquebrado.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Apavorado",
+        "text": "O personagem sofre -5 em testes de perícia e deve fugir da fonte do medo da maneira mais eficiente possível.",
+        "subtext": "Se não puder, poderá agir, mas não poderá se aproximar voluntariamente da fonte do medo.",
+        "typeC": "Condição de Medo",
+        "img": "Images/Conditions/Apavorado.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Atordoado",
+        "text": "O personagem fica desprevenido e não pode fazer ações.",
+        "subtext": null,
+        "typeC": "Condição Mental",
+        "img": "Images/Conditions/Atordoado.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Caído",
+        "text": "Deitado no chão.",
+        "subtext": "O personagem sofre -5 em ataques corpo a corpo e seu deslocamento é reduzido a 1,5m.\nAlém disso, sofre -5 de Defesa contra ataques corpo a corpo, mas recebe +5 de Defesa contra ataques à distância.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Caido.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cego",
+        "text": "Fica desprevenido e lento, não pode fazer testes de Percepção para observar e sofre -5 em testes de perícias baseadas em Força ou Destreza.",
+        "subtext": "Todos os alvos de seus ataques recebem camuflagem total.",
+        "typeC": "Condição de Sentidos",
+        "img": "Images/Conditions/Cego.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Confuso",
+        "text": "Comportando-se de modo aleatório.",
+        "subtext": "Role 1d6 no início de seus turnos: \n1) Movimenta-se em uma direção escolhida por uma rolagem de 1d8 (sendo 1 diretamente à frente, 2 à frente e a direita e assim por diante); \n2-3) Não pode fazer ações, exceto reações, e fica balbuciando incoerentemente; \n4-5) Usa a arma que estiver empunhando para atacar a criatura mais próxima, ou a si mesmo se estiver sozinho (nesse caso, apenas role o dano); \n6) A condição termina e pode agir normalmente.",
+        "typeC": "Condição Mental",
+        "img": "Images/Conditions/Confuso.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Debilitado",
+        "text": "O personagem sofre -5 em testes de atributos físicos (Força, Destreza e Constituição) e de perícias baseadas nesses atributos.",
+        "subtext": "Se ficar debilitado novamente, em vez disso fica inconsciente.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Debilitado.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Desprevenido",
+        "text": "Despreparado para reagir.",
+        "subtext": "O personagem sofre -5 na Defesa e em Reflexos. \nUm personagem fica desprevenido contra inimigos que não possa ver.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Desprevenido.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Doente",
+        "text": "Sob efeito de uma doença.",
+        "subtext": "Um personagem exposto a umadoença deve fazer um teste deFortitude (CD conforme a doença). Se falhar, é contaminado (masainda não sofre nenhum efeito). \nUm personagem contaminado deve repetir o teste de Fortitude no início de cada dia. Se falhar, sofre o efeito da doença naquele dia. Se passar, não sofre o efeito. \nSe passar por dois dias seguidos, estará curado. Algumas doenças possuem efeitos progressivos. \nSe o personagem falhar no teste de Fortitude, sofre o primeiro efeito. Se falhar dois testes seguidos, sofre o segundo efeito, e assim por diante. Um personagem que tenha sofrido um efeito progressivo e passe no teste sofre o efeito anterior durante aquele dia.Para uma lista de doenças, veja Tormenta20, página 303.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Doente.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Em Chamas",
+        "text": "O personagem está pegando fogo. No início de seus turnos, sofre 1d6 pontos de dano de fogo.",
+        "subtext": "O personagem pode gastar uma ação padrão para apagar o fogo com as mãos. \nImersão em água também apaga as chamas.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/EmChamas.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Enjoado",
+        "text": "O personagem só pode realizar uma ação padrão ou de movimento (não ambas) por rodada.",
+        "subtext": "Ele ainda pode fazer ações livres ou extras, como o normal. \nEle pode gastar uma ação padrão para fazer uma investida, mas pode avançar no máximo seu deslocamento (e não o dobro).",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Enjoado.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Enredado",
+        "text": "O personagem fica lento, vulnerável e sofre -2 em testes de ataque.",
+        "subtext": null,
+        "typeC": "Condição de Paralisia",
+        "img": "Images/Conditions/Enredado.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Envenenado",
+        "text": "O efeito varia de acordo com o veneno. Pode ser outra condição ou dano recorrente.",
+        "subtext": "A descrição do veneno determina a duração dele (caso nada seja dito, a duração é uma cena). Um personagem exposto a um veneno deve fazer um teste de Fortitude (CD conforme o veneno). Se falhar, sofre o  efeito descrito. \nAlguns venenos afetam a vítima mesmo que ela passe no  teste, com um efeito reduzido (entre  parênteses após o efeito principal). Alguns venenos não fazem efeito instantaneamente. Nesse caso, a vítima  faz o teste de resistência quando o efeito acontece, não no momento da exposição. Outros venenos fazem efeito mais de uma vez; a vítima faz o teste de Fortitude cada vez que o efeito acontece e, mesmo que passe num teste, ainda precisará fazer os outros. \nPara uma lista de venenos, veja Tormenta20, página 304.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Envenenado.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Esmorecido",
+        "text": "Sofre -5 em testes de atributos mentais e de perícias baseadas nesses atributos.",
+        "subtext": null,
+        "typeC": "Condição Mental",
+        "img": "Images/Conditions/Esmorecido.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Exausto",
+        "text": "O personagem fica debilitado, lento e vulnerável.",
+        "subtext": "O personagem fica debilitado, lento e vulnerável.",
+        "typeC": "Condição de Fadiga",
+        "img": "Images/Conditions/Exausto.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Fascinado",
+        "text": "Sofre -5 em Percepção e não pode fazer ações, exceto observar aquilo que o fascinou.",
+        "subtext": "Qualquer ação hostil contra o personagem anula esta condição. Balançar uma criatura para tirá-la desse estado gasta uma ação padrão.",
+        "typeC": "Condição Mental",
+        "img": "Images/Conditions/Fascinado.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Fatigado",
+        "text": "O personagem fica fraco e vulnerável.",
+        "subtext": "Se ficar fatigado novamente, em vez disso fica exausto.",
+        "typeC": "Condição de Fadiga",
+        "img": "Images/Conditions/Fatigado.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Fraco",
+        "text": "O personagem sofre -2 em testes de atributos físicos (Força, Destreza e Constituição) e de perícias baseadas nesses atributos.",
+        "subtext": "Se ficar fraco novamente, em vez disso fica debilitado.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Fraco.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Frustrado",
+        "text": "Sofre -2 em testes de atributos mentais (Inteligência, Sabedoria e Carisma) e de perícias baseadas nesses atributos.",
+        "subtext": "Se ficar frustrado novamente, em vez disso fica esmorecido.",
+        "typeC": "Condição Mental",
+        "img": "Images/Conditions/Frustrado.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Imovel",
+        "text": "Todas as formas de deslocamento do personagem são reduzidas a zero metros.",
+        "subtext": null,
+        "typeC": "Condição de Paralisia",
+        "img": "Images/Conditions/Imovel.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Inconsciente",
+        "text": "O personagem fica indefeso e não pode fazer ações.",
+        "subtext": "Balançar uma criatura para acordá-la gasta uma ação padrão.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Inconsciente.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Indefeso",
+        "text": "O personagem é considerado desprevenido, mas sofre -10 na Defesa, falha automaticamente em testes de Reflexos e pode sofrer golpes de misericórdia.",
+        "subtext": null,
+        "typeC": "Condição",
+        "img": "Images/Conditions/Indefeso.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Lento",
+        "text": "Todas as formas de deslocamento do personagem são reduzidas à metade (arredonde para baixo para o primeiro incremento de 1,5m) e ele não pode correr ou fazer investidas.",
+        "subtext": null,
+        "typeC": "Condição de Paralisia",
+        "img": "Images/Conditions/Lento.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Ofuscado",
+        "text": "Sofre -2 em testes de ataque e Percepção.",
+        "subtext": null,
+        "typeC": "Condição de Sentidos",
+        "img": "Images/Conditions/Ofuscado.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Paralisado",
+        "text": "Fica imóvel e indefeso e só pode realizar ações mentais.",
+        "subtext": null,
+        "typeC": "Condição de Paralisia",
+        "img": "Images/Conditions/Paralisado.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Pasmo",
+        "text": "Não pode fazer ações, exceto reações.",
+        "subtext": null,
+        "typeC": "Condição Mental",
+        "img": "Images/Conditions/Pasmo.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Petrificado",
+        "text": "O personagem fica inconsciente e recebe resistência a dano 8.",
+        "subtext": null,
+        "typeC": "Condição",
+        "img": "Images/Conditions/Petrificado.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Sangrando",
+        "text": "Com um ferimento aberto.",
+        "subtext": "No início de seus turnos, o personagem deve fazer um teste de Constituição (CD 15). Se passar, estabiliza e remove essa condição. Se falhar, perde 1d6 pontos de vida e continua sangrando.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Sangrando.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Surdo",
+        "text": "Não pode fazer testes de Percepção para ouvir e sofre -5 em testes de Iniciativa.",
+        "subtext": "É considerado em condição ruim para lançar magias.",
+        "typeC": "Condição de Sentidos",
+        "img": "Images/Conditions/Surdo.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Surpreendido",
+        "text": "Não ciente de seus inimigos.",
+        "subtext": "O personagem fica desprevenido e não pode fazer ações, exceto reações.",
+        "typeC": "Condição",
+        "img": "Images/Conditions/Surpreendido.jpg"
+    },
+    {
+        "id": 32,
+        "name": "Vulnerável",
+        "text": "O personagem sofre -2 na Defesa.",
+        "subtext": null,
+        "typeC": "Condição",
+        "img": "Images/Conditions/Vulneravel.jpg"
+    }
+]
