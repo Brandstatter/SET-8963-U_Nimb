@@ -8,10 +8,11 @@ async def find_magic(ctx, identity):
         for magic in MAG_JSON:
             if int(identity) == magic['id']:
                 await embed_magic(ctx, int(identity))
-    #TODO Add step to verify second word of the name.
     else:
+        nameMagic = ctx.message.content
+        nameMagic = nameMagic[3:]
         for magic in MAG_JSON:
-            if magic['name'].lower().find(identity.lower()) == 0:
+            if magic['name'].lower().find(nameMagic.lower()) == 0:
                 id = magic['id']
                 await embed_magic(ctx, id)
 
@@ -47,6 +48,7 @@ async def embed_magic(ctx, id):
         global index_img
         index_img = 0
 
+        # FIXME The function to change image is returning an error
         # This still could be improved but focusing on this will only stall progress on the next features.
         async def next_pic(interaction):
             global index_img
@@ -54,12 +56,12 @@ async def embed_magic(ctx, id):
                 index_img = 0
                 file = discord.File(MAG_JSON[id]['img'][index_img], filename="image.jpg")
                 magic.set_image(url="attachment://image.jpg")
-                await message.edit(embed = magic)
+                await message.edit(file = file, embed = magic)
             else:
                 index_img += 1
                 file = discord.File(MAG_JSON[id]['img'][index_img], filename="image.jpg")
                 magic.set_image(url="attachment://image.jpg")
-                await message.edit(embed = magic)
+                await message.edit(file = file, embed = magic)
 
         async def prev_pic(interaction):
             global index_img

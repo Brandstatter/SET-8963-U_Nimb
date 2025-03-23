@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 intents = discord.Intents.all()
 intents.message_content = True
 
-activity = discord.Game(name="Thelp")
+activity = discord.Activity(type=discord.ActivityType.listening, name="Prefixo 'T'")
 client = commands.Bot(command_prefix = "T", case_insensitive = True, activity = activity, status = discord.Status.online, intents = intents)
 
 client.remove_command("help")
@@ -27,6 +27,8 @@ async def help(ctx):
     await ctx.send('Td + Valor do dado(6, 12, 20) + Numero de Dados + Bonus - Retorna uma magica aleatoria')
     await ctx.send('Tfeedback - Função para enviar reporte de bugs ou sugestões de melhoria.')
 
+#TODO Add slash commands
+
 # Random Magic
 @client.command(aliases = ['y']) # WORKING
 async def descarte(ctx):
@@ -34,11 +36,11 @@ async def descarte(ctx):
 
 # Search Magic (Kinda)
 @client.command(aliases = ['e']) # WORKING
-async def teste(ctx, name:str):
+async def Search(ctx, name:str):
     await find_magic(ctx, name)
 
 # Dice
-@client.command(aliases = ['D']) # WORKING
+@client.command(aliases = ['D']) # TODO Improve command
 async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
     await roll_dice(ctx, nDice, nNumb, nBonus)    
 
@@ -49,6 +51,7 @@ async def i(ctx): #FIXME
 # Feedback command
 @client.command(aliases = ['t'])
 async def Feedback(ctx):
+    #TODO Remove buttons after being clicked
     await ctx.send("Obrigado por nos ajudar a melhorar o Magic Madness!")
     await ctx.send("Deseja sugerir uma feature nova, reportar um bug ou dar uma sugestão de melhoria?")
     feedbackButton = discord.ui.Button(label = "Feedback", style = discord.ButtonStyle.green, custom_id = 'Feedback')
