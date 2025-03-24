@@ -1,6 +1,7 @@
 import discord
 import json
 
+
 # Function that creates the embed of the condition based on id.
 async def condition(ctx, x): 
     # Open .json file that contain the conditions data
@@ -19,7 +20,7 @@ async def condition(ctx, x):
     conditions = discord.Embed(
     title = name.decode('utf-8'),
     description = type_cond.decode('utf-8'),
-    color=discord.Color.random())
+    color = discord.Color.random())
     
     # Work around subtext existence or not
     if subtext == None:

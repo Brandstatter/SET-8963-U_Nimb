@@ -1,6 +1,7 @@
 import discord
 from discord.ui import View
 
+
 async def set_attributes(dices : list):
     # TODO switcher a function on itself
     attribute_choice = discord.Embed(title = "Definir atributos", color = 2899536)

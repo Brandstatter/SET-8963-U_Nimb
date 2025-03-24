@@ -1,9 +1,9 @@
 import discord
-from discord.ui import View
 import random
+from discord.ui import View
+
 
 # FIXME problem of awaiting function inside loops
-
 async def attributes(ctx):
     # Embed explanation of ways to get atributes
     types_attributes = discord.Embed(title = "Formas para gerar Atributos", color = 15844367)
