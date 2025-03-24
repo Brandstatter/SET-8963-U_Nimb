@@ -1,6 +1,6 @@
 """ Functions related with spells part of the Magic Madness bot.
 
-Both functions that create the embeded view of a spell based on the id and the de function to search magic are on this module
+Both functions that create the embeded view of a spell based on the id and the de function to search magic are on this module.
 """
 
 import discord
@@ -9,17 +9,19 @@ from unidecode import unidecode
 from discord.ui import View
 
 
+MAG_JSON = json.load(open("json\magics.json", encoding='utf-8'))
+
+
 #TODO Function that create a dropdpwn menu based of a list of Ids.
 async def dropdown_magic(magicIds):
     return 0
 
 # Search a spell by id or name
-async def find_magic(ctx, identity):
-    MAG_JSON = json.load(open("json\magics.json", encoding='utf-8'))
-    if identity.isnumeric() == True:
+async def find_magic(ctx, id):
+    if id.isnumeric() == True:
         for magic in MAG_JSON:
-            if int(identity) == magic['id']:
-                await embed_magic(ctx, int(identity))
+            if int(id) == magic['id']:
+                await embed_magic(ctx, int(id))
     else:
         #TODO If list of magics is too big, create dropdown menu to choose spell.
         message = unidecode(ctx.message.content)
@@ -38,8 +40,6 @@ async def find_magic(ctx, identity):
 
 # Function that creates the embed of the magic based on id.
 async def embed_magic(ctx, id):
-    MAG_JSON = json.load(open("json\magics.json", encoding='utf-8'))
-
     # Block of code that pulls specifics data for the embed. (Enconding in latin necessary to portuguese.)
     name = str(MAG_JSON[id]['name']).encode('latin-1')
     type = str(MAG_JSON[id]['type']).encode('latin-1')

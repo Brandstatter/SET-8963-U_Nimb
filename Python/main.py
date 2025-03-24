@@ -4,12 +4,13 @@ import discord
 import random
 
 import Commands.qualityCtrl
+import Commands.magic
+import Commands.conditions
+import Commands.dice
+import Commands.generate_attribute
+
 from discord.ext import commands
 from discord.ui import View
-from Commands.magic import embed_magic, find_magic, dropdown_magic
-from Commands.dice import roll_dice
-from Commands.generate_attribute import attributes
-from Commands.conditions import condition
 from dotenv import load_dotenv
 
 intents = discord.Intents.all()
@@ -36,30 +37,33 @@ async def help(ctx):
 # Random Magic
 @client.command(aliases = ['y']) # WORKING
 async def descarte(ctx):
-    await embed_magic(ctx, random.randrange(0, 197))
+    await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
 
 # Search Magic
 @client.command(aliases = ['e']) # WORKING
 async def searchMagic(ctx, name:str):
-    await find_magic(ctx, name)
+    await Commands.magic.find_magic(ctx, name)
 
 # Dice
 @client.command(aliases = ['D']) # TODO Improve command
 async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
-    await roll_dice(ctx, nDice, nNumb, nBonus)    
+    await Commands.dice.roll_dice(ctx, nDice, nNumb, nBonus)    
 
 @client.command(aliases = ['g'])
-async def search_condition(ctx):
-    await condition(ctx, 5)
+async def search_condition(ctx, name:str):
+    await Commands.conditions.search_condition(ctx, name)
 
 @client.command()
 async def i(ctx): #FIXME
-    await attributes(ctx)
+    await Commands.generate_attribute.attributes(ctx)
     
 # Feedback command
 @client.command(aliases = ['t'])
 async def feedback(ctx):
     #TODO Remove buttons after being clicked
+
+    original_author = ctx.message.author
+
     await ctx.send("Obrigado por nos ajudar a melhorar o Magic Madness!")
     await ctx.send("Deseja sugerir uma feature nova, reportar um bug ou dar uma sugestão de melhoria?")
     feedback_button = discord.ui.Button(label = "Feedback", style = discord.ButtonStyle.green, custom_id = 'Feedback')
@@ -71,17 +75,20 @@ async def feedback(ctx):
     async def feature_ideia(self):
         await ctx.send("Por favor escreva qual a feature você gostaria que fosse adicionado no Magic Madness. Não esqueça de descrever oque a feature deve realizar.")
         msg = await client.wait_for("message")
-        await Commands.qualityCtrl.feature(msg)
+        if original_author == msg.author:
+            await Commands.qualityCtrl.feature(msg)
 
     async def bug_report(self):
         await ctx.send("Por favor informe qual o comando que o bug se encontra e descreva oque está acontecendo.")
         msg = await client.wait_for("message")
-        await Commands.qualityCtrl.bug(msg)
+        if original_author == msg.author:
+            await Commands.qualityCtrl.bug(msg)
     
     async def feedback(self):
         await ctx.send("Por favor informe o comando e como podemos melhorar a sua experiencia.")
         msg = await client.wait_for("message")
-        await Commands.qualityCtrl.suggestion(msg)
+        if original_author == msg.author:
+            await Commands.qualityCtrl.suggestion(msg)
 
     feature_button.callback = feature_ideia
     bug_button.callback = bug_report
