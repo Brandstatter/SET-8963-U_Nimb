@@ -24,33 +24,38 @@ client.remove_command("help")
 def configure():
     load_dotenv()
 
-#TODO Improve design of the help function
-@client.command() 
+@client.slash_command(
+    name = "help",
+    guild_ids = [563153398392684554]
+)
 async def help(ctx):
-    await ctx.send('Ty - Retorna uma magica aleatoria')
-    await ctx.send('Te + Nome de uma magia - Retorna explicação da magia especifica.')
-    await ctx.send('Td + Valor do dado(6, 12, 20) + Numero de Dados + Bonus - Retorna uma magica aleatoria')
-    await ctx.send('Tfeedback - Função para enviar reporte de bugs ou sugestões de melhoria.')
+    await ctx.respond(f"Ty - Retorna uma magica aleatoria /n Te + Nome de uma magia - Retorna explicação da magia especifica. /n Td + Valor do dado(6, 12, 20) + Numero de Dados + Bonus - Retorna uma magica aleatoria /n Tfeedback - Função para enviar reporte de bugs ou sugestões de melhoria.")
+
+#TODO Improve design of the help function
 
 #TODO Add slash commands
 
 # Random Magic
-@client.command(aliases = ['y']) # WORKING
+@client.command(aliases = ['y']) 
 async def descarte(ctx):
-    await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
+    print("usou descarte")
+    await ctx.respond( await Commands.magic.embed_magic(ctx, random.randrange(0, 197)))
 
 # Search Magic
 @client.command(aliases = ['e']) # WORKING
 async def searchMagic(ctx, name:str):
+    print("usou pesquisa magica")
     await Commands.magic.find_magic(ctx, name)
 
 # Dice
 @client.command(aliases = ['D']) # TODO Improve command
 async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
+    print("usou dados")
     await Commands.dice.roll_dice(ctx, nDice, nNumb, nBonus)    
 
 @client.command(aliases = ['g'])
 async def search_condition(ctx, name:str):
+    print("usou pesquisa condição")
     await Commands.conditions.search_condition(ctx, name)
 
 @client.command()

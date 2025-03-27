@@ -4,7 +4,7 @@ import json
 from unidecode import unidecode
 
 
-COND_JSON = json.load(open("json\conditions.json"))
+COND_JSON = json.load(open("json\conditions.json", encoding='utf-8'))
 
 async def search_condition(ctx, id):
     if id.isnumeric() == True:
@@ -17,7 +17,6 @@ async def search_condition(ctx, id):
         list_ids = []
         if len(message) >= 4:
             for condition in COND_JSON:
-                # FIXME  Caido changes to CaAdo and vulneravel changes to VulnerA!vel
                 if unidecode(condition['name']).lower().find(message.lower()) == 0:
                     list_ids.append(condition['id'])
             if len(list_ids) == 1:
@@ -39,18 +38,18 @@ async def embed_condition(ctx, id):
         
     # Conditions embed body
     conditions = discord.Embed(
-    title = name.decode('utf-8'),
-    description = type_cond.decode('utf-8'),
+    title = name.decode('latin-1'),
+    description = type_cond.decode('latin-1'),
     color = discord.Color.random())
     
     # Work around subtext existence or not
     if subtext == None:
         # If theres no subtext, only the main text is added
-        conditions.add_field(name="Efeitos", value= text.decode('utf-8'), inline=False)
+        conditions.add_field(name="Efeitos", value= text.decode('latin-1'), inline=False)
     else:
         # If theres a subtext, will decode and ad on field
-        subtext = subtext.decode('utf-8')
-        conditions.add_field(name="Efeitos", value= text.decode('utf-8') + '\n' + str(subtext), inline=False)
+        subtext = subtext.decode('latin-1')
+        conditions.add_field(name="Efeitos", value= text.decode('latin-1') + '\n' + str(subtext), inline=False)
     
     # Set image to be sent with the embed
     conditions.set_image(url="attachment://image.jpg")
