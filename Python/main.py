@@ -10,6 +10,7 @@ import Commands.dice
 import Commands.generate_attribute
 
 from discord.ext import commands
+from discord import SlashCommandGroup
 from discord.ui import View
 from dotenv import load_dotenv
 
@@ -24,6 +25,17 @@ client.remove_command("help")
 def configure():
     load_dotenv()
 
+@client.event
+async def on_ready() :
+    global guilds_list
+    guilds_list = [guild.id for guild in client.guilds]
+    print("Bot pronto.")
+
+#TODO Add slash commands
+#TODO Improve design of the help function
+
+# Slash Commands Section
+
 @client.slash_command(
     name = "help",
     guild_ids = [563153398392684554]
@@ -31,18 +43,41 @@ def configure():
 async def help(ctx):
     await ctx.respond(f"Ty - Retorna uma magica aleatoria /n Te + Nome de uma magia - Retorna explicação da magia especifica. /n Td + Valor do dado(6, 12, 20) + Numero de Dados + Bonus - Retorna uma magica aleatoria /n Tfeedback - Função para enviar reporte de bugs ou sugestões de melhoria.")
 
-#TODO Improve design of the help function
+@client.slash_command(
+    name = "feedback",
+    guild_ids = [563153398392684554]
+)
+async def slash_feedback(ctx, 
+    feedback_option : discord.Option(str, choices = ["Feature", "Bug", "Sugestão"])):
+    original_author = ctx.author
+    if feedback_option == "Feature":
+        await ctx.respond("Por favor escreva qual a feature você gostaria que fosse adicionado no Magic Madness. Não esqueça de descrever oque a feature deve realizar.")
+        msg = await client.wait_for("message")
+        if original_author == msg.author:
+            await Commands.qualityCtrl.feature(msg)
+    elif feedback_option == "Bug":
+        await ctx.respond("Por favor informe qual o comando que o bug se encontra e descreva oque está acontecendo.")
+        msg = await client.wait_for("message")
+        if original_author == msg.author:
+            await Commands.qualityCtrl.bug(msg)
+    else:
+        await ctx.respond("Por favor informe o comando e como podemos melhorar a sua experiencia.")
+        msg = await client.wait_for("message")
+        if original_author == msg.author:
+            await Commands.qualityCtrl.suggestion(msg)
 
-#TODO Add slash commands
+
+
+# Prefix Commands Section
 
 # Random Magic
 @client.command(aliases = ['y']) 
 async def descarte(ctx):
     print("usou descarte")
-    await ctx.respond( await Commands.magic.embed_magic(ctx, random.randrange(0, 197)))
+    await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
 
 # Search Magic
-@client.command(aliases = ['e']) # WORKING
+@client.command(aliases = ['e']) 
 async def searchMagic(ctx, name:str):
     print("usou pesquisa magica")
     await Commands.magic.find_magic(ctx, name)
@@ -60,13 +95,12 @@ async def search_condition(ctx, name:str):
 
 @client.command()
 async def i(ctx): #FIXME
-    await Commands.generate_attribute.attributes(ctx)
+    print(guilds_list)
     
 # Feedback command
 @client.command(aliases = ['t'])
 async def feedback(ctx):
     #TODO Remove buttons after being clicked
-
     original_author = ctx.message.author
 
     await ctx.send("Obrigado por nos ajudar a melhorar o Magic Madness!")
