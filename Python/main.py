@@ -45,10 +45,12 @@ async def help(ctx):
 
 @client.slash_command(
     name = "feedback",
+    description = "Comando para sugerir melhorias, novas features ou reportar bugs no bot.",
     guild_ids = [563153398392684554]
 )
 async def slash_feedback(ctx, 
-    feedback_option : discord.Option(str, choices = ["Feature", "Bug", "Sugestão"])):
+    feedback_option : discord.Option(str, choices = ["Feature", "Bug", "Sugestão"])
+    ):
     original_author = ctx.author
     if feedback_option == "Feature":
         await ctx.respond("Por favor escreva qual a feature você gostaria que fosse adicionado no Magic Madness. Não esqueça de descrever oque a feature deve realizar.")
@@ -66,7 +68,15 @@ async def slash_feedback(ctx,
         if original_author == msg.author:
             await Commands.qualityCtrl.suggestion(msg)
 
-
+@client.slash_command(
+        name = "condição",
+        description = "Comando para pesquisa de condições.",
+        guild_ids = [563153398392684554]
+)
+async def slash_condition(ctx,
+    condtion_option : discord.Option(str, choices = ['Abalado', 'Agarrado', 'Alquebrado', 'Apavorado', 'Atordoado', 'Caído', 'Cego', 'Confuso', 'Debilitado', 'Desprevenido', 'Doente', 'Em Chamas', 'Enjoado', 'Enredado', 'Envenenado', 'Esmorecido', 'Exausto', 'Fascinado', 'Fatigado', 'Fraco', 'Frustrado'])
+):
+    return 0 
 
 # Prefix Commands Section
 
@@ -90,8 +100,14 @@ async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
 
 @client.command(aliases = ['g'])
 async def search_condition(ctx, name:str):
-    print("usou pesquisa condição")
-    await Commands.conditions.search_condition(ctx, name)
+    id = await Commands.conditions.search_condition(ctx, name)
+    embed, file = await Commands.conditions.embed_condition(ctx, id)
+    await ctx.send(embed = embed, file = file)
+
+
+
+
+    
 
 @client.command()
 async def i(ctx): #FIXME
