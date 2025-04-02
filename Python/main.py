@@ -87,13 +87,19 @@ async def slash_condition(ctx,
 @client.command(aliases = ['y']) 
 async def descarte(ctx):
     print("usou descarte")
-    await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
+    embed, file = await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
+    print(embed)
+    await ctx.send(embed = embed, file = file)
 
 # Search Magic
 @client.command(aliases = ['e']) 
 async def searchMagic(ctx, name:str):
-    print("usou pesquisa magica")
-    await Commands.magic.find_magic(ctx, name)
+    id = await Commands.magic.search_magic(ctx, name)
+    print(id)
+    for magic in id:
+        embed, file = await Commands.magic.embed_magic(ctx, magic)
+        print(embed)
+        await ctx.send(embed = embed, file = file)
 
 # Dice
 @client.command(aliases = ['D']) # TODO Improve command
@@ -110,14 +116,10 @@ async def search_condition(ctx, name:str):
     else:
         await ctx.send(embed = embed, file = file)
 
-
-
-
-    
-
 @client.command()
 async def i(ctx): #FIXME
-    print(guilds_list)
+    embed, file = await Commands.magic.embed_magic(ctx, 0)
+    await ctx.send(embed = embed, file = file)
     
 # Feedback command
 @client.command(aliases = ['t'])

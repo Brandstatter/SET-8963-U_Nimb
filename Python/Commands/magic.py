@@ -17,26 +17,20 @@ async def dropdown_magic(magicIds):
     return 0
 
 # Search a spell by id or name
-async def find_magic(ctx, id):
-    if id.isnumeric() == True:
+async def search_magic(ctx, id):
+    #TODO If list of magics is too big, create dropdown menu to choose spell.
+    message = unidecode(ctx.message.content)
+    message = message[3:]
+    spell_ids = []
+    # Added a step to verify if spells found exceeds 3, if exceeds asks the user to be more especific.
+    if len(message) >= 3:
         for magic in MAG_JSON:
-            if int(id) == magic['id']:
-                await embed_magic(ctx, int(id))
-    else:
-        #TODO If list of magics is too big, create dropdown menu to choose spell.
-        message = unidecode(ctx.message.content)
-        message = message[3:]
-        spell_ids = []
-        # Added a step to verify if spells found exceeds 3, if exceeds asks the user to be more especific.
-        if len(message) >= 3:
-            for magic in MAG_JSON:
-                if unidecode(magic['name']).lower().find(message.lower()) == 0:
-                    spell_ids.append(magic['id'])
-            if len(spell_ids) <= 3:
-                for id in spell_ids:
-                    await embed_magic(ctx, id)
-            else:
-                await ctx.send("Foram encontradas " + str(len(spell_ids)) + " magias. Por favor seja mais especifico.")   
+            if unidecode(magic['name']).lower().find(message.lower()) == 0:
+                spell_ids.append(magic['id'])
+        if len(spell_ids) <= 3:
+            return spell_ids
+        else:
+            await ctx.send("Foram encontradas " + str(len(spell_ids)) + " magias. Por favor seja mais especifico.")   
 
 # Function that creates the embed of the magic based on id.
 async def embed_magic(ctx, id):
@@ -100,4 +94,4 @@ async def embed_magic(ctx, id):
         buttons.add_item(prev_button)
         message = await ctx.send(file = file, embed = magic, view = buttons)
     else:
-        await ctx.send(file = file, embed = magic)       
+        return magic, file      
