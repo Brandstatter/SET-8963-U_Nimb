@@ -74,9 +74,12 @@ async def slash_feedback(ctx,
         guild_ids = [563153398392684554]
 )
 async def slash_condition(ctx,
-    condtion_option : discord.Option(str, choices = ['Abalado', 'Agarrado', 'Alquebrado', 'Apavorado', 'Atordoado', 'Caído', 'Cego', 'Confuso', 'Debilitado', 'Desprevenido', 'Doente', 'Em Chamas', 'Enjoado', 'Enredado', 'Envenenado', 'Esmorecido', 'Exausto', 'Fascinado', 'Fatigado', 'Fraco', 'Frustrado'])
+    condtion_option : discord.Option(str, choices = ['Abalado', 'Agarrado', 'Alquebrado', 'Apavorado', 'Atordoado', 'Caído', 'Cego', 'Confuso', 'Debilitado', 'Desprevenido', 'Doente', 'Em Chamas', 'Enjoado', 'Enredado', 'Envenenado', 'Esmorecido', 'Exausto', 'Fascinado', 'Fatigado', 'Fraco', 'Frustrado', 'Imovel', 'Inconsciente', 'Indefeso', 'Lento', 'Ofuscado', 'Paralisado', 'Pasmo', 'Petrificado', 'Sangrando', 'Surdo', 'Surpreendido', 'Vulnerável'])
 ):
-    return 0 
+    id = 23
+    embed, file = await Commands.conditions.embed_condition(ctx, id)
+    await ctx.respond(embed = embed, file = file)
+
 
 # Prefix Commands Section
 
@@ -102,7 +105,10 @@ async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
 async def search_condition(ctx, name:str):
     id = await Commands.conditions.search_condition(ctx, name)
     embed, file = await Commands.conditions.embed_condition(ctx, id)
-    await ctx.send(embed = embed, file = file)
+    if file == None:
+        await ctx.send(embed = embed)
+    else:
+        await ctx.send(embed = embed, file = file)
 
 
 

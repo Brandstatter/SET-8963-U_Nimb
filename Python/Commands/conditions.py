@@ -6,6 +6,12 @@ from unidecode import unidecode
 
 COND_JSON = json.load(open("json\conditions.json", encoding='utf-8'))
 
+listCond = []
+for cond in COND_JSON:
+    listCond.append(cond['name'])
+print(listCond)
+
+
 async def search_condition(ctx, id):
     message = unidecode(ctx.message.content)
     message = message[3:]
@@ -28,7 +34,9 @@ async def embed_condition(ctx, id):
     text = str(COND_JSON[id]['text']).encode('latin-1')
     subtext = str(COND_JSON[id]['subtext']).encode('latin-1')
     # Get path to the image from json
-    file = discord.File(COND_JSON[id]['img'], filename="image.jpg")
+    file = None
+    if COND_JSON[id]['img'] != None:
+        file = discord.File(COND_JSON[id]['img'], filename="image.jpg")
 
      # Conditions embed body
     conditions = discord.Embed(
@@ -45,5 +53,6 @@ async def embed_condition(ctx, id):
     
     # Set image to be sent with the embed
     conditions.set_image(url="attachment://image.jpg")
+    
     
     return conditions, file
