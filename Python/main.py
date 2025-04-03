@@ -14,6 +14,8 @@ from discord import SlashCommandGroup
 from discord.ui import View
 from dotenv import load_dotenv
 
+import Commands.race
+
 intents = discord.Intents.all()
 intents.message_content = True
 
@@ -40,8 +42,13 @@ async def on_ready() :
     name = "help",
     guild_ids = [563153398392684554]
 )
-async def help(ctx):
-    await ctx.respond(f"Ty - Retorna uma magica aleatoria /n Te + Nome de uma magia - Retorna explicação da magia especifica. /n Td + Valor do dado(6, 12, 20) + Numero de Dados + Bonus - Retorna uma magica aleatoria /n Tfeedback - Função para enviar reporte de bugs ou sugestões de melhoria.")
+async def help(ctx,
+    race_option : discord.Option(str, choices = ["Humano", "Anão", "Dahllan", "Elfo", "Goblin", "Lefou", "Minotauro", "Qareen", "Golem", "Hynne", "Kliren", "Medusa", "Osteon", "Sereia/Tritão", "Sílfide", "Suraggel", "Trog"])
+    ):
+    id = await Commands.race.switcher_race(race_option)
+    embed = await Commands.race.embed_race(ctx, id)
+    await ctx.respond(embed = embed)
+    #await ctx.respond(f"Ty - Retorna uma magica aleatoria /n Te + Nome de uma magia - Retorna explicação da magia especifica. /n Td + Valor do dado(6, 12, 20) + Numero de Dados + Bonus - Retorna uma magica aleatoria /n Tfeedback - Função para enviar reporte de bugs ou sugestões de melhoria.")
 
 @client.slash_command(
     name = "feedback",
@@ -80,22 +87,30 @@ async def slash_condition(ctx,
     embed, file = await Commands.conditions.embed_condition(ctx, id)
     await ctx.respond(embed = embed, file = file)
 
+@client.slash_command(
+    name = "races",
+    description = "Retorna atributos e habilidades da raça selecionada.",
+    guild_ids = [563153398392684554]
+)
+async def slash_race(ctx,
+    race_option : discord.Option(str, choices = ['Humano', 'Anão', 'Dahllan', 'Elfo', 'Goblin', 'Lefou', 'Minotauro', 'Qareen', 'Golem', 'Hynne', 'Kliren', 'Medusa', 'Osteon', 'Sereia/Tritão', 'Sílfide', 'Suraggel', 'Trog'])
+):
+    id = await Commands.race.switcher_race(race_option)
+    embed = await Commands.race.embed_race(ctx, id)
+    await ctx.respond(embed = embed)
 
 # Prefix Commands Section
 
 # Random Magic
 @client.command(aliases = ['y']) 
 async def descarte(ctx):
-    print("usou descarte")
     embed, file = await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
-    print(embed)
     await ctx.send(embed = embed, file = file)
 
 # Search Magic
 @client.command(aliases = ['e']) 
 async def searchMagic(ctx, name:str):
     id = await Commands.magic.search_magic(ctx, name)
-    print(id)
     for magic in id:
         embed, file = await Commands.magic.embed_magic(ctx, magic)
         print(embed)
@@ -116,10 +131,13 @@ async def search_condition(ctx, name:str):
     else:
         await ctx.send(embed = embed, file = file)
 
+@client.command(aliases = ['r','raças', 'races'])
+async def search_races(ctx): 
+    await Commands.race.search_race(ctx)
+
 @client.command()
-async def i(ctx): #FIXME
-    embed, file = await Commands.magic.embed_magic(ctx, 0)
-    await ctx.send(embed = embed, file = file)
+async def i(ctx):
+    await Commands.race.search_race(ctx)
     
 # Feedback command
 @client.command(aliases = ['t'])
