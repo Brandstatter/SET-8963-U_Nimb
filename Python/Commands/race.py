@@ -42,29 +42,28 @@ async def switcher_race(name):
 
 async def search_race(ctx):
     race_select = discord.ui.Select(options=[
-        discord.SelectOption(label="Humano"),
-        discord.SelectOption(label="Anão"),
-        discord.SelectOption(label="Dahllan"),
-        discord.SelectOption(label="Elfo"),
-        discord.SelectOption(label="Goblin"),
-        discord.SelectOption(label="Lefou"),
-        discord.SelectOption(label="Minotauro"),
-        discord.SelectOption(label="Qareen"),
-        discord.SelectOption(label="Golem"),
-        discord.SelectOption(label="Hynne"),
-        discord.SelectOption(label="Kliren"),
-        discord.SelectOption(label="Medusa"),
-        discord.SelectOption(label="Osteon"),
-        discord.SelectOption(label="Sereia/Tritão"),
-        discord.SelectOption(label="Sílfide"),
-        discord.SelectOption(label="Suraggel"),
-        discord.SelectOption(label="Trog"),
+        discord.SelectOption(label="Humano",value= "0"),
+        discord.SelectOption(label="Anão", value= "1"),
+        discord.SelectOption(label="Dahllan", value="2"),
+        discord.SelectOption(label="Elfo", value="3"),
+        discord.SelectOption(label="Goblin", value="4"),
+        discord.SelectOption(label="Lefou", value="5"),
+        discord.SelectOption(label="Minotauro", value="6"),
+        discord.SelectOption(label="Qareen", value="7"),
+        discord.SelectOption(label="Golem", value="8"),
+        discord.SelectOption(label="Hynne", value="9"),
+        discord.SelectOption(label="Kliren", value="10"),
+        discord.SelectOption(label="Medusa", value="11"),
+        discord.SelectOption(label="Osteon", value="12"),
+        discord.SelectOption(label="Sereia/Tritão", value="13"),
+        discord.SelectOption(label="Sílfide", value="14"),
+        discord.SelectOption(label="Suraggel", value="15"),
+        discord.SelectOption(label="Trog", value="16"),
     ])
 
     async def race_callback(interaction):
-        choosen = str({race_select.values[0]})
-        id = await switcher_race(choosen[2:-2])
-        embed = await embed_race(ctx, id)
+        id = str({race_select.values[0]})[2:-2]
+        embed = await embed_race(ctx, int(id))
         await interaction.response.send_message(embed=embed)
 
     race_select.callback = race_callback
