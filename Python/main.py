@@ -3,6 +3,7 @@ import os
 import discord
 import random
 
+import Commands.help
 import Commands.qualityCtrl
 import Commands.magic
 import Commands.conditions
@@ -27,12 +28,6 @@ client.remove_command("help")
 def configure():
     load_dotenv()
 
-@client.event
-async def on_ready() :
-    global guilds_list
-    guilds_list = [guild.id for guild in client.guilds]
-    print("Bot pronto.")
-
 #TODO Add slash commands
 #TODO Improve design of the help function
 
@@ -40,15 +35,24 @@ async def on_ready() :
 
 @client.slash_command(
     name = "help",
-    guild_ids = [563153398392684554]
+    guild_ids = [563153398392684554, 474008663174938637]
 )
-async def help(ctx,
-    race_option : discord.Option(str, choices = ["Humano", "Anão", "Dahllan", "Elfo", "Goblin", "Lefou", "Minotauro", "Qareen", "Golem", "Hynne", "Kliren", "Medusa", "Osteon", "Sereia/Tritão", "Sílfide", "Suraggel", "Trog"])
-    ):
+async def help(ctx):
+    user = await ctx.user.create_dm()
+    await ctx.respond("Comandos enviados para sua DM!")
+    await user.send(embed = await Commands.help.embed_help())
+
+@client.slash_command(
+    name = "races",
+    description = "Retorna atributos e habilidades da raça selecionada.",
+    guild_ids = [474008663174938637]
+)
+async def slash_race(ctx,
+    race_option : discord.Option(str, choices = ['Humano', 'Anão', 'Dahllan', 'Elfo', 'Goblin', 'Lefou', 'Minotauro', 'Qareen', 'Golem', 'Hynne', 'Kliren', 'Medusa', 'Osteon', 'Sereia/Tritão', 'Sílfide', 'Suraggel', 'Trog'])
+):
     id = await Commands.race.switcher_race(race_option)
     embed = await Commands.race.embed_race(ctx, id)
     await ctx.respond(embed = embed)
-    #await ctx.respond(f"Ty - Retorna uma magica aleatoria /n Te + Nome de uma magia - Retorna explicação da magia especifica. /n Td + Valor do dado(6, 12, 20) + Numero de Dados + Bonus - Retorna uma magica aleatoria /n Tfeedback - Função para enviar reporte de bugs ou sugestões de melhoria.")
 
 @client.slash_command(
     name = "feedback",
@@ -87,28 +91,17 @@ async def slash_condition(ctx,
     embed, file = await Commands.conditions.embed_condition(ctx, id)
     await ctx.respond(embed = embed, file = file)
 
-@client.slash_command(
-    name = "races",
-    description = "Retorna atributos e habilidades da raça selecionada.",
-    guild_ids = [563153398392684554]
-)
-async def slash_race(ctx,
-    race_option : discord.Option(str, choices = ['Humano', 'Anão', 'Dahllan', 'Elfo', 'Goblin', 'Lefou', 'Minotauro', 'Qareen', 'Golem', 'Hynne', 'Kliren', 'Medusa', 'Osteon', 'Sereia/Tritão', 'Sílfide', 'Suraggel', 'Trog'])
-):
-    id = await Commands.race.switcher_race(race_option)
-    embed = await Commands.race.embed_race(ctx, id)
-    await ctx.respond(embed = embed)
 
 # Prefix Commands Section
 
 # Random Magic
-@client.command(aliases = ['y']) 
-async def descarte(ctx):
+@client.command(aliases = ['l', 'random']) 
+async def randomMagic(ctx):
     embed, file = await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
     await ctx.send(embed = embed, file = file)
 
 # Search Magic
-@client.command(aliases = ['e']) 
+@client.command(aliases = ['e', 'magia']) 
 async def searchMagic(ctx, name:str):
     id = await Commands.magic.search_magic(ctx, name)
     for magic in id:
@@ -122,7 +115,7 @@ async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
     print("usou dados")
     await Commands.dice.roll_dice(ctx, nDice, nNumb, nBonus)    
 
-@client.command(aliases = ['g'])
+@client.command(aliases = ['g', 'cond'])
 async def search_condition(ctx, name:str):
     id = await Commands.conditions.search_condition(ctx, name)
     embed, file = await Commands.conditions.embed_condition(ctx, id)
@@ -131,16 +124,13 @@ async def search_condition(ctx, name:str):
     else:
         await ctx.send(embed = embed, file = file)
 
+# Consult info about different races from the game
 @client.command(aliases = ['r','raças', 'races'])
 async def search_races(ctx): 
     await Commands.race.search_race(ctx)
-
-@client.command()
-async def i(ctx):
-    await Commands.race.search_race(ctx)
     
-# Feedback command
-@client.command(aliases = ['t'])
+# Give user option to report bugs or send ideas to new features
+@client.command(aliases = ['t', 'report'])
 async def feedback(ctx):
     #TODO Remove buttons after being clicked
     original_author = ctx.message.author
@@ -179,6 +169,16 @@ async def feedback(ctx):
     buttons.add_item(bug_button)
     buttons.add_item(feedback_button)
     await ctx.send(view = buttons)
-    
+
+@client.command()
+async def i(ctx):
+    await Commands.race.search_race(ctx)
+
+@client.event
+async def on_ready() :
+    global guilds_list
+    guilds_list = [guild.id for guild in client.guilds]
+    print("Bot pronto.")
+   
 configure()
 client.run(os.getenv('clientID'))

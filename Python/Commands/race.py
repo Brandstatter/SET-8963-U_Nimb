@@ -77,7 +77,8 @@ async def embed_race(ctx, id):
     race = discord.Embed(
     title = name.decode('latin-1'),
     description = "**Atributos** \n" + atribute.decode('latin-1'),
-    color = discord.Color.random())
+    color = discord.Color.random()
+    )
 
     x = 0
     while x < len(RACES_JSON[id]['skills']['titles']):

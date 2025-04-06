@@ -38,7 +38,7 @@ async def embed_condition(ctx, id):
     if COND_JSON[id]['img'] != None:
         file = discord.File(COND_JSON[id]['img'], filename="image.jpg")
 
-     # Conditions embed body
+    # Conditions embed body
     conditions = discord.Embed(
     title = name.decode('latin-1'),
     description = type_cond.decode('latin-1'),
@@ -53,6 +53,5 @@ async def embed_condition(ctx, id):
     
     # Set image to be sent with the embed
     conditions.set_image(url="attachment://image.jpg")
-    
     
     return conditions, file
