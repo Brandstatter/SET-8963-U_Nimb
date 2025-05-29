@@ -2,20 +2,20 @@ import os
 
 import discord
 import random
+import json
 
 import Commands.help
 import Commands.qualityCtrl
 import Commands.magic
 import Commands.conditions
 import Commands.dice
-import Commands.generate_attribute
+import Commands.race
 
 from discord.ext import commands
 from discord import SlashCommandGroup
 from discord.ui import View
 from dotenv import load_dotenv
 
-import Commands.race
 
 intents = discord.Intents.all()
 intents.message_content = True
@@ -27,6 +27,15 @@ client.remove_command("help")
 
 def configure():
     load_dotenv()
+
+@client.event
+async def on_guild_join(guild):
+    with open("json\guilds.json", 'r') as file:
+        data = json.load(file)
+        
+    data[0]['guilds'].append(guild.id)
+    with open("json\guilds.json", 'w') as outputFile:
+        json.dump(data, outputFile, indent=4)
 
 #TODO Add slash commands
 #TODO Improve design of the help function
@@ -45,7 +54,7 @@ async def help(ctx):
 @client.slash_command(
     name = "races",
     description = "Retorna atributos e habilidades da raça selecionada.",
-    guild_ids = [474008663174938637]
+    guild_ids = [563153398392684554]
 )
 async def slash_race(ctx,
     race_option : discord.Option(str, choices = ['Humano', 'Anão', 'Dahllan', 'Elfo', 'Goblin', 'Lefou', 'Minotauro', 'Qareen', 'Golem', 'Hynne', 'Kliren', 'Medusa', 'Osteon', 'Sereia/Tritão', 'Sílfide', 'Suraggel', 'Trog'])
@@ -79,19 +88,6 @@ async def slash_feedback(ctx,
         if original_author == msg.author:
             await Commands.qualityCtrl.suggestion(msg)
 
-@client.slash_command(
-        name = "condição",
-        description = "Comando para pesquisa de condições.",
-        guild_ids = [563153398392684554]
-)
-async def slash_condition(ctx,
-    condtion_option : discord.Option(str, choices = ['Abalado', 'Agarrado', 'Alquebrado', 'Apavorado', 'Atordoado', 'Caído', 'Cego', 'Confuso', 'Debilitado', 'Desprevenido', 'Doente', 'Em Chamas', 'Enjoado', 'Enredado', 'Envenenado', 'Esmorecido', 'Exausto', 'Fascinado', 'Fatigado', 'Fraco', 'Frustrado', 'Imovel', 'Inconsciente', 'Indefeso', 'Lento', 'Ofuscado', 'Paralisado', 'Pasmo', 'Petrificado', 'Sangrando', 'Surdo', 'Surpreendido', 'Vulnerável'])
-):
-    id = 23
-    embed, file = await Commands.conditions.embed_condition(ctx, id)
-    await ctx.respond(embed = embed, file = file)
-
-
 # Prefix Commands Section
 
 # Random Magic
@@ -115,7 +111,7 @@ async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
     print("usou dados")
     await Commands.dice.roll_dice(ctx, nDice, nNumb, nBonus)    
 
-@client.command(aliases = ['g', 'cond'])
+@client.command(aliases = ['cond'])
 async def search_condition(ctx, name:str):
     id = await Commands.conditions.search_condition(ctx, name)
     embed, file = await Commands.conditions.embed_condition(ctx, id)
@@ -172,12 +168,18 @@ async def feedback(ctx):
 
 @client.command()
 async def i(ctx):
-    await Commands.race.search_race(ctx)
+    with open("json\guilds.json", 'r') as file:
+        data = json.load(file)
+        
+    data[0]['guilds'].append(31231234354354365)
+    with open("json\guilds.json", 'w') as outputFile:
+        json.dump(data, outputFile, indent=4)
 
 @client.event
 async def on_ready() :
     global guilds_list
     guilds_list = [guild.id for guild in client.guilds]
+    print (guilds_list)
     print("Bot pronto.")
    
 configure()

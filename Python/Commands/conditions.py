@@ -14,10 +14,13 @@ print(listCond)
 
 async def search_condition(ctx, id):
     message = unidecode(ctx.message.content)
-    message = message[3:]
+    # Remove prefix from message content
+    message = message[6:]
     list_ids = []
     if len(message) >= 4:
+        print(message.lower())
         for condition in COND_JSON:
+            print(condition['name'].lower())
             if unidecode(condition['name']).lower().find(message.lower()) == 0:
                 list_ids.append(condition['id'])
         if len(list_ids) == 1:
