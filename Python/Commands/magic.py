@@ -12,12 +12,8 @@ from discord.ui import View
 MAG_JSON = json.load(open("json\magics.json", encoding='utf-8'))
 
 
-#TODO Function that create a dropdpwn menu based of a list of Ids.
-async def dropdown_magic(magicIds):
-    return 0
-
 # Search a spell by id or name
-async def search_magic(ctx, id):
+async def search_magic(ctx):
     #TODO If list of magics is too big, create dropdown menu to choose spell.
     message = unidecode(ctx.message.content)
     message = message[3:]

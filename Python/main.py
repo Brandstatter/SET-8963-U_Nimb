@@ -5,6 +5,7 @@ import random
 import json
 
 import Commands.help
+import Commands.origins
 import Commands.qualityCtrl
 import Commands.magic
 import Commands.conditions
@@ -28,12 +29,28 @@ client.remove_command("help")
 def configure():
     load_dotenv()
 
+GUILDS_JSON = json.load(open("json\guilds.json", encoding='utf-8'))
+global guilds_list
+guilds_list = GUILDS_JSON[0]['guilds']
+
+@client.event
+async def on_ready() :
+    print("Bot pronto.")
+
 @client.event
 async def on_guild_join(guild):
     with open("json\guilds.json", 'r') as file:
         data = json.load(file)
         
     data[0]['guilds'].append(guild.id)
+    with open("json\guilds.json", 'w') as outputFile:
+        json.dump(data, outputFile, indent=4)
+
+@client.event
+async def on_guild_remove(guild):
+    with open("json\guilds.json", 'r') as file:
+        data = json.load(file)
+    data[0]['guilds'].remove(guild.id)
     with open("json\guilds.json", 'w') as outputFile:
         json.dump(data, outputFile, indent=4)
 
@@ -44,7 +61,7 @@ async def on_guild_join(guild):
 
 @client.slash_command(
     name = "help",
-    guild_ids = [563153398392684554, 474008663174938637]
+    guild_ids = guilds_list
 )
 async def help(ctx):
     user = await ctx.user.create_dm()
@@ -54,7 +71,7 @@ async def help(ctx):
 @client.slash_command(
     name = "races",
     description = "Retorna atributos e habilidades da raça selecionada.",
-    guild_ids = [563153398392684554]
+    guild_ids = guilds_list
 )
 async def slash_race(ctx,
     race_option : discord.Option(str, choices = ['Humano', 'Anão', 'Dahllan', 'Elfo', 'Goblin', 'Lefou', 'Minotauro', 'Qareen', 'Golem', 'Hynne', 'Kliren', 'Medusa', 'Osteon', 'Sereia/Tritão', 'Sílfide', 'Suraggel', 'Trog'])
@@ -64,9 +81,17 @@ async def slash_race(ctx,
     await ctx.respond(embed = embed)
 
 @client.slash_command(
+    name = "origins",
+    description = "Informa beneficios e itens da origem selecionada.",
+    guild_ids = guilds_list
+)
+async def slash_origins(ctx):
+    id = await Commands.origins.search_origin(ctx)
+
+@client.slash_command(
     name = "feedback",
     description = "Comando para sugerir melhorias, novas features ou reportar bugs no bot.",
-    guild_ids = [563153398392684554]
+    guild_ids = guilds_list
 )
 async def slash_feedback(ctx, 
     feedback_option : discord.Option(str, choices = ["Feature", "Bug", "Sugestão"])
@@ -108,7 +133,6 @@ async def searchMagic(ctx, name:str):
 # Dice
 @client.command(aliases = ['D']) # TODO Improve command
 async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
-    print("usou dados")
     await Commands.dice.roll_dice(ctx, nDice, nNumb, nBonus)    
 
 @client.command(aliases = ['cond'])
@@ -168,19 +192,9 @@ async def feedback(ctx):
 
 @client.command()
 async def i(ctx):
-    with open("json\guilds.json", 'r') as file:
-        data = json.load(file)
-        
-    data[0]['guilds'].append(31231234354354365)
-    with open("json\guilds.json", 'w') as outputFile:
-        json.dump(data, outputFile, indent=4)
-
-@client.event
-async def on_ready() :
-    global guilds_list
-    guilds_list = [guild.id for guild in client.guilds]
-    print (guilds_list)
-    print("Bot pronto.")
+    id = await Commands.origins.search_origin(ctx)
+    embed = await Commands.origins.embed_origin(ctx, id)
+    await ctx.send(embed = embed)
    
 configure()
 client.run(os.getenv('clientID'))
