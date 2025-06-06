@@ -9,11 +9,16 @@
 
 ## Roadmap
 
-- [ ] Pesquisa de Magias 
-- [ ] Pesquisa de Condições 
+- [ ] Pesquisa de Magias
+- [ ] Pesquisa de Magias por classe
+- [ ] Pesquisa de Condições
+- [ ] Pesquisa de Raças
+- [ ] Pesquisa de Origens
+- [ ] Gerador de recompensas (Dinheiro)
+- [ ] Gerador de recompensas (Itens)
 - [ ] Gerador de NPCs
-- [ ] Bestiario
 - [ ] Implementação dos Slash Commands
+- [ ] Bestiario
 - [ ] Sugestões de Feedback 
 - [ ] Gerador de rotas (Mundo de Arton)
 
