@@ -9,6 +9,7 @@
 
 ## Roadmap
 
+### V1.0 (04/07/25)
 - [ ] Pesquisa de Magias
 - [ ] Pesquisa de Magias por classe
 - [ ] Pesquisa de Condições
@@ -16,9 +17,7 @@
 - [ ] Pesquisa de Origens
 - [ ] Gerador de recompensas (Dinheiro)
 - [ ] Gerador de recompensas (Itens)
-- [ ] Gerador de NPCs
 - [ ] Implementação dos Slash Commands
-- [ ] Bestiario
-- [ ] Sugestões de Feedback 
-- [ ] Gerador de rotas (Mundo de Arton)
+- [ ] Sugestões de Feedback
+- [ ] Dockerização
 
