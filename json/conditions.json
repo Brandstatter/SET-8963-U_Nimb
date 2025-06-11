@@ -42,8 +42,8 @@
     {
         "id": 5,
         "name": "Caído",
-        "text": "O personagem sofre –5 na Defesa contra ataques corpo a corpo e recebe +5 na Defesa contra ataques à distância (cumulativos com outras condições).",
-        "subtext": "Além disso, sofre –5 em ataques corpo a corpo e seu deslocamento é reduzido a 1,5m.",
+        "text": "O personagem sofre -5 na Defesa contra ataques corpo a corpo e recebe +5 na Defesa contra ataques à distância (cumulativos com outras condições).",
+        "subtext": "Além disso, sofre -5 em ataques corpo a corpo e seu deslocamento é reduzido a 1,5m.",
         "typeC": "Condição",
         "img": "Images/Conditions/Caido.jpg"
     },
@@ -122,7 +122,7 @@
     {
         "id": 15,
         "name": "Esmorecido",
-        "text": "O personagem sofre –5 em testes de Inteligência, Sabedoria e Carisma e de perícias baseadas nesses atributos.",
+        "text": "O personagem sofre -5 em testes de Inteligência, Sabedoria e Carisma e de perícias baseadas nesses atributos.",
         "subtext": null,
         "typeC": "Condição Mental",
         "img": "Images/Conditions/Esmorecido.jpg"
@@ -138,7 +138,7 @@
     {
         "id": 17,
         "name": "Fascinado",
-        "text": "Com a atenção presa em alguma coisa. O personagem sofre –5 em Percepção e não pode fazer ações, exceto observar aquilo que o fascinou.",
+        "text": "Com a atenção presa em alguma coisa. O personagem sofre -5 em Percepção e não pode fazer ações, exceto observar aquilo que o fascinou.",
         "subtext": " Esta condição é anulada por ações hostis contra o personagem ou se o que o fascinou não estiver mais visível.\n Balançar uma criatura fascinada para tirá-la desse estado gasta uma ação padrão.",
         "typeC": "Condição Mental",
         "img": "Images/Conditions/Fascinado.jpg"
@@ -242,7 +242,7 @@
     {
         "id": 30,
         "name": "Surdo",
-        "text": "O personagem não pode fazer testes de Percepção para ouvir e sofre –5 em testes de Iniciativa.",
+        "text": "O personagem não pode fazer testes de Percepção para ouvir e sofre -5 em testes de Iniciativa.",
         "subtext": "Além disso, é considerado em condição ruim para lançar magias.",
         "typeC": "Condição de Sentidos",
         "img": "Images/Conditions/Surdo.jpg"
@@ -266,7 +266,7 @@
     {
         "id": 33,
         "name": "Sobrecarregado",
-        "text": "O personagem sofre penalidade de armadura –5 e seu deslocamento é reduzido em –3m.",
+        "text": "O personagem sofre penalidade de armadura -5 e seu deslocamento é reduzido em -3m.",
         "subtext": null,
         "typeC": "Condição de Movimento",
         "img": null

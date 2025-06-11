@@ -31,21 +31,29 @@ async def search_magic(ctx):
 # Function that creates the embed of the magic based on id.
 async def embed_magic(ctx, id):
     # Block of code that pulls specifics data for the embed. (Enconding in latin necessary to portuguese.)
-    name = str(MAG_JSON[id]['name']).encode('latin-1')
-    type = str(MAG_JSON[id]['type']).encode('latin-1')
-    text = MAG_JSON[id]['tier']
-    name = name.decode('latin-1')
-    type = type.decode('latin-1')
+    name = str(MAG_JSON[id]['name'])
+    tier = f"***{str(MAG_JSON[id]['tier'])}° Circulo - {str(MAG_JSON[id]['type'])}({str(MAG_JSON[id]['school'])})*** \n \n"
+    if str(MAG_JSON[id]['targetType']) == 1:
+        target = "**Área:**"
+    else:
+        target = "**Alvo:**"
+
+    description = f"{tier} **Execução:** {str(MAG_JSON[id]['execution'])}\n**Alcance:** {str(MAG_JSON[id]['distance'])} \n{target} {str(MAG_JSON[id]['target'])} \n**Duração:** {str(MAG_JSON[id]['duration'])}"
     
+    if MAG_JSON[id]['resistence'] != None:
+        description = f'{description} \n **Resistência:** {str(MAG_JSON[id]["resistence"])} \n \n {str(MAG_JSON[id]["description"])}'
+    else:
+        description = f'{description} \n \n {str(MAG_JSON[id]["description"])}'
+
     # Get path to the image from json
     file = discord.File(MAG_JSON[id]['img'][0], filename="image.jpg")
     
     # Magic embed body
     magic = discord.Embed(
     title = name,
-    description = str(type) +"\nCirculo: "+ str(text),
+    description = description,
     color=discord.Color.random())
-
+    print(type(description))
     # Set image to be sent with the embed
     magic.set_image(url="attachment://image.jpg")
 

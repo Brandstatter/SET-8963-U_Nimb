@@ -3,43 +3,6 @@ import json
 
 RACES_JSON = json.load(open("json\detail_races.json", encoding='utf-8'))
 
-async def switcher_race(name):
-    match name:
-        case "Humano":
-            return 0   
-        case "Anão":
-            return 1
-        case "Dahllan":
-            return 2
-        case "Elfo":
-            return 3
-        case "Goblin":
-            return 4
-        case "Lefou":
-            return 5
-        case "Minotauro":
-            return 6
-        case "Qareen":
-            return 7 
-        case "Golem":
-            return 8
-        case "Hynne":
-            return 9
-        case "Kliren":
-            return 10
-        case "Medusa":
-            return 11
-        case "Osteon":
-            return 12
-        case "Sereia/Tritão":
-            return 13
-        case "Sílfide":
-            return 14
-        case "Suraggel":
-            return 15
-        case "Trog":
-            return 16
-
 async def search_race(ctx):
     race_select = discord.ui.Select(options=[
         discord.SelectOption(label="Humano",value= "0"),
@@ -62,7 +25,7 @@ async def search_race(ctx):
     ])
 
     async def race_callback(interaction):
-        id = str({race_select.values[0]})[2:-2]
+        id = str(race_select.values[0])
         embed = await embed_race(ctx, int(id))
         await interaction.response.send_message(embed=embed)
 

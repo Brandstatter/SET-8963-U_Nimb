@@ -35,6 +35,8 @@ guilds_list = GUILDS_JSON[0]['guilds']
 
 @client.event
 async def on_ready() :
+    guilds_ = [guild.id for guild in client.guilds]
+    print (guilds_)
     print("Bot pronto.")
 
 @client.event
@@ -76,8 +78,8 @@ async def help(ctx):
 async def slash_race(ctx,
     race_option : discord.Option(str, choices = ['Humano', 'Anão', 'Dahllan', 'Elfo', 'Goblin', 'Lefou', 'Minotauro', 'Qareen', 'Golem', 'Hynne', 'Kliren', 'Medusa', 'Osteon', 'Sereia/Tritão', 'Sílfide', 'Suraggel', 'Trog'])
 ):
-    id = await Commands.race.switcher_race(race_option)
-    embed = await Commands.race.embed_race(ctx, id)
+    options = ['Humano', 'Anão', 'Dahllan', 'Elfo', 'Goblin', 'Lefou', 'Minotauro', 'Qareen', 'Golem', 'Hynne', 'Kliren', 'Medusa', 'Osteon', 'Sereia/Tritão', 'Sílfide', 'Suraggel', 'Trog']
+    embed = await Commands.race.embed_race(ctx, options.index(race_option))
     await ctx.respond(embed = embed)
 
 @client.slash_command(
@@ -87,6 +89,28 @@ async def slash_race(ctx,
 )
 async def slash_origins(ctx):
     id = await Commands.origins.search_origin(ctx)
+    embed = await Commands.origins.embed_origin(ctx, id)
+    await ctx.respond(embed = embed)
+
+@client.slash_command(
+    name = "range_roll",
+    description = "Escolhe um numero entre range informado pelo jogador.",
+    guild_ids = guilds_list
+)
+async def slash_rangeRoll(ctx,
+    numero1: discord.Option(int), numero2: discord.Option(int)
+                          ):
+    await ctx.respond(embed = await Commands.dice.range_roll(ctx, numero1, numero2))
+
+@client.slash_command(
+    name = "dados",
+    description = "Rolagem de dados.",
+    guild_ids = guilds_list
+)
+async def slash_dice(ctx,
+    quantidade: discord.Option(int), dados: discord.Option(int), bonus: discord.Option(int)
+                          ):
+    await ctx.respond(embed = await Commands.dice.roll_dice(ctx, dados, quantidade, bonus))
 
 @client.slash_command(
     name = "feedback",
@@ -133,7 +157,7 @@ async def searchMagic(ctx, name:str):
 # Dice
 @client.command(aliases = ['D']) # TODO Improve command
 async def dice(ctx, nDice: int, nNumb: int, nBonus: int):
-    await Commands.dice.roll_dice(ctx, nDice, nNumb, nBonus)    
+    await Commands.dice.roll_dice(ctx, nDice, nNumb, nBonus)
 
 @client.command(aliases = ['cond'])
 async def search_condition(ctx, name:str):
@@ -192,9 +216,8 @@ async def feedback(ctx):
 
 @client.command()
 async def i(ctx):
-    id = await Commands.origins.search_origin(ctx)
-    embed = await Commands.origins.embed_origin(ctx, id)
-    await ctx.send(embed = embed)
+    embed, file = await Commands.magic.embed_magic(ctx, 0)
+    await ctx.send(embed = embed, file = file)
    
 configure()
 client.run(os.getenv('clientID'))
