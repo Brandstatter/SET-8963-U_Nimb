@@ -9,11 +9,15 @@
 
 ## Roadmap
 
-- [ ] Pesquisa de Magias 
-- [ ] Pesquisa de Condições 
-- [ ] Gerador de NPCs
-- [ ] Bestiario
+### V1.0 (04/07/25)
+- [ ] Pesquisa de Magias
+- [ ] Pesquisa de Magias por classe
+- [ ] Pesquisa de Condições
+- [ ] Pesquisa de Raças
+- [ ] Pesquisa de Origens
+- [ ] Gerador de recompensas (Dinheiro)
+- [ ] Gerador de recompensas (Itens)
 - [ ] Implementação dos Slash Commands
-- [ ] Sugestões de Feedback 
-- [ ] Gerador de rotas (Mundo de Arton)
+- [ ] Sugestões de Feedback
+- [ ] Dockerização
 
