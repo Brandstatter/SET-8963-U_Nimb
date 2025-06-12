@@ -4,6 +4,10 @@ import discord
 import random
 import json
 
+from discord.ext import commands
+from discord.ui import View  
+from dotenv import load_dotenv
+
 import Commands.help
 import Commands.origins
 import Commands.qualityCtrl
@@ -11,11 +15,6 @@ import Commands.magic
 import Commands.conditions
 import Commands.dice
 import Commands.race
-
-from discord.ext import commands
-from discord import SlashCommandGroup
-from discord.ui import View
-from dotenv import load_dotenv
 
 
 intents = discord.Intents.all()
@@ -29,7 +28,8 @@ client.remove_command("help")
 def configure():
     load_dotenv()
 
-GUILDS_JSON = json.load(open("json\guilds.json", encoding='utf-8'))
+json_path = os.path.join("json", "guilds.json")
+GUILDS_JSON = json.load(open(json_path, encoding='utf-8'))
 global guilds_list
 guilds_list = GUILDS_JSON[0]['guilds']
 
