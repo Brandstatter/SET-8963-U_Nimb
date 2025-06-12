@@ -1,10 +1,12 @@
+import os
+
 import discord
 import json
 
 from unidecode import unidecode
 
-
-COND_JSON = json.load(open("json\conditions.json", encoding='utf-8'))
+json_path = os.path.join("json", "conditions.json")
+COND_JSON = json.load(open(json_path, encoding='utf-8'))
 
 listCond = []
 for cond in COND_JSON:

@@ -1,7 +1,10 @@
+import os
+
 import discord
 import json
 
-RACES_JSON = json.load(open("json\detail_races.json", encoding='utf-8'))
+json_path = os.path.join("json", "detail_races.json")
+RACES_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def search_race(ctx):
     race_select = discord.ui.Select(options=[

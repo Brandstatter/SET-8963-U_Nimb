@@ -2,14 +2,14 @@
 
 Both functions that create the embeded view of a spell based on the id and the de function to search magic are on this module.
 """
-
+import os
 import discord
 import json
 from unidecode import unidecode
 from discord.ui import View
 
-
-MAG_JSON = json.load(open("json\magics.json", encoding='utf-8'))
+json_path = os.path.join("json", "magics.json")
+MAG_JSON = json.load(open(json_path, encoding='utf-8'))
 
 
 # Search a spell by id or name

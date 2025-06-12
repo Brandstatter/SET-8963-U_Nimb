@@ -1,9 +1,11 @@
+import os
 import json
 import discord
 
 from unidecode import unidecode
 
-ORIGINS_JSON = json.load(open("json\origins.json", encoding='utf-8'))
+json_path = os.path.join("json", "origins.json")
+ORIGINS_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def search_origin(ctx):
     message = unidecode(ctx.message.content)
