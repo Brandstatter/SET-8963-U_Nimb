@@ -33,21 +33,14 @@ async def embed_magic(ctx, id):
     # Block of code that pulls specifics data for the embed. (Enconding in latin necessary to portuguese.)
     name = str(MAG_JSON[id]['name'])
     tier = f"***{str(MAG_JSON[id]['tier'])}° Circulo - {str(MAG_JSON[id]['type'])}({str(MAG_JSON[id]['school'])})*** \n \n"
-    if str(MAG_JSON[id]['targetType']) == 1:
-        target = "**Área:**"
-    else:
-        target = "**Alvo:**"
 
-    description = f"{tier} **Execução:** {str(MAG_JSON[id]['execution'])}\n**Alcance:** {str(MAG_JSON[id]['distance'])} \n{target} {str(MAG_JSON[id]['target'])} \n**Duração:** {str(MAG_JSON[id]['duration'])}"
+    description = f"{tier} **Execução:** {str(MAG_JSON[id]['execution'])}\n**Alcance:** {str(MAG_JSON[id]['distance'])} \n{str(MAG_JSON[id]['targetType'])} {str(MAG_JSON[id]['target'])} \n**Duração:** {str(MAG_JSON[id]['duration'])}"
     
     if MAG_JSON[id]['resistence'] != None:
         description = f'{description} \n **Resistência:** {str(MAG_JSON[id]["resistence"])} \n \n {str(MAG_JSON[id]["description"])}'
     else:
         description = f'{description} \n \n {str(MAG_JSON[id]["description"])}'
 
-    # Get path to the image from json
-    file = discord.File(MAG_JSON[id]['img'][0], filename="image.jpg")
-    
     # Magic embed body
     magic = discord.Embed(
     title = name,
@@ -57,45 +50,11 @@ async def embed_magic(ctx, id):
     # Set image to be sent with the embed
     magic.set_image(url="attachment://image.jpg")
 
-    if len(MAG_JSON[id]["img"]) > 1:
-        prev_button = discord.ui.Button(label = ">", style = discord.ButtonStyle.green, custom_id = 'next')
-        next_button = discord.ui.Button(label = "<", style = discord.ButtonStyle.green, custom_id = 'prev')
-
-        global index_img
-        index_img = 0
-
-        # FIXME The function to change image is returning an error. 
-        async def next_pic(interaction):
-            global index_img
-            if index_img == len(MAG_JSON[id]["img"]) - 1:
-                index_img = 0
-                file = discord.File(MAG_JSON[id]['img'][index_img], filename="image.jpg")
-                magic.set_image(url="attachment://image.jpg")
-                await message.edit(file = file, embed = magic)
-            else:
-                index_img += 1
-                file = discord.File(MAG_JSON[id]['img'][index_img], filename="image.jpg")
-                magic.set_image(url="attachment://image.jpg")
-                await message.edit(file = file, embed = magic)
-
-        async def prev_pic(interaction):
-            global index_img
-            if index_img == 0:
-                index_img = len(MAG_JSON[id]["img"]) - 1
-                file = discord.File(MAG_JSON[id]['img'][index_img], filename="image.jpg")
-                magic.set_image(url="attachment://image.jpg")
-                await message.edit(embed = magic)
-            else:
-                index_img -= 1
-                file = discord.File(MAG_JSON[id]['img'][index_img], filename="image.jpg")
-                magic.set_image(url="attachment://image.jpg")
-                await message.edit(embed = magic)            
-        
-        prev_button.callback = next_pic
-        next_button.callback = prev_pic
-        buttons = View()
-        buttons.add_item(next_button)
-        buttons.add_item(prev_button)
-        message = await ctx.send(file = file, embed = magic, view = buttons)
+    if MAG_JSON[id]['extraTitle'] != None:
+        x = 0
+        while x < len(MAG_JSON[id]['extraTitle']):
+            magic.add_field(name=str(MAG_JSON[id]['extraTitle'][x]), value=str(MAG_JSON[id]['extraDesc'][x]), inline=False)
+            x = x+1
+        return magic
     else:
-        return magic, file      
+        return magic

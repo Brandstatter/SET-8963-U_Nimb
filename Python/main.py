@@ -144,7 +144,7 @@ async def slash_feedback(ctx,
 async def randomMagic(ctx):
     embed, file = await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
     await ctx.send(embed = embed, file = file)
-
+ 
 # Search Magic
 @client.command(aliases = ['e', 'magia']) 
 async def searchMagic(ctx, name:str):
@@ -216,8 +216,11 @@ async def feedback(ctx):
 
 @client.command()
 async def i(ctx):
-    embed, file = await Commands.magic.embed_magic(ctx, 0)
-    await ctx.send(embed = embed, file = file)
+   x = 0
+   while x <= 197:
+    embed= await Commands.magic.embed_magic(ctx, x)
+    await ctx.send(embed = embed)
+    x = x + 1
    
 configure()
 client.run(os.getenv('clientID'))
