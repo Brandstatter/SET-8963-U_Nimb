@@ -29,12 +29,12 @@ async def search_magic(ctx):
             await ctx.send("Foram encontradas " + str(len(spell_ids)) + " magias. Por favor seja mais especifico.")   
 
 # Function that creates the embed of the magic based on id.
-async def embed_magic(ctx, id):
-    # Block of code that pulls specifics data for the embed. (Enconding in latin necessary to portuguese.)
+async def embed_magic(id):
+
     name = str(MAG_JSON[id]['name'])
     tier = f"***{str(MAG_JSON[id]['tier'])}° Circulo - {str(MAG_JSON[id]['type'])}({str(MAG_JSON[id]['school'])})*** \n \n"
 
-    description = f"{tier} **Execução:** {str(MAG_JSON[id]['execution'])}\n**Alcance:** {str(MAG_JSON[id]['distance'])} \n{str(MAG_JSON[id]['targetType'])} {str(MAG_JSON[id]['target'])} \n**Duração:** {str(MAG_JSON[id]['duration'])}"
+    description = f"{tier} **Execução:** {str(MAG_JSON[id]['execution'])}\n**Alcance:** {str(MAG_JSON[id]['distance'])} \n**{str(MAG_JSON[id]['targetType'])}** {str(MAG_JSON[id]['target'])} \n**Duração:** {str(MAG_JSON[id]['duration'])}"
     
     if MAG_JSON[id]['resistence'] != None:
         description = f'{description} \n **Resistência:** {str(MAG_JSON[id]["resistence"])} \n \n {str(MAG_JSON[id]["description"])}'
@@ -46,7 +46,6 @@ async def embed_magic(ctx, id):
     title = name,
     description = description,
     color=discord.Color.random())
-    print(type(description))
     # Set image to be sent with the embed
     magic.set_image(url="attachment://image.jpg")
 

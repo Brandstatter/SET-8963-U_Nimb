@@ -15,6 +15,7 @@ import Commands.magic
 import Commands.conditions
 import Commands.dice
 import Commands.race
+import Commands.reward
 
 
 intents = discord.Intents.all()
@@ -37,7 +38,7 @@ guilds_list = GUILDS_JSON[0]['guilds']
 async def on_ready() :
     guilds_ = [guild.id for guild in client.guilds]
     print (guilds_)
-    print("Bot pronto.")
+    print("Bot pronto. ")
 
 @client.event
 async def on_guild_join(guild):
@@ -142,17 +143,16 @@ async def slash_feedback(ctx,
 # Random Magic
 @client.command(aliases = ['l', 'random']) 
 async def randomMagic(ctx):
-    embed, file = await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
-    await ctx.send(embed = embed, file = file)
+    embed = await Commands.magic.embed_magic(ctx, random.randrange(0, 197))
+    await ctx.send(embed = embed)
  
 # Search Magic
 @client.command(aliases = ['e', 'magia']) 
 async def searchMagic(ctx, name:str):
     id = await Commands.magic.search_magic(ctx, name)
     for magic in id:
-        embed, file = await Commands.magic.embed_magic(ctx, magic)
-        print(embed)
-        await ctx.send(embed = embed, file = file)
+        embed = await Commands.magic.embed_magic(magic)
+        await ctx.send(embed = embed)
 
 # Dice
 @client.command(aliases = ['D']) # TODO Improve command
@@ -216,11 +216,9 @@ async def feedback(ctx):
 
 @client.command()
 async def i(ctx):
-   x = 0
-   while x <= 197:
-    embed= await Commands.magic.embed_magic(ctx, x)
+    embed = await Commands.reward.get_percent(3)
     await ctx.send(embed = embed)
-    x = x + 1
+
    
 configure()
 client.run(os.getenv('clientID'))

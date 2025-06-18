@@ -1,0 +1,24 @@
+[
+    {
+        "id" : 0,
+        "name" : "Glop",
+        "ND" : "1/4",
+        "type" : "Monstro",
+        "size" : "Pequeno",
+        "stats" : {
+            "iniciativa" : "+0",
+            "percep" : "+0, Percepção às cegas",
+            "defesa" : "10",
+            "fort" : "+0",
+            "ref" : "+2",
+            "vont" : "-5, imunidade a ácido",
+            "HP" : 10,
+            "deslocamento" : "9m (6q)"
+        },
+        "adendos" : {
+            "Corpo a Corpo" : "Pancada +7 (1d4 mais 1d4 ácido)."
+        },
+        "atributos" : "For 0, Des 0, Con 0, Int —, Sab –5, Car –5",
+        "tesouro" : "Nenhum"
+    }
+]
