@@ -7,6 +7,14 @@ from unidecode import unidecode
 json_path = os.path.join("json", "origins.json")
 ORIGINS_JSON = json.load(open(json_path, encoding='utf-8'))
 
+async def slash_search(ctx, origem):
+    list_ids = []
+    for origin in ORIGINS_JSON:
+        if unidecode(origin['name']).lower().find(origem.lower()) == 0:
+            list_ids.append(origin['id'])
+    if len(list_ids) == 1:
+        return list_ids[0]
+
 async def search_origin(ctx):
     message = unidecode(ctx.message.content)
     message = message[3:]
@@ -32,7 +40,7 @@ async def embed_origin(ctx, id):
 
     origin.add_field(name= "Itens", value= str(ORIGINS_JSON[id]['itens']), inline=False)
 
-    origin.add_field(name= "Pericias", value= str(ORIGINS_JSON[id]['pericias']), inline=False)
+    origin.add_field(name= "Pericias treinadas", value= str(ORIGINS_JSON[id]['pericias']), inline=False)
 
     x = 0
     while x < len(ORIGINS_JSON[id]['powerList']):
@@ -40,3 +48,11 @@ async def embed_origin(ctx, id):
         x = x+1
 
     return origin
+
+names = []
+x = 0 
+while x < 87:
+    name = ORIGINS_JSON[x]['name']
+    names.append(name)
+    x = x+1
+print(names)
