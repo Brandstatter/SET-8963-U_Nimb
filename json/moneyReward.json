@@ -1,0 +1,47 @@
+[
+    {
+        "id" : 0,
+        "ND" : "1/4",
+        "percentages" : [1, 30, 31, 70, 71, 95, 96, 100],
+        "rewardDiceQtd" : [null, 1, 1, 1],
+        "rewardDice" : [null, 6, 4, 6],
+        "diceBonus": [0, 0, 0, 0, 0],
+        "rewardQtd" : [null, 10, 100, 10],
+        "rewardCurrency" : [null, "TC", "TC", "T$"],
+        "treasureType" : [null, 0, 0, 0]  
+    },
+    {
+        "id" : 1,
+        "ND" : "1/2",
+        "percentages" : [1, 25, 26, 70, 71, 95, 96, 100],
+        "rewardDiceQtd" : [null, 2, 2, 1],
+        "rewardDice" : [null, 6, 8, 4],
+        "diceBonus": [0, 0, 0, 0, 0],
+        "rewardQtd" : [null, 10, 10, 100],
+        "rewardCurrency" : [null, "TC", "T$", "T$"],
+        "treasureType" : [null, 0, 0, 0]
+    },
+    {
+        "id" : 2,
+        "ND" : "1",
+        "percentages" : [1, 20, 21, 70, 71, 95, 96, 100],
+        "rewardDiceQtd" : [null, 3, 4, 1],
+        "rewardDice" : [null, 8, 12, 1],
+        "diceBonus": [0, 0, 0, 0, 0],
+        "rewardQtd" : [null, 10, 10, 0],
+        "rewardCurrency" : [null, "T$", "T$", "riqueza menor"],
+        "treasureType" : [null, 0, 0, 1]
+    },
+    {
+        "id" : 3,
+        "ND" : "2",
+        "percentages" : [1, 15, 16, 55, 56, 85, 86, 95, 96, 100],
+        "rewardDiceQtd" : [null, 3, 2, 2, 1],
+        "rewardDice" : [null, 10, 4, 6, 1],
+        "diceBonus": [0, 0, 0, 1, 0],
+        "rewardQtd" : [null, 10, 100, 100, 0],
+        "rewardCurrency" : [null, "T$", "T$", "T$", "riqueza menor"],
+        "treasureType" : [null, 0, 0, 0, 1]
+    }
+    
+]
