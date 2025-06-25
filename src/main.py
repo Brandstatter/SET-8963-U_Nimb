@@ -18,6 +18,7 @@ from clientConfig import client
 # import Commands.reward
 import core.dice.command
 import core.conditions.command
+import core.magic.command
 
 
 
