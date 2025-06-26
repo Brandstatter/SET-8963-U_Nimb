@@ -1,0 +1,57 @@
+import os
+
+import random
+import json
+
+from discord.commands import Option
+from discord.ui import View  
+from dotenv import load_dotenv
+from clientConfig import client
+
+import core.dice.command
+import core.conditions.command
+import core.magic.command
+import core.origins.command
+import core.quality.command
+import core.race.command
+import core.reward.command
+
+
+client.remove_command("help")
+
+def configure():
+    load_dotenv()
+
+json_path = os.path.join("json", "guilds.json")
+GUILDS_JSON = json.load(open(json_path, encoding='utf-8'))
+global guilds_list
+guilds_list = GUILDS_JSON[0]['guilds']
+
+@client.event
+async def on_ready() :
+    guilds_ = [guild.id for guild in client.guilds]
+    print (guilds_)
+    print("Bot pronto. ")
+
+@client.event
+async def on_guild_join(guild):
+    with open("json\guilds.json", 'r') as file:
+        data = json.load(file)
+        
+    data[0]['guilds'].append(guild.id)
+    with open("json\guilds.json", 'w') as outputFile:
+        json.dump(data, outputFile, indent=4)
+
+@client.event
+async def on_guild_remove(guild):
+    with open("json\guilds.json", 'r') as file:
+        data = json.load(file)
+    data[0]['guilds'].remove(guild.id)
+    with open("json\guilds.json", 'w') as outputFile:
+        json.dump(data, outputFile, indent=4)
+
+# #TODO Add slash commands
+# #TODO Improve design of the help function
+   
+configure()
+client.run(os.getenv('clientID'))

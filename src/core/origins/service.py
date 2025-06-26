@@ -7,10 +7,12 @@ from unidecode import unidecode
 json_path = os.path.join("json", "origins.json")
 ORIGINS_JSON = json.load(open(json_path, encoding='utf-8'))
 
+
+# TODO: Refact this function.
 async def slash_search(ctx, origem):
     list_ids = []
     for origin in ORIGINS_JSON:
-        if unidecode(origin['name']).lower().find(origem.lower()) == 0:
+        if unidecode(origin['name']).lower().find(unidecode(origem).lower()) == 0:
             list_ids.append(origin['id'])
     if len(list_ids) == 1:
         return list_ids[0]
@@ -29,7 +31,7 @@ async def search_origin(ctx):
         await ctx.send("Encontramos " + str(len(list_ids)) + " origens, por favor seja mais específico.")
 
 
-async def embed_origin(ctx, id):
+async def embed_origin(id):
     name = str(ORIGINS_JSON[id]['name']).encode('latin-1')
 
     origin = discord.Embed(
