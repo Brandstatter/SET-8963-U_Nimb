@@ -11,7 +11,7 @@ async def randomMagic(ctx):
  
 # Search Magic
 @client.command(aliases = ['e', 'magia']) 
-async def searchMagic(ctx, name:str):
+async def searchMagic(ctx):
     id = await search_magic(ctx)
     for magic in id:
         embed = await embed_magic(magic)

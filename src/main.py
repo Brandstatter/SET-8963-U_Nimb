@@ -19,6 +19,7 @@ from clientConfig import client
 import core.dice.command
 import core.conditions.command
 import core.magic.command
+import core.origins.command
 
 
 
