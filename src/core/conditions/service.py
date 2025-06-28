@@ -53,3 +53,11 @@ async def embed_condition(ctx, id):
         conditions.add_field(name="Efeitos", value= text + '\n' + str(subtext), inline=False)
     
     return conditions
+
+async def condition_autocomplete(ctx: discord.AutocompleteContext):
+    query = ctx.value.lower()
+    options = [
+        condition["name"] for condition in COND_JSON
+        if query in condition["name"].lower()
+    ]
+    return options[:25]

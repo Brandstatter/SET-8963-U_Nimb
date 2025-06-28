@@ -57,4 +57,4 @@ while x < 87:
     name = ORIGINS_JSON[x]['name']
     names.append(name)
     x = x+1
-print(names)
+# print(names) # Removi por hora pq ta ocupando no run e pros prints
