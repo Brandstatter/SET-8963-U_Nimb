@@ -13,7 +13,6 @@ async def randomMagic(ctx):
 @client.slash_command(
     name="random_magic",
     description="Busca uma magia aleatoriamente",
-    guild_ids=[563153398392684554]
 ) 
 async def random_magic_slash_command(ctx):
     embed = await embed_magic(random.randrange(0, 219))
