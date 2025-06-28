@@ -2,3 +2,4 @@ __pycache__/
 json/guilds.json
 *.env
 .vscode
+venv
