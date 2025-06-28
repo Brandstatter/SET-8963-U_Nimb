@@ -15,9 +15,10 @@ import core.origins.command
 import core.quality.command
 import core.race.command
 import core.reward.command
+import core.help.command
 
 
-client.remove_command("help")
+# client.remove_command("help")
 
 def configure():
     load_dotenv()
@@ -35,19 +36,19 @@ async def on_ready() :
 
 @client.event
 async def on_guild_join(guild):
-    with open("json\guilds.json", 'r') as file:
+    with open(json_path, 'r') as file:
         data = json.load(file)
         
     data[0]['guilds'].append(guild.id)
-    with open("json\guilds.json", 'w') as outputFile:
+    with open(json_path, 'w') as outputFile:
         json.dump(data, outputFile, indent=4)
 
 @client.event
 async def on_guild_remove(guild):
-    with open("json\guilds.json", 'r') as file:
+    with open(json_path, 'r') as file:
         data = json.load(file)
     data[0]['guilds'].remove(guild.id)
-    with open("json\guilds.json", 'w') as outputFile:
+    with open(json_path, 'w') as outputFile:
         json.dump(data, outputFile, indent=4)
 
 # #TODO Add slash commands
