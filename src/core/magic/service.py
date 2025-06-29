@@ -13,20 +13,12 @@ MAG_JSON = json.load(open(json_path, encoding='utf-8'))
 
 
 # Search a spell by id or name
-async def search_magic(ctx):
-    #TODO If list of magics is too big, create dropdown menu to choose spell.
-    message = unidecode(ctx.message.content)
-    message = message[3:]
-    spell_ids = []
-    # Added a step to verify if spells found exceeds 3, if exceeds asks the user to be more especific.
-    if len(message) >= 3:
-        for magic in MAG_JSON:
-            if unidecode(magic['name']).lower().find(message.lower()) == 0:
-                spell_ids.append(magic['id'])
-        if len(spell_ids) <= 3:
-            return spell_ids
-        else:
-            await ctx.send("Foram encontradas " + str(len(spell_ids)) + " magias. Por favor seja mais especifico.")   
+async def search_magic(choosed_magic: str):
+    for magic in MAG_JSON:
+        if(magic["name"] == choosed_magic):
+            return magic["id"]
+    
+    return None
 
 # Function that creates the embed of the magic based on id.
 async def embed_magic(id):
@@ -57,3 +49,15 @@ async def embed_magic(id):
         return magic
     else:
         return magic
+    
+async def magicAutoComplete(ctx: discord.AutocompleteContext):
+    jsonMagics = os.path.join("json", "magics.json")
+    with open(jsonMagics, encoding="utf-8") as f:
+        magics = json.load(f)
+    
+    query = ctx.value.lower()
+    options = [
+        magic["name"] for magic in magics
+        if query in magic["name"].lower()
+    ]
+    return options[:25]

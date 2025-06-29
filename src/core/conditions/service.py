@@ -9,13 +9,11 @@ json_path = os.path.join("json", "conditions.json")
 COND_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def slash_search(ctx, choice):
-    list_ids = []
-    if len(choice) >= 4:
-        for condition in COND_JSON:
-            if unidecode(condition['name']).lower().find(choice.lower()) == 0:
-                list_ids.append(condition['id'])
-        if len(list_ids) == 1:
-            return list_ids[0]
+    for condition in COND_JSON:
+        if condition["name"].lower() == choice.lower():
+            return condition["id"]
+        
+    return None
 
 async def search_condition(ctx, id):
     message = unidecode(ctx.message.content)
@@ -53,3 +51,11 @@ async def embed_condition(ctx, id):
         conditions.add_field(name="Efeitos", value= text + '\n' + str(subtext), inline=False)
     
     return conditions
+
+async def condition_autocomplete(ctx: discord.AutocompleteContext):
+    query = ctx.value.lower()
+    options = [
+        condition["name"] for condition in COND_JSON
+        if query in condition["name"].lower()
+    ]
+    return options[:25]
