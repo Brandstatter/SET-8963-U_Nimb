@@ -789,6 +789,7 @@
         "name": "Cria da Favela - Regional(Valkaria)",
         "desc": "A Favela dos Goblins é um lugar empobrecido e injustiçado, esquecido pelos governantes de Valkaria. Essa comunidade o tornou resistente e incansável.",
         "itens": "Andrajos de aldeão, corda, vara de madeira.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
         "powerList":["Benefício da Origem."],
         "powerDesc":["Você recebe +1 em Constituição e, por piores que sejam as condições de descanso, sua recuperação é sempre pelo menos normal."],
         "footer":"Atlas de Arton"
@@ -831,6 +832,76 @@
         "pericias": "Guerra.",
         "powerList":["Benefício da Origem."],
         "powerDesc":["Você recebe proficiência com espadas bastardas e escudos. Se estiver empunhando uma espada bastarda e um escudo pesado, recebe +2 em testes de ataque"],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 87,
+        "name": "Duplo Feérico - Regional(Pondsmânia)",
+        "desc": "Em algum lugar de Arton, há alguém igual a você. Com a mesma aparência, as mesmas capacidades, os mesmos ideais. Talvez isso rendesse uma boa amizade, mas esse alguém veio primeiro. Você é apenas a cópia feita por uma fada.",
+        "itens": "Essência de mana, marca no corpo ou característica física não possuída pela sua versão original.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Escolha uma habilidade de classe de 1º nível de uma classe que não seja a sua. Você recebe essa habilidade e pode usá-la como se tivesse 1 nível naquela classe (se escolher a habilidade Magias, você aprende uma única magia e recebe +1 ponto de mana, mas não soma o atributo-chave da habilidade em seu total de PM)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 88,
+        "name": "Duyshidakk Infiltrado - Regional(Tyrondir)",
+        "desc": "Você viveu entre o povo do Reinado por muito tempo, absorvendo seu modo de vida… mas secretamente devotado a construir O Mundo Como Deve Ser.",
+        "itens": "Arma marcial, peças sobressalentes (T$100 para vender ou construir engenhocas).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 em Furtividade e Vontade e pode usar Sabedoria como atributo-chave de Enganação (em vez de Carisma)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 89,
+        "name": "Emissár io Ubaneri - Regional(Ubani)",
+        "desc": "Você foi preparado para percorrer as terras distantes e conhecer mais sobre o mundo além da Savana. Você nunca fica solitário, pois está acompanhado de um alikunhá, um pequeno pedaço de Ubani.",
+        "itens": "Essência de mana, mochila de aventureiro.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe um alikunhá, um parceiro iniciante que não conta em seu limite de parceiros (veja o quadro na página 471) e pode usar Sabedoria como atributo-chave de Misticismo (em vez de Inteligência)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 90,
+        "name": "Escudeiro da Luz - Regional(Bielefeld)",
+        "desc": "Você não serviu a um cavaleiro errante qualquer, mas a um nobre e honrado cavaleiro da Luz. Ao lado dele, aprendeu todas as tarefas diárias desse ofício, além dos valores da nobreza e da justiça.",
+        "itens": "Cota de malha ou escudo pesado, enfeite de elmo com o símbolo da Ordem da Luz.",
+        "pericias": "Nobreza.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 na Defesa e +3 PM."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 91,
+        "name": "Escudeiro Solitário - Regional(Bielefeld)",
+        "desc": "Ninguém sabe, mas você foi escudeiro de um cavaleiro de Bielefeld… ou cupincha de um trambiqueiro. Seu mestre era membro dos Cavaleiros Solitários, disposto a todo tipo de subterfúgio, intriga e traição para ajudar os verdadeiros heróis.",
+        "itens": "Cota de malha ou escudo pesado, enfeite de elmo.",
+        "pericias": "Enganação e Ladinagem.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você rrecebe +10 em testes de Enganação para se disfarçar como cavaleiro da Luz. Além disso, se tiver Código de Honra (ou outro semelhante), atacar pelas costas não faz com que você o viole."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 92,
+        "name": "Estandarte Vivo - Regional(Ermos Púrpuras)",
+        "desc": "Muitas tribos dos Ermos Púrpuras acabaram extintas — por guerra, por doença ou pela corrupção da Tormenta. Sua tribo se foi, mas você permanece, uma prova viva de que um dia seu povo existiu",
+        "itens": "Arma simples ou marcial, gibão de peles, fragmento do estandarte do seu povo (se vestido, fornece +1 em testes de Vontade).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 em Sobrevivência e um poder de combate ou da Tormenta à sua escolha."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 93,
+        "name": "Estudante da Academia - Regional(Academia Arcana)",
+        "desc": "Você frequentou a Academia Arcana. Pode ou não ter se tornado um arcanista, mas com certeza aprendeu algo sobre lançar magias.",
+        "itens": "Coleção de livros (uma qualquer), essência de mana x2.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você aprende e pode lançar uma magia arcana de 1 o círculo a sua escolha (atributo- -chave Inteligência). Além disso, pode fazer testes de Encontrando-se Consigo Mesmo Quando um duplo encontra sua versão original, tem extrema dificuldade em lidar com o fato de ser uma cópia. Quando isso ocorre, deve passar em um teste de Vontade (CD seu próprio Car). Se falhar, o duplo entra em um frenesi homicida até o fim da cena, tendo como único propósito matar sua versão original. Caso uma das duas criaturas morra nesse encontro, a versão sobrevivente herda todas as lembranças do morto, incluindo uma de suas perícias treinadas, mas perde permanentemente 1 ponto de Carisma — já que, para o bem ou para o mal, perdeu uma parte de si para sempre. Misticismo mesmo sem ser treinado nessa perícia. Se for treinado, recebe +2 em testes dela."],
         "footer":"Atlas de Arton"
     }
 ]

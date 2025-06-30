@@ -8,7 +8,8 @@
         "diceBonus": [0, 0, 0, 0, 0],
         "rewardQtd" : [null, 10, 100, 10],
         "rewardCurrency" : [null, "TC", "TC", "T$"],
-        "treasureType" : [null, 0, 0, 0]  
+        "treasureType" : [null, 0, 0, 0],
+        "link": "https://i.imgur.com/baB8EK0.png"
     },
     {
         "id" : 1,
@@ -19,7 +20,8 @@
         "diceBonus": [0, 0, 0, 0, 0],
         "rewardQtd" : [null, 10, 10, 100],
         "rewardCurrency" : [null, "TC", "T$", "T$"],
-        "treasureType" : [null, 0, 0, 0]
+        "treasureType" : [null, 0, 0, 0],
+        "link": "https://i.imgur.com/g0e0dlr.png"
     },
     {
         "id" : 2,
@@ -30,7 +32,8 @@
         "diceBonus": [0, 0, 0, 0, 0],
         "rewardQtd" : [null, 10, 10, 0],
         "rewardCurrency" : [null, "T$", "T$", "riqueza menor"],
-        "treasureType" : [null, 0, 0, 1]
+        "treasureType" : [null, 0, 0, 1],
+        "link": "https://i.imgur.com/dI0ghR9.png"
     },
     {
         "id" : 3,
@@ -41,7 +44,209 @@
         "diceBonus": [0, 0, 0, 1, 0],
         "rewardQtd" : [null, 10, 100, 100, 0],
         "rewardCurrency" : [null, "T$", "T$", "T$", "riqueza menor"],
-        "treasureType" : [null, 0, 0, 0, 1]
+        "treasureType" : [null, 0, 0, 0, 1],
+        "link":"https://i.imgur.com/tErsCEj.png"
+    },
+    {
+        "id" : 4,
+        "ND" : "3",
+        "percentages" : [1, 10, 11, 20, 21, 60, 61, 90, 91, 100],
+        "rewardDiceQtd" : [null, 4, 1, 1, 1],
+        "rewardDice" : [null, 12, 4, 8, 3],
+        "diceBonus": [0, 0, 0, 0, 0],
+        "rewardQtd" : [null, 10, 100, 10, 0],
+        "rewardCurrency" : [null, "T$", "T$", "TO", "riquezas menores"],
+        "treasureType" : [null, 0, 0, 0, 1],
+        "link": "https://i.imgur.com/0HghFei.png"
+    },
+    {
+        "id" : 5,
+        "ND" : "4",
+        "percentages" : [1, 10, 11, 50, 51, 80, 81, 90, 91, 100],
+        "rewardDiceQtd" : [null, 1, 1, 1, 1],
+        "rewardDice" : [null, 6, 12, 1, 3],
+        "diceBonus": [0, 0, 0, 0, 0],
+        "rewardQtd" : [null, 100, 100, 0, 0],
+        "rewardCurrency" : [null, "T$", "T$", "riqueza menor(%)", "riquezas menores(%)"],
+        "treasureType" : [null, 0, 0, 2, 2],
+        "link": "https://i.imgur.com/LWu5q7t.png"
+    },
+    {
+        "id" : 6,
+        "ND" : "5",
+        "percentages" : [1, 15, 16, 65, 66, 95, 96, 100],
+        "rewardDiceQtd" : [null, 1, 3, 1],
+        "rewardDice" : [null, 8, 4, 1],
+        "diceBonus": [0, 0, 0, 0],
+        "rewardQtd" : [null, 100, 10, 0],
+        "rewardCurrency" : [null, "T$", "TO", "riqueza média"],
+        "treasureType" : [null, 0, 0, 3],
+        "link": "https://i.imgur.com/NFSWvAt.png"
+    },
+    {
+        "id" : 7,
+        "ND" : "6",
+        "percentages" : [1, 15, 16, 60, 61, 90, 91, 100],
+        "rewardDiceQtd" : [null, 2, 2, 1],
+        "rewardDice" : [null, 6, 10, 3],
+        "diceBonus": [0, 0, 0, 1],
+        "rewardQtd" : [null, 100, 100, 0],
+        "rewardCurrency" : [null, "T$", "T$", "riquezas menores"],
+        "treasureType" : [null, 0, 0, 1]
+    },
+    {
+        "id" : 8,
+        "ND" : "7",
+        "percentages" : [1, 10, 11, 60, 61, 90, 91, 100],
+        "rewardDiceQtd" : [null, 2, 2, 1],
+        "rewardDice" : [null, 8, 12, 4],
+        "diceBonus": [0, 0, 0, 1],
+        "rewardQtd" : [null, 100, 10, 0],
+        "rewardCurrency" : [null, "T$", "TO", "riquezas menores"],
+        "treasureType" : [null, 0, 0, 1]
+    },
+    {
+        "id" : 9,
+        "ND" : "8",
+        "percentages" : [1, 10, 11, 55, 56, 95, 96, 100],
+        "rewardDiceQtd" : [null, 2, 1, 1],
+        "rewardDice" : [null, 10, 4, 1],
+        "diceBonus": [0, 0, 1, 0],
+        "rewardQtd" : [null, 100, 0, 0],
+        "rewardCurrency" : [null, "T$", "TO", "riquezas menores"],
+        "treasureType" : [null, 0, 0, 1]
+    },
+    {
+        "id" : 10,
+        "ND" : "9",
+        "percentages" : [1, 10, 11, 35, 36, 85, 86, 100],
+        "rewardDiceQtd" : [null, 1, 4, 1],
+        "rewardDice" : [null, 1, 6, 3],
+        "diceBonus": [0, 0, 0, 0],
+        "rewardQtd" : [null, 0, 100, 0],
+        "rewardCurrency" : [null, "riqueza média", "T$", "riquezas médias"],
+        "treasureType" : [null, 3, 0, 3]
+    },
+    {
+        "id" : 11,
+        "ND" : "10",
+        "percentages" : [1, 10, 11, 30, 31, 85, 86, 100],
+        "rewardDiceQtd" : [null, 4, 4, 1],
+        "rewardDice" : [null, 6, 10, 3],
+        "diceBonus": [0, 0, 0, 1],
+        "rewardQtd" : [null, 100, 10, 0],
+        "rewardCurrency" : [null, "T$", "TO", "riquezas médias"],
+        "treasureType" : [null, 0, 0, 3],
+        "link": "https://i.imgur.com/NJEOt3J.png"
+    },
+    {
+        "id" : 12,
+        "ND" : "11",
+        "percentages" : [1, 10, 11, 45, 46, 85, 86, 100],
+        "rewardDiceQtd" : [null, 2, 1, 2],
+        "rewardDice" : [null, 4, 3, 6],
+        "diceBonus": [0, 0, 0, 0],
+        "rewardQtd" : [null, 1000, 0, 100],
+        "rewardCurrency" : [null, "T$", "riquezas médias", "TO"],
+        "treasureType" : [null, 0, 3, 0]
+    },
+    {
+        "id" : 13,
+        "ND" : "12",
+        "percentages" : [1, 10, 11, 45, 46, 80, 81, 100],
+        "rewardDiceQtd" : [null, 1, 2, 1],
+        "rewardDice" : [null, 1, 6, 4],
+        "diceBonus": [0, 0, 0, 1],
+        "rewardQtd" : [null, 0, 1000, 0],
+        "rewardCurrency" : [null, "riqueza média(%)", "T$", "riquezas médias"],
+        "treasureType" : [null, 4, 0, 3]
+    },
+    {
+        "id" : 14,
+        "ND" : "13",
+        "percentages" : [1, 10, 11, 45, 46, 80, 81, 100],
+        "rewardDiceQtd" : [null, 4, 1, 4],
+        "rewardDice" : [null, 4, 3, 6],
+        "diceBonus": [0, 0, 1, 0],
+        "rewardQtd" : [null, 1000, 0, 100],
+        "rewardCurrency" : [null, "T$", "riquezas médias", "TO"],
+        "treasureType" : [null, 0, 3, 0]
+    },
+    {
+        "id" : 15,
+        "ND" : "14",
+        "percentages" : [1, 10, 11, 45, 46, 80, 81, 100],
+        "rewardDiceQtd" : [null, 1, 3, 1],
+        "rewardDice" : [null, 3, 6, 1],
+        "diceBonus": [0, 1, 0, 0],
+        "rewardQtd" : [null, 0, 1000, 0],
+        "rewardCurrency" : [null, "riquezas médias", "T$", "riqueza maior"],
+        "treasureType" : [null, 3, 0, 5]
+    },
+    {
+        "id" : 16,
+        "ND" : "15",
+        "percentages" : [1, 10, 11, 45, 46, 80, 81, 100],
+        "rewardDiceQtd" : [null, 1, 2, 1],
+        "rewardDice" : [null, 1, 10, 4],
+        "diceBonus": [0, 0, 0, 0],
+        "rewardQtd" : [null, 0, 1000, 1000],
+        "rewardCurrency" : [null, "riqueza média(%)", "T$", "TO"],
+        "treasureType" : [null, 4, 0, 0]
+    },
+    {
+        "id" : 17,
+        "ND" : "16",
+        "percentages" : [1, 10, 11, 40, 41, 75, 76, 100],
+        "rewardDiceQtd" : [null, 3, 3, 1],
+        "rewardDice" : [null, 6, 10, 3],
+        "diceBonus": [0, 0, 0, 0],
+        "rewardQtd" : [null, 1000, 100, 0],
+        "rewardCurrency" : [null, "T$", "TO", "riquezas maiores"],
+        "treasureType" : [null, 0, 0, 5]
+    },
+    {
+        "id" : 18,
+        "ND" : "17",
+        "percentages" : [1, 5, 6, 40, 41, 75, 76, 100],
+        "rewardDiceQtd" : [null, 4, 1, 2],
+        "rewardDice" : [null, 6, 3, 4],
+        "diceBonus": [0, 0, 0, 0],
+        "rewardQtd" : [null, 1000, 0, 1000],
+        "rewardCurrency" : [null, "T$", "riquezas médias(%)", "TO"],
+        "treasureType" : [null, 0, 4, 0]
+    },
+    {
+        "id" : 19,
+        "ND" : "18",
+        "percentages" : [1, 5, 6, 40, 41, 75, 76, 100],
+        "rewardDiceQtd" : [null, 4, 1, 1],
+        "rewardDice" : [null, 10, 1, 3],
+        "diceBonus": [0, 0, 0, 1],
+        "rewardQtd" : [null, 1000, 0, 0],
+        "rewardCurrency" : [null, "T$", "riqueza maior", "riquezas maiores"],
+        "treasureType" : [null, 0, 5, 5]
+    },
+    {
+        "id" : 20,
+        "ND" : "19",
+        "percentages" : [1, 5, 6, 40, 41, 75, 76, 100],
+        "rewardDiceQtd" : [null, 4, 1, 1],
+        "rewardDice" : [null, 12, 1, 12],
+        "diceBonus": [0, 0, 0, 0],
+        "rewardQtd" : [null, 1000, 0, 1000],
+        "rewardCurrency" : [null, "T$", "riqueza maior(%)", "TO"],
+        "treasureType" : [null, 0, 6, 0]
+    },
+    {
+        "id" : 21,
+        "ND" : "20",
+        "percentages" : [1, 5, 6, 40, 41, 75, 76, 100],
+        "rewardDiceQtd" : [null, 2, 1, 1],
+        "rewardDice" : [null, 4, 3, 3],
+        "diceBonus": [0, 0, 0, 1],
+        "rewardQtd" : [null, 1000, 0, 0],
+        "rewardCurrency" : [null, "TO", "riquezas maiores", "riquezas maiores(%)"],
+        "treasureType" : [null, 0, 5, 6]
     }
-    
 ]
