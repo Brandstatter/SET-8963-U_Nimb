@@ -7,15 +7,12 @@ from unidecode import unidecode
 json_path = os.path.join("json", "origins.json")
 ORIGINS_JSON = json.load(open(json_path, encoding='utf-8'))
 
-
 # TODO: Refact this function.
-async def slash_search(ctx, origem):
-    list_ids = []
+async def slash_search(chosen_origin):
     for origin in ORIGINS_JSON:
-        if unidecode(origin['name']).lower().find(unidecode(origem).lower()) == 0:
-            list_ids.append(origin['id'])
-    if len(list_ids) == 1:
-        return list_ids[0]
+        if (origin['name'] == chosen_origin):
+            return origin["id"]
+
 
 async def search_origin(ctx):
     message = unidecode(ctx.message.content)
@@ -51,10 +48,10 @@ async def embed_origin(id):
 
     return origin
 
-names = []
-x = 0 
-while x < 87:
-    name = ORIGINS_JSON[x]['name']
-    names.append(name)
-    x = x+1
-# print(names) # Removi por hora pq ta ocupando no run e pros prints
+async def origins_autocomplete(ctx: discord.AutocompleteContext):
+    query = ctx.value.lower()
+    options = [
+        origin["name"] for origin in ORIGINS_JSON
+        if query in origin["name"].lower()
+    ]
+    return options[:25]

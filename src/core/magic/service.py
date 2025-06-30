@@ -13,9 +13,9 @@ MAG_JSON = json.load(open(json_path, encoding='utf-8'))
 
 
 # Search a spell by id or name
-async def search_magic(choosed_magic: str):
+async def search_magic(chosen_magic: str):
     for magic in MAG_JSON:
-        if(magic["name"] == choosed_magic):
+        if(magic["name"] == chosen_magic):
             return magic["id"]
     
     return None
@@ -50,14 +50,10 @@ async def embed_magic(id):
     else:
         return magic
     
-async def magicAutoComplete(ctx: discord.AutocompleteContext):
-    jsonMagics = os.path.join("json", "magics.json")
-    with open(jsonMagics, encoding="utf-8") as f:
-        magics = json.load(f)
-    
+async def magicAutoComplete(ctx: discord.AutocompleteContext):    
     query = ctx.value.lower()
     options = [
-        magic["name"] for magic in magics
+        magic["name"] for magic in MAG_JSON
         if query in magic["name"].lower()
     ]
     return options[:25]
