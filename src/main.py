@@ -17,9 +17,6 @@ import core.race.command
 import core.reward.command
 import core.help.command
 
-
-# client.remove_command("help")
-
 def configure():
     load_dotenv()
 
