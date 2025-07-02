@@ -4,6 +4,7 @@ import random
 import math
 
 MONEY_JSON = json.load(open("json\moneyReward.json", encoding='utf-8'))
+TREASURE_JSON = json.load(open("json\\treasureReward.json", encoding='utf-8'))
 
 # Rolls D100 and get the type of reward relative to index.
 async def get_percent(id):
@@ -32,67 +33,138 @@ async def get_percent(id):
         embed = await embed_nulo(id, d100)
         return embed
     else:
-        embed = await get_treasure(id, index)
+        embed = await get_treasure(id, d100, index)
         return embed
 
-async def get_money(id, d100, percent):
-    dicesQtd = MONEY_JSON[id]['rewardDiceQtd'][percent]
-    dicesType = MONEY_JSON[id]['rewardDice'][percent]
-    diceBonus = MONEY_JSON[id]['diceBonus'][percent]
-    rewardQtd = MONEY_JSON[id]['rewardQtd'][percent]
-    
+async def get_money(id, d100, index):
     # Since the Bonus is garanted the starting diceValues for the dices is going to be the bonus, if there's no bonus the diceValues will be 0.
-    diceValue = diceBonus
+    diceValue = MONEY_JSON[id]['diceBonus'][index]
     dices = []
     
     index = 1
-    while index <= dicesQtd:
-        dice = random.randrange(1, dicesType)
+    while index <= MONEY_JSON[id]['rewardDiceQtd'][index]:
+        dice = random.randrange(1, MONEY_JSON[id]['rewardDice'][index])
         dices.append(dice)
         diceValue =+ diceValue + (dice)
         index = index+1
-    
-    result = diceValue*rewardQtd
 
-    embed = await embed_money(id, d100, result, dices)
+    if MONEY_JSON[id]["diceBonus"][index] != 0:
+        dices = f'`{dices} + {MONEY_JSON[id]["diceBonus"][index]} = {diceValue}`'
+    else:
+        dices = f'`{dices} = {diceValue}`'
+
+    result = diceValue*MONEY_JSON[id]['rewardQtd'][index]
+
+    embed = await embed_money(id, d100, result, dices, index)
     return embed
     
-async def get_treasure(id, percent):
-    embed = await embed_treasure(id, 100, 13, [1,4])
+async def get_treasure(id, d100, index):
+    d100_list = []
+    values_list = []
+    treasure_quantity = random.randrange(1, MONEY_JSON[id]['rewardDice'][index]) 
+    treasure_quantity = treasure_quantity + MONEY_JSON[id]['diceBonus'][index]
+    x = 0
+    while x < treasure_quantity:
+        d100_treasure = random.randrange(1, 100)
+        if MONEY_JSON[id]['treasureType'][index] % 2 == 0:
+            if d100_treasure >= 70:
+                d100_treasure = 100
+            else:
+                d100_treasure = d100_treasure + 20
+        d100_list.append(d100_treasure)
+        x = x + 1
+
+
+    if MONEY_JSON[id]['treasureType'][index] == 1 or MONEY_JSON[id]['treasureType'][index]  == 2:
+        total_value = 0
+        for y in d100_list:
+            new_value = await treasure_value(y , 0)
+            values_list.append(new_value)
+            total_value  = total_value + new_value
+
+    elif MONEY_JSON[id]['treasureType'][index] == 3 or MONEY_JSON[id]['treasureType'][index]  == 4:
+        total_value = 0
+        for y in d100_list:
+            new_value = await treasure_value(y , 1)
+            values_list.append(new_value)
+            total_value  = total_value + new_value 
+    else:
+        total_value = 0
+        for y in d100_list:
+            new_value = await treasure_value(y , 2)
+            values_list.append(new_value)
+            total_value  = total_value + new_value  
+
+    embed = await embed_treasure(id, d100, total_value, values_list, index)
     return embed
 
-async def embed_money(id, d100, result, dices):
-    title = f'Recompensa ND : {MONEY_JSON[id]["ND"]}'
-    desc = f'## Resultado : {result} \n D100: {d100}\n TABELA \nTABELA \nTABELA \nTABELA \n \n D100: sla \n Dados rolados : `{dices}`'
+async def treasure_value(d100Treasure, treasure):
+    percentages = TREASURE_JSON[treasure]['percentages']
+    
+    index_percent = 0
+    while d100Treasure > percentages[index_percent]:
+        index_percent += 1
+    index_percent = int(math.floor(index_percent/2))
+
+    index = 1
+    diceValue = 0
+    while index <= TREASURE_JSON[treasure]['diceQtd'][index_percent]:
+        dice = random.randrange(1, TREASURE_JSON[treasure]['diceType'][index_percent])
+        diceValue =+ diceValue + (dice)
+        index = index+1
+
+    if TREASURE_JSON[treasure]['currencyMult'][index_percent] != 0:
+        diceValue = diceValue * TREASURE_JSON[treasure]['currencyMult'][index_percent]
+
+    return diceValue
+
+# FINISHED
+async def embed_money(id, d100, result, dices, index):
+    if MONEY_JSON[id]["diceBonus"][index] != 0:
+        title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}d{MONEY_JSON[id]["rewardDice"][index]}+{MONEY_JSON[id]["diceBonus"][index]} x {MONEY_JSON[id]["rewardQtd"][index]}{MONEY_JSON[id]["rewardCurrency"][index]}'
+    else:
+        title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}d{MONEY_JSON[id]["rewardDice"][index]} x {MONEY_JSON[id]["rewardQtd"][index]}{MONEY_JSON[id]["rewardCurrency"][index]}'
+    
+    desc = f'## Resultado: {result}{MONEY_JSON[id]["rewardCurrency"][index]} \n ### **D100: *{d100}***\n Dados rolados : `{dices}`'
 
     reward = discord.Embed(
         title = title,
         description = desc,
         color=discord.Color.gold()
     )
+    reward.set_image(url = MONEY_JSON[id]["link"])
     
     return reward
 
-async def embed_nulo(id, dado):
-    title = f'Recompensa ND : {MONEY_JSON[id]["ND"]}'
-    desc = f'## Sem Recompensa \n D100: {dado} \n TABELA \n TABELA \n TABELA \n TABELA \n'
+# FINISHED
+async def embed_nulo(id, d100):
+    title = f'Recompensa(ND {MONEY_JSON[id]["ND"]})'
+    desc = f'## Não encontrou nenhuma recompensa. \n ### **D100: *{d100}***'
 
     reward = discord.Embed(
         title= title,
         description= desc,
         color= discord.Color.darker_grey()
     )
+    reward.set_image(url = MONEY_JSON[id]["link"])
 
     return reward
 
-async def embed_treasure(id, d100, result, dices):
-    title = f'Recompensa ND : {MONEY_JSON[id]["ND"]}'
-    desc = f'## Resultado : riqueza \n TABELA \nTABELA \nTABELA \nTABELA \n \n D100: sla \n Dados rolados : {dices}'
+#TODO Add possibilities to others titles. (1d3+1 riquezas)
+async def embed_treasure(id, d100, reward, values, index):
+    if {MONEY_JSON[id]["rewardDice"][index]} != 1:
+        if {MONEY_JSON[id]["diceBonus"][index]} != 0:
+            title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}d{MONEY_JSON[id]["rewardDice"][index]}+{MONEY_JSON[id]["diceBonus"][index]} {MONEY_JSON[id]["rewardCurrency"][index]}'
+        else:
+            title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}d{MONEY_JSON[id]["rewardDice"][index]} {MONEY_JSON[id]["rewardCurrency"][index]}'
+    else:
+        title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDice"][index]} {MONEY_JSON[id]["rewardCurrency"][index]}'
+    desc = f'## Recompensa: {reward}T$ \n ### **D100: *{d100}*** \n Valores das riquezas: {values}'
 
     reward = discord.Embed(
         title = title,
         description = desc,
         color=discord.Color.gold()
     )
-    
+    reward.set_image(url = MONEY_JSON[id]["link"])
     return reward

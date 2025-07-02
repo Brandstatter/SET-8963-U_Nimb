@@ -13,21 +13,6 @@ async def slash_search(chosen_origin):
         if (origin['name'] == chosen_origin):
             return origin["id"]
 
-
-async def search_origin(ctx):
-    message = unidecode(ctx.message.content)
-    message = message[3:]
-    print(message)
-    list_ids = []
-    for origin in ORIGINS_JSON:
-        if unidecode(origin['name']).lower().find(message.lower()) == 0:
-            list_ids.append(origin['id'])
-    if len(list_ids) == 1:
-        return list_ids[0]
-    else:
-        await ctx.send("Encontramos " + str(len(list_ids)) + " origens, por favor seja mais específico.")
-
-
 async def embed_origin(id):
     name = str(ORIGINS_JSON[id]['name']).encode('latin-1')
 
