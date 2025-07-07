@@ -8,7 +8,8 @@ TREASURE_JSON = json.load(open("json\\treasureReward.json", encoding='utf-8'))
 
 # Rolls D100 and get the type of reward relative to index.
 async def get_percent(id):
-    d100 = random.randrange(1,100)
+    d100 = 85
+    #d100 = random.randrange(1,100)
     percentages = MONEY_JSON[id]['percentages']
 
     index = 0
@@ -18,14 +19,6 @@ async def get_percent(id):
     # Halfes index and round to the lowest number to get index of the reward.
     index = int(math.floor(index/2))
 
-    """
-    Treasure types
-    None = No reward.
-    0 = Money.
-    1 = Small Treasure / 2 = Small Treasure Roll with bonus
-    3 = Medium Treasure / 4 = Medium Treasure Roll with bonus
-    5 = Medium Treasure / 6 = Big Treasure Roll with bonus
-    """
     if MONEY_JSON[id]['treasureType'][index] == 0:
         embed = await get_money(id, d100, index)
         return embed
@@ -61,7 +54,10 @@ async def get_money(id, d100, index):
 async def get_treasure(id, d100, index):
     d100_list = []
     values_list = []
-    treasure_quantity = random.randrange(1, MONEY_JSON[id]['rewardDice'][index]) 
+    if MONEY_JSON[id]['rewardDice'][index] == 1:
+        treasure_quantity = 1
+    else:
+        treasure_quantity = random.randrange(1, MONEY_JSON[id]['rewardDice'][index]) 
     treasure_quantity = treasure_quantity + MONEY_JSON[id]['diceBonus'][index]
     x = 0
     while x < treasure_quantity:
@@ -121,9 +117,9 @@ async def treasure_value(d100Treasure, treasure):
 # FINISHED
 async def embed_money(id, d100, result, dices, index):
     if MONEY_JSON[id]["diceBonus"][index] != 0:
-        title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}d{MONEY_JSON[id]["rewardDice"][index]}+{MONEY_JSON[id]["diceBonus"][index]} x {MONEY_JSON[id]["rewardQtd"][index]}{MONEY_JSON[id]["rewardCurrency"][index]}'
+        title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}D{MONEY_JSON[id]["rewardDice"][index]}+{MONEY_JSON[id]["diceBonus"][index]} x {MONEY_JSON[id]["rewardQtd"][index]}{MONEY_JSON[id]["rewardCurrency"][index]}'
     else:
-        title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}d{MONEY_JSON[id]["rewardDice"][index]} x {MONEY_JSON[id]["rewardQtd"][index]}{MONEY_JSON[id]["rewardCurrency"][index]}'
+        title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}D{MONEY_JSON[id]["rewardDice"][index]} x {MONEY_JSON[id]["rewardQtd"][index]}{MONEY_JSON[id]["rewardCurrency"][index]}'
     
     desc = f'## Resultado: {result}{MONEY_JSON[id]["rewardCurrency"][index]} \n ### **D100: *{d100}***\n Dados rolados : `{dices}`'
 
@@ -152,14 +148,14 @@ async def embed_nulo(id, d100):
 
 #TODO Add possibilities to others titles. (1d3+1 riquezas)
 async def embed_treasure(id, d100, reward, values, index):
-    if {MONEY_JSON[id]["rewardDice"][index]} != 1:
-        if {MONEY_JSON[id]["diceBonus"][index]} != 0:
-            title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}d{MONEY_JSON[id]["rewardDice"][index]}+{MONEY_JSON[id]["diceBonus"][index]} {MONEY_JSON[id]["rewardCurrency"][index]}'
+    if MONEY_JSON[id]["rewardDice"][index] != 1:
+        if MONEY_JSON[id]["diceBonus"][index] == 0:
+            title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}D{MONEY_JSON[id]["rewardDice"][index]} {MONEY_JSON[id]["rewardCurrency"][index]}'
         else:
-            title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}d{MONEY_JSON[id]["rewardDice"][index]} {MONEY_JSON[id]["rewardCurrency"][index]}'
+            title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDiceQtd"][index]}D{MONEY_JSON[id]["rewardDice"][index]}+{MONEY_JSON[id]["diceBonus"][index]} {MONEY_JSON[id]["rewardCurrency"][index]}'
     else:
         title = f'Recompensa(ND {MONEY_JSON[id]["ND"]}): {MONEY_JSON[id]["rewardDice"][index]} {MONEY_JSON[id]["rewardCurrency"][index]}'
-    desc = f'## Recompensa: {reward}T$ \n ### **D100: *{d100}*** \n Valores das riquezas: {values}'
+    desc = f'## Recompensa: {reward}T$ \n ### **D100: *{d100}*** \n Quantidade de riquezas: {str(len(values))} \n Valores das riquezas: {values}'
 
     reward = discord.Embed(
         title = title,
