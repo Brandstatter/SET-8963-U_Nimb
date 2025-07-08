@@ -26,7 +26,8 @@ global guilds_list
 guilds_list = GUILDS_JSON[0]['guilds']
 
 @client.event
-async def on_ready() :
+async def on_ready():
+    await client.sync_commands()
     guilds_ = [guild.id for guild in client.guilds]
     print (guilds_)
     print("Bot pronto. ")

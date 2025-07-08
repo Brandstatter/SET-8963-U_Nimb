@@ -1,10 +1,14 @@
+import os
 import discord
 import json
 import random
 import math
 
-MONEY_JSON = json.load(open("json\moneyReward.json", encoding='utf-8'))
-TREASURE_JSON = json.load(open("json\\treasureReward.json", encoding='utf-8'))
+moneyJsonPath = os.path.join("json", "moneyReward.json")
+treasureJsonPath = os.path.join("json", "moneyReward.json")
+
+MONEY_JSON = json.load(open(moneyJsonPath, encoding='utf-8'))
+TREASURE_JSON = json.load(open(treasureJsonPath, encoding='utf-8'))
 
 # Rolls D100 and get the type of reward relative to index.
 async def get_percent(id):

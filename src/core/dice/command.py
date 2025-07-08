@@ -12,7 +12,7 @@ async def slash_dice(
     dados: int = discord.Option(int ,description="Dados"),
     bonus: int = discord.Option(int, description="Bônus (opcional)")
 ):
-    await ctx.respond(embed = await roll_dice(ctx, dados, quantidade, bonus))
+    return await ctx.respond(embed = await roll_dice(ctx, dados, quantidade, bonus))
 
 @client.slash_command(
     name = "range_roll",
@@ -22,4 +22,4 @@ async def slash_rangeRoll(ctx,
     numero1: int = discord.Option(int), 
     numero2: int = discord.Option(int)
 ):
-    await ctx.respond(embed = await range_roll(ctx, numero1, numero2))
+    return await ctx.respond(embed = await range_roll(ctx, numero1, numero2))
