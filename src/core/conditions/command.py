@@ -4,7 +4,7 @@ from clientConfig import client
 from core.conditions.service import slash_search, embed_condition, condition_autocomplete
 
 @client.slash_command(
-    name = "conditions",
+    name = "condições",
     description = "Envia embed com informações sobre a condição selecionada."
 )
 async def slash_conditions(

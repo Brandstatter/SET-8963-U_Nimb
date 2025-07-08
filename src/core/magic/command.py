@@ -10,7 +10,7 @@ from core.magic.service import embed_magic, search_magic, magicAutoComplete
     description="Busca uma magia aleatoriamente.",
 ) 
 async def random_magic_slash_command(ctx):
-    embed = await embed_magic(random.randrange(0, 219))
+    embed = await embed_magic(random.randrange(0, 226))
     return await ctx.respond(embed = embed)
     
 # Search magic

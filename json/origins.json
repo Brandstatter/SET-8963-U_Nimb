@@ -479,7 +479,7 @@
         "name": "Ferreiro Militar",
         "desc": "Você participou de uma das guerras na história recente de Arton, mas não como combatente. Você forjava armas e armaduras para soldados e oficiais. Sua rotina começava antes de o sol nascer, acendendo a forja e moldando o metal incandescente com golpes precisos de seu martelo. Às vezes você lidava com materiais raros, como adamante, mitral ou aço-rubi. Entre faíscas e o som do metal sendo trabalhado, você não produzia apenas instrumentos de combate, mas também itens cotidianos como ferraduras e pregos, que também salvam vidas e podem decidir batalhas. Muitas vezes também foi visitado por heróis, que pediam informações sobre armas lendárias ou reparos em seus equipamentos. Até que, um dia, decidiu acompanhá-los.",
         "itens": "Instrumentos de armeiro, martelo leve.",
-        "pericias": "Ofício (armeiro)",
+        "pericias": "Ofício (armeiro).",
         "powerList":["Benefício da Origem."],
         "powerDesc":["Você recebe +2 em rolagens de dano com martelos e marretas de qualquer tipo."],
         "footer":"Herois de Arton"
@@ -699,7 +699,7 @@
         "name": "Armeiro Armado - Regional(Zakharov)",
         "desc": "Você aprendeu o ofício mais tradicional e respeitado de Zakharov. Suas armas não são apenas instrumentos de combate, mas obras de arte.",
         "itens": "Arma marcial, instrumentos de Ofício(armeiro).",
-        "pericias": "Ofício (armeiro)",
+        "pericias": "Ofício (armeiro).",
         "powerList":["Benefício da Origem."],
         "powerDesc":["Você pode fabricar armas com uma melhoria. Se aprender a fabricar armas superiores por outra habilidade, gasta apenas 1/4 do preço das melhorias que aplica em armas."],
         "footer":"Atlas de Arton"
@@ -902,6 +902,176 @@
         "pericias": "Não recebe treinamento em nenhuma pericia.",
         "powerList":["Benefício da Origem."],
         "powerDesc":["Você aprende e pode lançar uma magia arcana de 1 o círculo a sua escolha (atributo- -chave Inteligência). Além disso, pode fazer testes de Encontrando-se Consigo Mesmo Quando um duplo encontra sua versão original, tem extrema dificuldade em lidar com o fato de ser uma cópia. Quando isso ocorre, deve passar em um teste de Vontade (CD seu próprio Car). Se falhar, o duplo entra em um frenesi homicida até o fim da cena, tendo como único propósito matar sua versão original. Caso uma das duas criaturas morra nesse encontro, a versão sobrevivente herda todas as lembranças do morto, incluindo uma de suas perícias treinadas, mas perde permanentemente 1 ponto de Carisma — já que, para o bem ou para o mal, perdeu uma parte de si para sempre. Misticismo mesmo sem ser treinado nessa perícia. Se for treinado, recebe +2 em testes dela."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 94,
+        "name": "Estudante do Colégio Real - Regional(Salistick)",
+        "desc": "Você teve a oportunidade de estudar no ilustríssimo Colégio Real de Médicos de Salistick. Seu ceticismo e rigor científico o afastam dos deuses e o aproximam da compreensão da vida.",
+        "itens": "Bálsamo restaurador x3, maleta de medicamentos.",
+        "pericias": "Cura.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Seus efeitos de cura recuperam +2 PV por dado. Você perde esse benefício caso se torne um devoto de qualquer tipo."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 95,
+        "name": "Explorador de Ruínas - Regional(Tyrondir)",
+        "desc": "A destruição de Tyrondir atraiu exploradores em busca de riquezas que possam ter sobrevivido à queda da Flecha de Fogo. Após um tempo nessa atividade, você aprendeu alguns truques úteis.",
+        "itens": "Mochila de aventureiro, tocha, vara de madeira (3m).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 em Ladinagem, Percepção e Reflexos e +3m em seu deslocamento."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 96,
+        "name": "Filhote da Revoada - Regional(Lamnor)",
+        "desc": "Você passou grande parte de sua juventude entre a Revoada Carnívora e seus perigosos e fantásticos engenhos voadores. Você ainda não tem seu próprio veículo, mas aprendeu duras lições entre voos e quedas.",
+        "itens": "Instrumentos de Ofício (artesão), T$ 100 (que você está juntando para fabricar seu primeiro veículo aéreo).",
+        "pericias": "Acrobacia e Pilotagem.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Quando faz um teste de Acrobacia ou Pilotagem, pode gastar 1 PM para rolar um dado adicional e usar o melhor resultado."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 97,
+        "name": "Futura Lenda - Regional(Nova Malpetrim)",
+        "desc": "Você nasceu ouvindo histórias sobre heróis, talvez tenha sido batizado com o nome de um deles e por fim decidiu fazer a única coisa que tinha sentido: superá-los!",
+        "itens": "Arma simples ou marcial com nome pomposo (e nenhuma melhoria), essência de mana x2.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Escolha um dos poderes de sua classe, normalmente disponíveis a partir do 2º nível. Você recebe esse poder."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 98,
+        "name": "Ginete de Tumarkhân - Regional(Khubar)",
+        "desc": "O povo de Khubar usa o lagarto tumarkhân como montaria. Você estabeleceu um elo com um desses animais, que o acompanha em suas jornadas.",
+        "itens": "Bálsamo restaurador, sela.",
+        "pericias": "Cavalgar.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você possui um parceiro tumarkhân iniciante, com quem recebe +2 em testes de Adestramento e Cavalgar. Se receber outra montaria especial (como pelos poderes Montaria ou Montaria Sagrada), você pode usar seu tumarkhân como essa montaria, acumulando o bônus em perícias com os benefícios da montaria especial."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 99,
+        "name": "Grumete Pirata - Regional(Três Mares)",
+        "desc": "Por paixão, sede de liberdade ou pura necessidade, você serviu em uma embarcação pirata.",
+        "itens": "Adaga, corda, tatuagem de sua antiga tripulação (+1 em Intimidação).",
+        "pericias": "Acrobacia, Atletismo e Reflexo.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Se estiver se equilibrando, escalando ou nadando, só cai ou afunda se falhar no teste de perícia por 10 ou mais (em vez de 5 ou mais)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 100,
+        "name": "Guardião Glacial - Regional(Uivantes)",
+        "desc": "As Uivantes são inclementes, mas também precisam de seus protetores. Você treinou com eles e aprendeu como afugentar intrometidos.",
+        "itens": "Casaco longo, cavalo glacial.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe redução de frio 5 e proficiência em arco longo e machado de batalha. Caso já possua proficiência com essas armas, você recebe +2 em rolagens de dano com elas."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 101,
+        "name": "Iniciado dos Caça-Monstros - Regional(Sanguinárias)",
+        "desc": "Você foi iniciado na Guilda dos Caça-Monstros. Mesmo que ainda não seja capaz de vencer todas as criaturas, consegue ao menos identificá-las!",
+        "itens": "Arma simples ou marcial, gibão de peles.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você pode fazer testes para identificar criaturas com uma ação de movimento e, quando acerta um ataque em uma criatura não humanoide, pode gastar 1 PM para causar +1d8 pontos de dano."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 102,
+        "name": "Insurgente Tapistano - Regional(Império de Tauron)",
+        "desc": "O Império de Tauron está ruindo. O Deus da Força está morto. Para você, isso ainda não é suficiente. O povo só estará satisfeito quando todos os antigos generais e escravagistas forem punidos.",
+        "itens": "Amuleto com um símbolo da resistência reconhecível por outros rebeldes, arma simples.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +1 em Fortitude, Reflexos e Vontade. Além disso, recebe +3 pontos de vida no 1º nível e +1 PV por nível seguinte."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 103,
+        "name": "Irmão sem Esporas - Regional(Namalkah)",
+        "desc": "Você possui um cavalo que o acompanha desde a infância; vocês cresceram juntos, tornando-se verdadeiros irmãos.",
+        "itens": "Bálsamo restaurador, sela.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você possui um irmão cavalo, um cavalo de guerra parceiro iniciante que fornece +1 em testes de ataque e Reflexos. Se receber outra montaria especial (como aquela concedida pelos poderes Montaria ou Montaria Sagrada), você pode usar seu irmão cavalo como essa montaria, acumulando o bônus em perícias com os benefícios da montaria especial."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 104,
+        "name": "Legionário - Regional(Império de Tauron)",
+        "desc": "Você serviu nas legiões do Império de Tauron, onde aprendeu a usar o equipamento de um legionário. Agora que seu serviço terminou, você espera usar as técnicas aprendidas para dar um novo rumo a Tapista.",
+        "itens": "Brunea com símbolo de sua legião, escudo pesado, gládio, ração de viagem x10.",
+        "pericias": "Guerra.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe proficiência com gládios (veja Ameaças de Arton) e escudos. Se estiver empunhando um gládio e um escudo pesado, recebe +1 na margem de ameaça e +1 na Defesa."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 105,
+        "name": "Lenhador de Tollon - Regional(Tollon)",
+        "desc": "Você foi criado entre as imponentes árvores da Floresta de Tollon, que lhe serviram tanto como casa quanto como fonte de sustento.",
+        "itens": "Item superior de madeira Tollon.",
+        "pericias": "Ofício (artesão).",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +5 em testes de perícias (exceto testes de ataque) relacionados a madeira. Além disso, você recebe proficiência com machadinhas e machados de batalha; caso já possua proficiência com essas armas, recebe +2 em rolagens de dano com elas."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 106,
+        "name": "Liricista de Lenórienn - Regional(Lamnor)",
+        "desc": "Mesmo não tendo vivido o auge do Reino dos Elfos, você ouviu histórias suficientes para admirá-lo. Inspirado pelas tradições élficas, você aprendeu a transformar sua magia em arte.",
+        "itens": "Alaúde élfico, réplica de uma peça artística élfica (1 espaço, T$ 50).",
+        "pericias": "Atuação.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 nessa perícia. Além disso, pode usar Carisma como atributo-chave de Misticismo (no lugar de Inteligência)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 107,
+        "name": "Membro do Principado - Regional(Sambúrdia)",
+        "desc": "Você faz parte do Principado Mercante, uma das organizações mais poderosas das Repúblicas Livres. Ainda está longe do topo, mas até mesmo os Príncipes Mercantes começaram em algum lugar.",
+        "itens": "Carroça, mercadorias sortidas (8 espaços, T$ 400).",
+        "pericias": "Diplomacia e Intuição.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Quando chega em uma cidade pela primeira vez em cada aventura, pode fazer um teste de Diplomacia (CD 20). Se passar, recebe 10% de desconto em todos os itens que comprar neste lugar (cumulativo com barganha)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 108,
+        "name": "Nitamuraniano - Regional(Valkaria)",
+        "desc": "Você foi criado na maior comunidade tamuraniana fora do próprio Império de Jade. Seus valores culturais misturam as complexas e distintas tradições deheoni e tamuranianas.",
+        "itens": "Arco longo ou katana, camisa bufante ou traje de seda.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe proficiência em katana e arco longo. Caso receba proficiência nessas armas novamente, recebe +2 em rolagens de dano com elas. Além disso, quando falha em um teste de perícia originalmente baseada em Sabedoria, você pode gastar 2 PM para refazer esse teste (apenas uma vez por teste)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 109,
+        "name": "Nobre Zakharoviano - Regional(Zakharov)",
+        "desc": "Você descende de uma das tradicionais famílias de nobres armeiros zakharovianos. Além do sobrenome, ostenta com orgulho uma de suas obras-primas.",
+        "itens": "Traje da corte.",
+        "pericias": "Ofício (armeiro).",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe uma arma superior com uma melhoria (exceto material especial). Se estiver de posse dessa arma, recebe +2 PM por patamar (apenas após um dia)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 110,
+        "name": "Nômade Sar-Allan - Regional(Halak-Tûr)",
+        "desc": "Você cresceu entre os sar-allan, aprendendo a resistir aos rigores — e aos predadores — do deserto.",
+        "itens": "Arma simples ou marcial, corcel do deserto ou dromedário (veja Ameaças de Arton), manto camuflado (deserto).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 em Fortitude e Sobrevivência e nas rolagens de dano com alfanges, arcos curtos e cimitarras."],
         "footer":"Atlas de Arton"
     }
 ]

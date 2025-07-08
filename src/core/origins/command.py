@@ -4,7 +4,7 @@ from clientConfig import client
 from core.origins.service import slash_search, embed_origin, origins_autocomplete
 
 @client.slash_command(
-    name = "origins",
+    name = "origens",
     description = "Informa beneficios e itens da origem selecionada."
 )
 async def slash_origins(ctx,
