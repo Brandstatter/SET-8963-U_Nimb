@@ -1073,5 +1073,205 @@
         "powerList":["Benefício da Origem."],
         "powerDesc":["Você recebe +2 em Fortitude e Sobrevivência e nas rolagens de dano com alfanges, arcos curtos e cimitarras."],
         "footer":"Atlas de Arton"
+    },
+    {
+        "id": 111,
+        "name": "Pescador Parrudo - Regional(Khubar)",
+        "desc": "Desde criança, você pesca nas águas profundas de Khubar. Tal atividade deixou seu corpo forte e resistente.",
+        "itens": "Vara de pesca (pode usar Sobrevivência para sustento), peixes raros salgados para revenda (1 espaço, T$ 50).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 em Atletismo, Fortitude e Sobrevivência e +3 PV. Além disso, quando faz um teste de Atletismo para nadar você avança seu deslocamento (em vez de apenas a metade)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 112,
+        "name": "Plebeu Arcano - Regional(Wynlla)",
+        "desc": "Crescer em Wynlla é estar próximo da magia. Esse contato o deixou mais acostumado aos aspectos místicos de Arton.",
+        "itens": "Bandoleira de poções, gorro de ervas, poção arcana de 1 o círculo.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 PM. Além disso, uma vez por rodada, quando falha em um teste de resistência contra um efeito mágico, você pode gastar 1 PM para rolar novamente esse teste."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 113,
+        "name": "Prisioneiro das Catacumbas - Regional(Leverick)",
+        "desc": "Você vivia uma vida comum e sem grandes emoções, até ter o azar de abrir a porta errada. Talvez também tenha sido por mero acaso que você escapou das Catacumbas de Leverick.",
+        "itens": "Arma marcial encontrada no corpo de alguém que não sobreviveu às Catacumbas.",
+        "pericias": "Percepção e Reflexo.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe resistência a armadilhas e efeitos de movimento +5."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 114,
+        "name": "Procurado: Vivo ou Morto - Regional(Smokestone)",
+        "desc": "Você é um pistoleiro infame nas cercanias de Smokestone, odiado e caçado por outros durões. Provavelmente foi tudo um engano e você ainda não faz jus a esse renome, mas sua cabeça está a prêmio!",
+        "itens": "Pistola, balas cruéis (20).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem.", "Por um Punhado de Tibares"],
+        "powerDesc":["Você recebe proficiência com armas de fogo. Além disso, recebe +5 em testes de Intimidação e -5 em testes de Diplomacia contra qualquer um que, a critério do mestre, o reconheça e saiba de sua fama.", "Personagens com a origem Procurado: Vivo ou Morto são caçados por pistoleiros e todo tipo de mercenários. Uma vez por aventura, a critério do mestre, você e seu grupo são atacados por caçadores de recompensa (um encontro de ND igual ou inferior ao do grupo). Cruéis e dispostos a qualquer coisa por uma recompensa, esses caçadores tendem a atacar nos momentos mais inconvenientes…"],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 115,
+        "name": "Profeta do Akzath - Regional(Lamnor)",
+        "desc": "Você conhece a verdade sobre o tempo e o destino, na forma do Akzath. Quem sabe será você a encontrar o novo Ayrrak?",
+        "itens": "Arma simples ou marcial, bordão, pergaminho com diagrama do Akzath.",
+        "pericias": "Religião.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você pode lançar magias mesmo sob o efeito de Fúria Divina."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 116,
+        "name": "Querido Filho - Regional(Aslothia)",
+        "desc": "Você passou parte de sua juventude em Aslothia. Lá, por escolha ou imposição do destino, abraçou a dádiva das trevas.",
+        "itens": "Essência de sombra, manto camuflado(urbano).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe redução de frio e trevas 5 e visão no escuro. Se já possuir visão no escuro, em vez disso recebe +2 em Percepção."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 117,
+        "name": "Rebelde Agitador - Regional(Sckharshantallas)",
+        "desc": "Sua terra natal, Sckharshantallas, está sob o jugo permanente de um monstro tirano. Você fez parte de grupos rebeldes, mas agora partiu para se aventurar. Espera se tornar forte para, um dia, depor o Dragão-Rei.",
+        "itens": "Arma simples ou marcial, panfleto revolucionário, T$ 6d12 (impostos que você deixou de pagar).",
+        "pericias": "Iniciativa.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Uma vez por aventura, pode gastar um dia para convencer pessoas comuns a ajudá-lo. Faça um teste de Diplomacia (CD 10). Se passar, você convence uma pessoa, mais uma para cada 10 pontos acima da CD (duas pessoas com resultado 20, três com resultado 30 e assim por diante). Cada pessoa pode ser usada como um parceiro iniciante de um tipo à sua escolha por uma cena. As pessoas não contam em seu limite de parceiros e ficam com você até serem usadas ou até o fim da aventura."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 118,
+        "name": "Receptador das Nuvens - Regional(Vectora)",
+        "desc": "Você cresceu em Vectora, o fabuloso Mercado nas Nuvens. Andando entre os bazares e becos da cidade, conheceu diversos mercadores.",
+        "itens": "Mercadorias raras e variadas (2 espaços, T$ 300).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você possui contatos em Vectora que lhe dão acesso a mercadorias. Se estiver em uma cidade ou outro lugar em que, a critério do mestre, possa acessar seus contatos, você pode gastar 1 dia para obter um aparato mágico: um item de 1 espaço que você (e apenas você) pode empunhar para lançar uma magia de 1º círculo (atributo-chave Inteligência), escolhida ao obter o aparato. Você pode ter até 2 aparatos ao mesmo tempo. Os aparatos não têm valor comercial."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 119,
+        "name": "Recruta Arcano - Regional(Wynlla)",
+        "desc": "Você serviu entre os Magos de Batalha de Wynlla. Agora, livre de suas obrigações cívicas, está pronto para seguir sua vida de aventuras.",
+        "itens": "Essência de mana x2, varinha arcana.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["A CD para resistir a suas magias arcanas aumenta em +1 e elas causam +1 ponto de dano."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 120,
+        "name": "Recruta da Fênix - Regional(Triunphus)",
+        "desc": "Você começou o treinamento para combater a Horda Moóck montado em um majestoso grifo. Por vontade própria ou imposição, você saiu da cidade antes de completar o treinamento… ou morrer!",
+        "itens": "Arma marcial, brunea, grifo iniciante.",
+        "pericias": "Cavalgar.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +1 PV por nível e redução de fogo 5."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 121,
+        "name": "Sábio Matemático - Regional(Halak-Tûr)",
+        "desc": "Você estudou as complexas equações que os sar-allan usam para calcular a formação de portais no deserto. Talvez ainda não consiga prever esses eventos tão bem quanto seus mestres, mas sabe usar o poder da matemática para resolver diversos problemas.",
+        "itens": "Coleção de livros, luneta.",
+        "pericias": "Conhecimento.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você aprende e pode lançar Concentração de Combate e *Orientação*. Estes efeitos não contam como magias (exceto para fins de acúmulo) e não são mágicos — eles provêm de sua habilidade de calcular resultados a partir de uma mistura de geometria, análise de probabilidades e outros campos da matemática."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 122,
+        "name": "Selvagem Sanguinário - Regional(Sanguinárias)",
+        "desc": "Você nasceu ou foi criado nas Montanhas Sanguinárias, um dos lugares mais brutais de Arton, onde aprendeu a sobreviver com base na determinação e força bruta.",
+        "itens": "Arma marcial, gibão de peles.",
+        "pericias": "Sobrevivência.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Se não estiver usando armadura pesada, recebe +1 em rolagens de dano com armas e redução de dano 1."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 123,
+        "name": "Sucateiro de Batalhas - Regional(Conflagração do Aço)",
+        "desc": "Muitos dizem que a Guerra Artoniana acabou. Não onde você foi criado. Em uma terra onde escaramuças são frequentes, você se especializou em pilhar armas e outros itens abandonados nos campos de batalha.",
+        "itens": "Arma simples ou marcial, bálsamo restaurador, escudo leve ou pesado, essência de mana, ração de viagem x5, T$ 4d6.",
+        "pericias": "Guerra e Investigação.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Quando rola na **Tabela 8-1: Tesouro por Nível de Desafio** (*Tormenta20*, p. 328), para cada tipo de tesouro (dinheiro ou item) você pode rolar novamente o resultado."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 124,
+        "name": "Tamalu - Regional(Khubar)",
+        "desc": "Você nasceu entre os tamalus, a casta política de Khubar que ostenta tatuagens mágicas mostrando sua história. Embora sua saga esteja apenas começando, você já conquistou sua primeira tatuagem.",
+        "itens": "Traje da corte.",
+        "pericias": "Diplomacia e Nobreza.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe uma tatuagem mística à sua escolha."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 125,
+        "name": "Tocado pela Dama Altiva - Regional(Moreania)",
+        "desc": "Nascido em Moreania, você foi agraciado pela própria Mãe Natureza. Você consegue entender as vozes da natureza e pode invocar o auxílio dos filhos de Allihanna.",
+        "itens": "Bordão, ração de viagem x5.",
+        "pericias": "Adestramento.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você pode gastar 1 minuto e 1 PM para convocar um animal Minúsculo a sua escolha, como um falcão ou gato, em seu auxílio. A criatura convocada fornece +2 nos seus testes de uma perícia específica, adequada às suas capacidades, e permanece auxiliando-o até o fim da cena, quando então retorna para os ermos. Você pode ter um número de criaturas convocadas simultâneas igual à sua Sabedoria (mínimo de 1). O mestre tem a palavra final sobre quais criaturas estão disponíveis e em quais perícias elas podem prestar auxílio."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 126,
+        "name": "Tocado pelo Indomavel - Regional(Moreania)",
+        "desc": "A face oposta da Dama Altiva, o Indomável é uma divindade de ferocidade e selvageria. Agraciado com o poder dos monstros, você tem dificuldade em se adequar às normas e restrições da sociedade.",
+        "itens": "Trapos surrados, carcaça de couro de algum animal caçado por você (conta como um gibão de peles).",
+        "pericias": "Atletismo.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 em rolagens de dano com armas naturais e ataques desarmados."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 127,
+        "name": "Tradicionalista Svalano - Regional(Svalas)",
+        "desc": "Svalas é díspar, honrado e livre. Após todos os registros escritos do reino terem sido destruídos, a tradição svalana foi passada pela oralidade. Você é o fruto dessas histórias.",
+        "itens": "Arma simples ou marcial, corda, mochila de aventureiro, vara de madeira (3 m).",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você pode usar Sabedoria como atributo-chave de Conhecimento e Nobreza e pode fazer testes dessas perícias mesmo sem treinamento. Além disso, recebe +1 em Fortitude e Vontade."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 128,
+        "name": "Trapaceiro Ahleniense - Regional(Ahlen)",
+        "desc": "Há um ditado em Ahlen: todo dia saem de casa um malandro e um otário. Você definitivamente aprendeu como não ser o otário.",
+        "itens": "Essência de sombra, gazua, estojo de disfarces.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe +2 em Enganação e Furtividade e pode usar Carisma como atributo-chave de Ladinagem (em vez de Destreza)."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 129,
+        "name": "Turista da Academia - Regional(Academia Arcana)",
+        "desc": "Você assistiu a algumas aulas na Academia Arcana. Não se tornou um arcanista, mas aprendeu a lidar com magias e enjambrar alguns truques!",
+        "itens": "Três pergaminhos de magias arcanas de 1º círculo à sua escolha.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você recebe resistência a magia +2 e pode ativar pergaminhos de todas as magias arcanas de 1º círculo como se as conhecesse."],
+        "footer":"Atlas de Arton"
+    },
+    {
+        "id": 130,
+        "name": "Um com os Kami - Regional(Tamu-ra)",
+        "desc": "Desde muito novo, você vê e ouve seres que não podem ser percebidos pela maioria das pessoas. São os kami, os espíritos divinos de Tamu-ra. Às vezes estão enfurecidos; outras vezes, querem pedir sua ajuda. Na maior parte das ocasiões, apenas acham graça de ser percebidos por você e por isso o tratam como amigo.",
+        "itens": "Bálsamo restaurador, essência de mana.",
+        "pericias": "Não recebe treinamento em nenhuma pericia.",
+        "powerList":["Benefício da Origem."],
+        "powerDesc":["Você pode usar Sabedoria como atributo-chave de Misticismo (em vez de Inteligência). Além disso, é acompanhado por um kami incorpóreo e invisível. Ele é um parceiro especial, que permite que você veja criaturas incorpóreas invisíveis e afete criaturas com seus ataques e habilidades como se fossem mágicos, e não conta em seu limite de parceiros. Além disso, uma vez por rodada você pode gastar 1 PM para executar o equivalente a uma ação de movimento que só pode ser usada para manipular um objeto solto em alcance curto. O kami não pode se afastar além de alcance curto de você. Se for destruído por qualquer efeito, o kami desaparece, retornando no início da próxima cena."],
+        "footer":"Atlas de Arton"
     }
 ]
