@@ -81,7 +81,7 @@
         "rewardQtd" : [null, 100, 10, 0],
         "rewardCurrency" : [null, "T$", "TO", "riqueza média"],
         "treasureType" : [null, 0, 0, 3],
-        "link": "https://i.imgur.com/NFSWvAt.png"
+        "link": "https://i.imgur.com/ZXwt68w.png"
     },
     {
         "id" : 7,
@@ -92,7 +92,8 @@
         "diceBonus": [0, 0, 0, 1],
         "rewardQtd" : [null, 100, 100, 0],
         "rewardCurrency" : [null, "T$", "T$", "riquezas menores"],
-        "treasureType" : [null, 0, 0, 1]
+        "treasureType" : [null, 0, 0, 1],
+        "link": "https://i.imgur.com/2SO1sbh.png"
     },
     {
         "id" : 8,
@@ -103,7 +104,8 @@
         "diceBonus": [0, 0, 0, 1],
         "rewardQtd" : [null, 100, 10, 0],
         "rewardCurrency" : [null, "T$", "TO", "riquezas menores"],
-        "treasureType" : [null, 0, 0, 1]
+        "treasureType" : [null, 0, 0, 1],
+        "link": "https://i.imgur.com/FRbfOcV.png"
     },
     {
         "id" : 9,
@@ -114,7 +116,8 @@
         "diceBonus": [0, 0, 1, 0],
         "rewardQtd" : [null, 100, 0, 0],
         "rewardCurrency" : [null, "T$", "TO", "riquezas menores"],
-        "treasureType" : [null, 0, 0, 1]
+        "treasureType" : [null, 0, 0, 1],
+        "link": "https://i.imgur.com/6nrtfno.png"
     },
     {
         "id" : 10,
@@ -125,7 +128,8 @@
         "diceBonus": [0, 0, 0, 0],
         "rewardQtd" : [null, 0, 100, 0],
         "rewardCurrency" : [null, "riqueza média", "T$", "riquezas médias"],
-        "treasureType" : [null, 3, 0, 3]
+        "treasureType" : [null, 3, 0, 3],
+        "link": "https://i.imgur.com/OSpqf5U.png"
     },
     {
         "id" : 11,
@@ -148,7 +152,8 @@
         "diceBonus": [0, 0, 0, 0],
         "rewardQtd" : [null, 1000, 0, 100],
         "rewardCurrency" : [null, "T$", "riquezas médias", "TO"],
-        "treasureType" : [null, 0, 3, 0]
+        "treasureType" : [null, 0, 3, 0],
+        "link": "https://i.imgur.com/0s1tnPX.png"
     },
     {
         "id" : 13,
@@ -159,7 +164,8 @@
         "diceBonus": [0, 0, 0, 1],
         "rewardQtd" : [null, 0, 1000, 0],
         "rewardCurrency" : [null, "riqueza média(%)", "T$", "riquezas médias"],
-        "treasureType" : [null, 4, 0, 3]
+        "treasureType" : [null, 4, 0, 3],
+        "link": "https://i.imgur.com/FhsfAUb.png"
     },
     {
         "id" : 14,
@@ -170,7 +176,8 @@
         "diceBonus": [0, 0, 1, 0],
         "rewardQtd" : [null, 1000, 0, 100],
         "rewardCurrency" : [null, "T$", "riquezas médias", "TO"],
-        "treasureType" : [null, 0, 3, 0]
+        "treasureType" : [null, 0, 3, 0],
+        "link": "https://i.imgur.com/vHkzr3Q.png"
     },
     {
         "id" : 15,
@@ -181,7 +188,8 @@
         "diceBonus": [0, 1, 0, 0],
         "rewardQtd" : [null, 0, 1000, 0],
         "rewardCurrency" : [null, "riquezas médias", "T$", "riqueza maior"],
-        "treasureType" : [null, 3, 0, 5]
+        "treasureType" : [null, 3, 0, 5],
+        "link": "https://i.imgur.com/HQz8f2R.png"
     },
     {
         "id" : 16,
@@ -192,7 +200,8 @@
         "diceBonus": [0, 0, 0, 0],
         "rewardQtd" : [null, 0, 1000, 1000],
         "rewardCurrency" : [null, "riqueza média(%)", "T$", "TO"],
-        "treasureType" : [null, 4, 0, 0]
+        "treasureType" : [null, 4, 0, 0],
+        "link": "https://i.imgur.com/GMYNshc.png"
     },
     {
         "id" : 17,
@@ -203,7 +212,8 @@
         "diceBonus": [0, 0, 0, 0],
         "rewardQtd" : [null, 1000, 100, 0],
         "rewardCurrency" : [null, "T$", "TO", "riquezas maiores"],
-        "treasureType" : [null, 0, 0, 5]
+        "treasureType" : [null, 0, 0, 5],
+        "link": "https://i.imgur.com/RW42Rev.png"
     },
     {
         "id" : 18,
@@ -214,7 +224,8 @@
         "diceBonus": [0, 0, 0, 0],
         "rewardQtd" : [null, 1000, 0, 1000],
         "rewardCurrency" : [null, "T$", "riquezas médias(%)", "TO"],
-        "treasureType" : [null, 0, 4, 0]
+        "treasureType" : [null, 0, 4, 0], 
+        "link": "https://i.imgur.com/Hz89GFx.png"
     },
     {
         "id" : 19,
@@ -225,7 +236,8 @@
         "diceBonus": [0, 0, 0, 1],
         "rewardQtd" : [null, 1000, 0, 0],
         "rewardCurrency" : [null, "T$", "riqueza maior", "riquezas maiores"],
-        "treasureType" : [null, 0, 5, 5]
+        "treasureType" : [null, 0, 5, 5],
+        "link": "https://i.imgur.com/wcUsMv9.png"
     },
     {
         "id" : 20,
@@ -236,7 +248,8 @@
         "diceBonus": [0, 0, 0, 0],
         "rewardQtd" : [null, 1000, 0, 1000],
         "rewardCurrency" : [null, "T$", "riqueza maior(%)", "TO"],
-        "treasureType" : [null, 0, 6, 0]
+        "treasureType" : [null, 0, 6, 0],
+        "link": "https://i.imgur.com/idD4dlz.png"
     },
     {
         "id" : 21,
@@ -247,6 +260,7 @@
         "diceBonus": [0, 0, 0, 1],
         "rewardQtd" : [null, 1000, 0, 0],
         "rewardCurrency" : [null, "TO", "riquezas maiores", "riquezas maiores(%)"],
-        "treasureType" : [null, 0, 5, 6]
+        "treasureType" : [null, 0, 5, 6],
+        "link": "https://i.imgur.com/99Z4yP7.png"
     }
 ]

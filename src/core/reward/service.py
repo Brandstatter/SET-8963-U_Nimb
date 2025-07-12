@@ -12,8 +12,7 @@ TREASURE_JSON = json.load(open(treasureJsonPath, encoding='utf-8'))
 
 # Rolls D100 and get the type of reward relative to index.
 async def get_percent(id):
-    d100 = 85
-    #d100 = random.randrange(1,100)
+    d100 = random.randrange(1,100)
     percentages = MONEY_JSON[id]['percentages']
 
     index = 0
@@ -150,7 +149,6 @@ async def embed_nulo(id, d100):
 
     return reward
 
-#TODO Add possibilities to others titles. (1d3+1 riquezas)
 async def embed_treasure(id, d100, reward, values, index):
     if MONEY_JSON[id]["rewardDice"][index] != 1:
         if MONEY_JSON[id]["diceBonus"][index] == 0:
