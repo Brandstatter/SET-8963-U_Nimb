@@ -1,0 +1,46 @@
+[
+    {
+        "id" : 2,
+        "ND" : "1",
+        "percentages" : [1, 20, 21, 70, 71, 95, 96, 100],
+        "rewardDiceQtd" : [null, 3, 4, 1],
+        "rewardDice" : [null, 8, 12, 1],
+        "diceBonus": [0, 0, 0, 0, 0],
+        "rewardQtd" : [null, 10, 10, 0],
+        "rewardCurrency" : [null, "T$", "T$", "riqueza menor"],
+        "treasureType" : [null, 0, 0, 1],
+        "link": "https://i.imgur.com/dI0ghR9.png"
+    }
+]
+
+[
+    {
+        "ND": "1",
+        "percentage": {
+            "20": {
+                "qtDice": null,
+                "typeDice": null,
+                "bonus": 0,
+                "typeTreasure": null 
+            },
+            "70": {
+                "qtDice": 3,
+                "typeDice": 8,
+                "bonus": 0,
+                "typeTreasure": null 
+            },
+            "95": {
+                "qtDice": null,
+                "typeDice": null,
+                "bonus": 0,
+                "typeTreasure": null 
+            },
+            "100": {
+                "qtDice": null,
+                "typeDice": null,
+                "bonus": 0,
+                "typeTreasure": null 
+            }
+        }
+    }
+]

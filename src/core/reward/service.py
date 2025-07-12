@@ -21,7 +21,6 @@ async def get_percent(id):
         index += 1
     # Halfes index and round to the lowest number to get index of the reward.
     index = int(math.floor(index/2))
-    print(index)
     if MONEY_JSON[id]['treasureType'][index] == 0:
         embed = await get_money(id, d100, index)
         return embed
