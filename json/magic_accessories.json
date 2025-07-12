@@ -280,7 +280,7 @@
             "id": 46,
             "name": "Manto Élfico",
             "desc": "Indistinguível de um manto cinza comum. Entretanto, quando usado com o capuz cobrindo o rosto, fornece +5 em Furtividade.",
-            "cost": ""
+            "cost": "T$ 3.000"
         },
         {
             "id": 47, 
@@ -374,15 +374,41 @@
         },
         {
             "id": 62,
+            "name": "Tomo dos Grandes Pensamentos",
+            "desc": "Este livro pesado contém exercícios para aprimorar o raciocínio e a memória, mas mesclado às palavras há um poderoso efeito mágico. Funciona como um *Manual do Bom Exercício*, mas fornece +1 de Inteligência.",
+            "cost": "T$ 30.000"
+        },
+        {
+            "id": 63,
             "name": "Torque do Vigor",
             "desc": "O acabamento deste colar ou bracelete remete a um animal poderoso, como um urso ou lobo. Você recebe +1 em Constituição (somente após um dia de uso).",
             "cost": "T$ 4.500"
         },
         {
-            "id": 63,
+            "id": 64,
             "name": "Vassoura Voadora",
             "desc": "Como um *tapete voador*, mas pode carregar duas pessoas (ou 40 espaços).",
             "cost": "T$ 21.000"
+        }
+    ],
+    "tables": [
+        {
+            "type": 0,
+            "name": "Acessórios Menores",
+            "percentages": [1,2,3,7,8,12,13,14,15,19,20,24,25,29,30,34,35,40,41,46,47,52,53,59,60,65,66,71,72,77,78,82,83,84,85,89,90,96,97,98,99,100],
+            "prizes": [9,11,25,33,35,36,46,51,18,40,41,43,44,54,63,21,34,39,3,8,53]
+        },
+        {
+            "type": 1,
+            "name": "Acessórios Médios",
+            "percentages": [1,4,5,8,9,10,11,14,15,18,19,24,25,30,31,34,35,38,39,42,43,46,47,50,51,54,55,58,59,64,65,68,69,74,75,80,81,86,87,88,89,94,95,100],
+            "prizes": [7,12,20,13,16,1,5,6,15,19,32,42,64,57,0,14,22,26,31,45,55,59]
+        },
+        {
+            "type": 2,
+            "name": "Acessórios Maiores",
+            "percentages": [1,2,3,4,5,9,10,15,16,21,22,27,28,34,35,40,41,46,47,52,53,57,58,60,61,67,68,72,73,77,78,82,83,87,88,89,90,94,95,96,97,98,99,100],
+            "prizes": [27,37,38,49,47,48,50,60,61,62,10,23,24,30,2,58,17,28,56,52,4,29]
         }
     ]
 }
