@@ -38,8 +38,6 @@ async def embed_magic(id):
     title = name,
     description = description,
     color=discord.Color.random())
-    # Set image to be sent with the embed
-    magic.set_image(url="attachment://image.jpg")
 
     if MAG_JSON[id]['extraTitle'] != None:
         x = 0

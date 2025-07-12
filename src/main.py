@@ -16,6 +16,7 @@ import core.quality.command
 import core.race.command
 import core.reward.command
 import core.help.command
+import core.magic_accessories.command
 
 def configure():
     load_dotenv()
@@ -26,7 +27,7 @@ global guilds_list
 guilds_list = GUILDS_JSON[0]['guilds']
 
 @client.event
-async def on_ready():
+async def on_ready() :
     await client.sync_commands()
     guilds_ = [guild.id for guild in client.guilds]
     print (guilds_)
@@ -49,8 +50,8 @@ async def on_guild_remove(guild):
     with open(json_path, 'w') as outputFile:
         json.dump(data, outputFile, indent=4)
 
-# #TODO Add slash commands
-# #TODO Improve design of the help function
+# TODO Add slash commands
+# TODO Improve design of the help function
    
 configure()
 client.run(os.getenv('clientID'))
