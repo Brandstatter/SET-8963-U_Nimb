@@ -10,6 +10,8 @@ treasureJsonPath = os.path.join("json", "moneyReward.json")
 MONEY_JSON = json.load(open(moneyJsonPath, encoding='utf-8'))
 TREASURE_JSON = json.load(open(treasureJsonPath, encoding='utf-8'))
 
+MONEYCOPY_JSON = json.load(open(os.path.join("json", "moneyRewardCopy.json"), encoding="utf-8"))
+
 # Rolls D100 and get the type of reward relative to index.
 async def get_percent(id):
     d100 = random.randrange(1,100)
@@ -165,3 +167,37 @@ async def embed_treasure(id, d100, reward, values, index):
     )
     reward.set_image(url = MONEY_JSON[id]["link"])
     return reward
+
+async def get_treasure(id):
+    ndObject = next((obj for obj in MONEYCOPY_JSON if obj["nd"] == id), None)
+    d100 = random.randrange(1, 100)
+    if not ndObject:
+        return None
+
+    money_dict = ndObject["money"]
+    choseReward = None
+    keys = sorted(int(k) for k in money_dict.keys())
+    for k in keys:
+        if d100 <= k:
+            choseReward = money_dict[str(k)]
+            break
+
+    if(choseReward == None):
+        print("Sem premio para você")
+        return None
+
+    mathSolve = 0
+    for i in range(choseReward["numberOfRolls"]):
+        rollDice = random.randrange(1, choseReward["chosenDie"])
+        print("rollDice", rollDice)
+        print("Numero tentativa", i)
+        mathSolve = mathSolve + rollDice
+
+    mathSolve = mathSolve * choseReward["multiplier"]
+
+    # print("D100 Escolhido: ", d100)
+    # print("Objeto Escolhido: ", choseReward)
+    # print("Calculo dos dados resolvidos: ", mathSolve)
+
+
+    

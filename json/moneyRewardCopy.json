@@ -4,7 +4,7 @@
         "money": {
             "30": null,
             "70": {
-                "numberOfRolls": 1,
+                "numberOfRolls": 2,
                 "chosenDie": 6,
                 "multiplier": 10,
                 "currencyType": "TC"
@@ -47,7 +47,7 @@
             }
         }
     },
-        {
+    {
         "nd": "1",
         "money": {
             "25": null, 
