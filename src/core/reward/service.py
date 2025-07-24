@@ -183,14 +183,12 @@ async def get_treasure(id):
             break
 
     if(choseReward == None):
-        print("Sem premio para você")
+        # print("Sem premio para você")
         return None
 
     mathSolve = 0
-    for i in range(choseReward["numberOfRolls"]):
+    for _ in range(choseReward["numberOfRolls"]):
         rollDice = random.randrange(1, choseReward["chosenDie"])
-        print("rollDice", rollDice)
-        print("Numero tentativa", i)
         mathSolve = mathSolve + rollDice
 
     mathSolve = mathSolve * choseReward["multiplier"]
