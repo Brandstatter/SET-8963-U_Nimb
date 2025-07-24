@@ -1,45 +1,74 @@
 [
     {
-        "id" : 2,
-        "ND" : "1",
-        "percentages" : [1, 20, 21, 70, 71, 95, 96, 100],
-        "rewardDiceQtd" : [null, 3, 4, 1],
-        "rewardDice" : [null, 8, 12, 1],
-        "diceBonus": [0, 0, 0, 0, 0],
-        "rewardQtd" : [null, 10, 10, 0],
-        "rewardCurrency" : [null, "T$", "T$", "riqueza menor"],
-        "treasureType" : [null, 0, 0, 1],
-        "link": "https://i.imgur.com/dI0ghR9.png"
-    }
-]
-
-[
-    {
-        "ND": "1",
-        "percentage": {
-            "20": {
-                "qtDice": null,
-                "typeDice": null,
-                "bonus": 0,
-                "typeTreasure": null 
-            },
+        "nd": "1/4",
+        "money": {
+            "30": null,
             "70": {
-                "qtDice": 3,
-                "typeDice": 8,
-                "bonus": 0,
-                "typeTreasure": null 
+                "numberOfRolls": 1,
+                "chosenDie": 6,
+                "multiplier": 10,
+                "currencyType": "TC"
             },
             "95": {
-                "qtDice": null,
-                "typeDice": null,
-                "bonus": 0,
-                "typeTreasure": null 
+                "numberOfRolls": 1,
+                "chosenDie": 4,
+                "multiplier":  100,
+                "currencyType": "TC"
             },
             "100": {
-                "qtDice": null,
-                "typeDice": null,
-                "bonus": 0,
-                "typeTreasure": null 
+                "numberOfRolls": 1,
+                "chosenDie": 6,
+                "multiplier":  10,
+                "currencyType": "T$"
+            }
+        }
+    },
+    {
+        "nd": "1/2",
+        "money": {
+            "25": null, 
+            "70": {
+                "numberOfRolls": 2,
+                "chosenDie": 6,
+                "multiplier": 10,
+                "currencyType": "TC"
+            },
+            "95": {
+                "numberOfRolls": 2,
+                "chosenDie": 8,
+                "multiplier": 10,
+                "currencyType": "T$"
+            },
+            "100": {
+                "numberOfRolls": 1,
+                "chosenDie": 4,
+                "multiplier": 100,
+                "currencyType": "T$"
+            }
+        }
+    },
+        {
+        "nd": "1",
+        "money": {
+            "25": null, 
+            "70": {
+                "numberOfRolls": 3,
+                "chosenDie": 8,
+                "multiplier": 10,
+                "currencyType": "T$"
+            },
+            "95": {
+                "numberOfRolls": 4,
+                "chosenDie": 12,
+                "multiplier": 10,
+                "currencyType": "T$"
+            },
+            "100": {
+                "numberOfRolls": 1,
+                "chosenDie": 1,
+                "wealth": {
+                    
+                } 
             }
         }
     }

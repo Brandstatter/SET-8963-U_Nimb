@@ -9,4 +9,3 @@ class Type_treasure(Enum):
     RIQUEZA_MAIOR = (5, "Riqueza Maior")
     RIQUEZA_MAIOR_BONUS = (6, "Riqueza Maior com Bônus")
 
-print(Type_treasure.DINHEIRO.value)    
