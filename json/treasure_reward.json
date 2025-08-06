@@ -1,0 +1,105 @@
+
+[
+    {
+        "type": 1,
+        "description": "Riqueza menor",
+        "probability": [
+            {
+                "cutoffValue": 25,
+                "dice": 4,
+                "numberOfRolls": 4,
+                "bonus": 1,
+                "examples": [
+                    "Ágata ou hematita (1/2)",
+                    "barril de farinha ou gaiola com galinhas (5)"
+                ]
+            },
+            {
+                "cutoffValue": 40,
+                "dice": 4,
+                "numberOfRolls": 1,
+                "bonus": 10,
+                "examples": [
+                    "Quartzo rosa ou topázio (1/2)",
+                    "caixa de tabaco ou rolo de linho (1)",
+                    "jarro de especiarias, como canela, gorad, pimenta ou sal (2)"
+                ]
+            },
+            {
+                "cutoffValue": 55,
+                "dice": 4,
+                "numberOfRolls": 2,
+                "bonus": 10,
+                "examples": [
+                    "Bracelete de ouro finamente trabalhado (1/2)", 
+                    "estatueta de osso ou marfim entalhado ou rolo de seda (1)", 
+                    "vaso de prata (2)"
+                ]
+            },
+            {
+                "cutoffValue": 70,
+                "dice": 6,
+                "numberOfRolls": 4,
+                "bonus": 10,
+                "examples": [
+                    "Ametista ou pérola branca (1/2)", 
+                    "lingote de prata ou cálice de prata com gemas de lápis-lazúli (1)", 
+                    "tapeçaria grande e bem-feita de lã (5)"
+                ]
+            },
+            {
+                "cutoffValue": 85,
+                "dice": 6,
+                "numberOfRolls": 1,
+                "bonus": 100,
+                "examples": [
+                    "Alexandrita ou pérola negra (1/2)", 
+                    "espada cerimonial ornada com prata e gema negra no cabo ou pente de prata com pedras preciosas (1)"
+                ]
+            },
+            {
+                "cutoffValue": 95,
+                "dice": 6,
+                "numberOfRolls": 2,
+                "bonus": 100,
+                "examples": [
+                    "Pente em forma de dragão com olhos de gema vermelha (1)", 
+                    "harpa de madeira exótica com ornamentos de zircão e marfim (5)"
+                ]
+            },
+            {
+                "cutoffValue": 99,
+                "dice": 8,
+                "numberOfRolls": 2,
+                "bonus": 100,
+                "examples": [
+                    "Opala negra ou tapa-olho com um olho falso de safira (1/2)", 
+                    "luva bordada e adornada com gemas ou pingente de opala vermelha com corrente de ouro (1)",
+                    "lingote de ouro ou pintura antiga (2)"
+                ]
+            },
+            {
+                "cutoffValue": 99,
+                "dice": 8,
+                "numberOfRolls": 2,
+                "bonus": 100,
+                "examples": [
+                    "Opala negra ou tapa-olho com um olho falso de safira (1/2)", 
+                    "luva bordada e adornada com gemas ou pingente de opala vermelha com corrente de ouro (1)",
+                    "lingote de ouro ou pintura antiga (2)"
+                ]
+            },
+            {
+                "cutoffValue": 100,
+                "dice": 10,
+                "numberOfRolls": 4,
+                "bonus": 100,
+                "examples": [
+                    "Esmeralda verde ou pingente de safira (1/2)", 
+                    "caixinha de música de ouro ou tornozeleira com gemas (1)", 
+                    "manto bordado em veludo e seda com inúmeras pedras preciosas (2)"
+                ]
+            }
+        ]
+    }
+]

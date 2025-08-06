@@ -1,7 +1,8 @@
 import discord
 
 from clientConfig import client
-from core.reward.service import get_percent, get_treasure
+from core.reward.service import get_percent
+from core.reward.new_service import get_treasure, embed_fail
 
 options = ['1/4', '1/2', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
 
@@ -13,7 +14,7 @@ async def slash_money(ctx: discord.ApplicationContext,
     nd : str = discord.Option(str, choices = options)
 ):
     
-    await get_treasure(nd)
-    return await ctx.send_response(content="Teste")
+    reward = await get_treasure(nd)
+    return await ctx.respond(embed = reward)
     # embed = await get_percent(options.index(nd))
     # await ctx.respond(embed = embed)

@@ -8,7 +8,7 @@ from discord.ui import View
 from dotenv import load_dotenv
 from clientConfig import client
 
-import core.dice.command
+import core.reward.command
 import core.conditions.command
 import core.magic.command
 import core.origins.command
