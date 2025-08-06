@@ -70,29 +70,15 @@ def embed_money(choseReward, rolled_dice, d100):
         color=discord.Color.random()
     )
 
-    embed.add_field(
-        name="D100",
-        value=d100,
-        inline=False
-    )
+    fields = [
+        ("D100", d100),
+        ("Dados lançados", f"`{rolls_str}`"),
+        ("Bônus", choseReward["description"]["multiplier"]),
+        ("Resultado do prêmio", f"{totalSumPlusBonus} {currencyType}")
+    ]
 
-    embed.add_field(
-        name="Dados lançados",
-        value=f"`{rolls_str}`",
-        inline=False
-    )
-
-    embed.add_field(
-        name="Bônus",
-        value=choseReward["description"]["multiplier"],
-        inline=False
-    )
-
-    embed.add_field(
-        name="Resultado do prêmio",
-        value=f"{totalSumPlusBonus} {currencyType}",
-        inline=False
-    )
+    for name, value in fields:
+        embed.add_field(name=name, value=value, inline=False)
 
     return embed
 
