@@ -2,7 +2,9 @@ import os
 import discord
 import json
 import random
-import math
+
+from core.reward.embeds.embed_money import embed_money
+from core.reward.embeds.embed_fail import embed_fail
 
 REWARD_JSON = json.load(open(os.path.join("json", "reward.json"), encoding="utf-8"))
 WEALTH_JSON = json.load(open(os.path.join("json", "treasure_reward.json"), encoding="utf-8"))
@@ -51,42 +53,3 @@ async def get_treasure(id):
         rolledDice.append(rollDice)
 
     return embed_money(choseReward=choseReward, rolled_dice=rolledDice, d100=d100)
-    
-def embed_money(choseReward, rolled_dice, d100):
-    number_of_rolls = choseReward["description"]["numberOfRolls"]
-    die_type = choseReward["description"]["chosenDie"]
-    bonus = choseReward["description"].get("multiplier")
-    currencyType = choseReward["description"]["currencyType"]
-
-    totalSum = sum(rolled_dice)    
-    totalSumPlusBonus = totalSum * bonus 
-
-    rolls_str = " + ".join(str(r) for r in rolled_dice)
-    equation = f"d{die_type}x{number_of_rolls} -> {rolls_str} = {totalSum} * {bonus} = {totalSumPlusBonus}"
-
-    embed = discord.Embed(
-        title="Prêmio",
-        description=f"{equation}",
-        color=discord.Color.random()
-    )
-
-    fields = [
-        ("D100", d100),
-        ("Dados lançados", f"`{rolls_str}`"),
-        ("Bônus", choseReward["description"]["multiplier"]),
-        ("Resultado do prêmio", f"{totalSumPlusBonus} {currencyType}")
-    ]
-
-    for name, value in fields:
-        embed.add_field(name=name, value=value, inline=False)
-
-    return embed
-
-def embed_fail():
-    embed = discord.Embed(
-        title="Sem prêmios",
-        description="Precisa de descrição",
-        color=discord.Color.red()
-    )
-
-    return embed
