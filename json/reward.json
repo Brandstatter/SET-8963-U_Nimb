@@ -103,9 +103,7 @@
                     "chosenDie": 1,
                     "wealth": {
                         "type": 1,
-                        "numberOfRolls": 1,
-                        "dice": null,
-                        "bonus": null
+                        "bonus": 0
                     }
                 }
             }

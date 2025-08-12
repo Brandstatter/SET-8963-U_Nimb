@@ -11,7 +11,8 @@ WEALTH_JSON = json.load(open(os.path.join("json", "treasure_reward.json"), encod
 
 async def get_treasure(id):
     ndObject = next((obj for obj in REWARD_JSON if obj["nd"] == id), None)
-    d100 = random.randrange(1, 100)
+    # d100 = random.randrange(1, 100)
+    d100 = 100
     if not ndObject:
         return None
 
@@ -25,22 +26,10 @@ async def get_treasure(id):
         return embed_fail()  
 
     if(choseReward["description"].get("wealth") is not None):
-        wealthObject = next(( obj for obj in WEALTH_JSON if obj.type == choseReward.wealth.type))
-
-        runD100 = random.randrange(1, 100)
-        probabilities = wealthObject.probability
-        chosenWealth = None
-        for probability in probabilities:
-            if(probability.cutoffValue <= runD100):
-                chosenWealth = probability
-                break
-            
-        if(chosenWealth == None):
-            return None
-
-        solveRolls = 0
-        for _ in range(chosenWealth.numberOfRolls):
-            solveRolls += (random.randrange(1, chosenWealth.dice) * chosenWealth.bonus) 
+        wealthRolls = roll_number_of_wealth(choseReward=choseReward)
+        treasureSelected = get_selected_wealth(choseReward=choseReward)
+        d100 = random.rand
+        
 
         return
 
@@ -52,3 +41,20 @@ async def get_treasure(id):
         rolledDice.append(rollDice)
 
     return embed_money(choseReward=choseReward, rolled_dice=rolledDice, d100=d100)
+
+
+def roll_number_of_wealth(choseReward):
+    numberOfRolls = choseReward["description"]["numberOfRolls"]
+    chosenDie = choseReward["description"]["chosenDie"]
+    
+    wealth_rolls = 0
+    for _ in range(numberOfRolls):
+
+        wealth_rolls += random.randrange(1, chosenDie)
+
+    return wealth_rolls
+
+def get_selected_wealth(choseReward):
+    wealthType = choseReward["description"]["wealth"]["type"]
+    return next((obj for obj in WEALTH_JSON if obj["type"] == wealthType), None)
+    
