@@ -33,7 +33,7 @@ async def get_treasure(id):
         for _ in range(wealthRolls):
             treasureSelected = get_selected_wealth(choseReward=choseReward)
             d100 = random.randrange(1, 100)
-            
+
             treasure = None
             for item in treasureSelected["probability"]:
                 if d100 <= item["cutoffValue"]:
@@ -41,9 +41,9 @@ async def get_treasure(id):
                     break
 
             if(treasure == None):
-                return embed_fail()  
+                return embed_fail()
 
-            treasures.append(treasure)     
+            treasures.append(treasure)
 
         for item in treasures:
             dice = item["dice"]
@@ -56,7 +56,8 @@ async def get_treasure(id):
                 
                 rolls.append(wealthValue)
 
-            item["rolls"] = rolls               
+
+            item["rolls"] = rolls
     
         return embed_wealth(choseReward=choseReward, treasures=treasures, rolls=wealthRolls)
 
