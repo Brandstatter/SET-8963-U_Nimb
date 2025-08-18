@@ -58,7 +58,7 @@ async def get_treasure(id):
 
             item["rolls"] = rolls               
     
-        return embed_wealth(choseReward=choseReward, treasures=treasures)
+        return embed_wealth(choseReward=choseReward, treasures=treasures, rolls=wealthRolls)
 
 
     rolledDice = []
