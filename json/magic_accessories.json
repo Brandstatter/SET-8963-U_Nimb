@@ -393,22 +393,282 @@
     ],
     "tables": [
         {
-            "type": 0,
-            "name": "Acessórios Menores",
-            "percentages": [1,2,3,7,8,12,13,14,15,19,20,24,25,29,30,34,35,40,41,46,47,52,53,59,60,65,66,71,72,77,78,82,83,84,85,89,90,96,97,98,99,100],
-            "prizes": [9,11,25,33,35,36,46,51,18,40,41,43,44,54,63,21,34,39,3,8,53]
-        },
-        {
             "type": 1,
-            "name": "Acessórios Médios",
-            "percentages": [1,4,5,8,9,10,11,14,15,18,19,24,25,30,31,34,35,38,39,42,43,46,47,50,51,54,55,58,59,64,65,68,69,74,75,80,81,86,87,88,89,94,95,100],
-            "prizes": [7,12,20,13,16,1,5,6,15,19,32,42,64,57,0,14,22,26,31,45,55,59]
+            "name": "Acessórios Menores",
+            "probability": [
+                {
+                    "cutoffValue": 2,
+                    "rewardId": 9
+                },
+                {
+                    "cutoffValue": 7,
+                    "rewardId": 11
+                },
+                {
+                    "cutoffValue": 12,
+                    "rewardId": 25
+                },
+                {
+                    "cutoffValue": 14,
+                    "rewardId": 33
+                },
+                {
+                    "cutoffValue": 19,
+                    "rewardId": 35
+                },
+                {
+                    "cutoffValue": 24,
+                    "rewardId": 36
+                },
+                {
+                    "cutoffValue": 29,
+                    "rewardId": 46
+                },
+                {
+                    "cutoffValue": 34,
+                    "rewardId": 51
+                },
+                {
+                    "cutoffValue": 40,
+                    "rewardId": 18
+                },
+                {
+                    "cutoffValue": 46,
+                    "rewardId": 40
+                },
+                {
+                    "cutoffValue":52,
+                    "rewardId": 41
+                },
+                {
+                    "cutoffValue": 59,
+                    "rewardId": 43
+                },
+                {
+                    "cutoffValue": 65,
+                    "rewardId": 44
+                },
+                {
+                    "cutoffValue": 71,
+                    "rewardId": 54
+                },
+                {
+                    "cutoffValue": 77,
+                    "rewardId": 63
+                },
+                {
+                    "cutoffValue": 82,
+                    "rewardId": 21
+                },
+                {
+                    "cutoffValue": 84,
+                    "rewardId": 34
+                },
+                {
+                    "cutoffValue": 89,
+                    "rewardId": 39
+                },
+                {
+                    "cutoffValue": 96,
+                    "rewardId": 3
+                },
+                {
+                    "cutoffValue": 98,
+                    "rewardId": 8
+                },
+                {
+                    "cutoffValue": 100,
+                    "rewardId": 53
+                }
+            ]
         },
         {
             "type": 2,
+            "name": "Acessórios Médios",
+            "probability": [
+                {
+                    "cutoffValue": 4,
+                    "rewardId": 7
+                },
+                {
+                    "cutoffValue": 8,
+                    "rewardId": 12
+                },
+                {
+                    "cutoffValue": 10,
+                    "rewardId": 20
+                },
+                {
+                    "cutoffValue": 14,
+                    "rewardId": 13
+                },
+                {
+                    "cutoffValue": 18,
+                    "rewardId": 16
+                },
+                {
+                    "cutoffValue": 24,
+                    "rewardId": 1
+                },
+                {
+                    "cutoffValue": 30,
+                    "rewardId": 5
+                },
+                {
+                    "cutoffValue": 34,
+                    "rewardId": 6
+                },
+                {
+                    "cutoffValue": 38,
+                    "rewardId": 15
+                },
+                {
+                    "cutoffValue": 42,
+                    "rewardId": 19
+                },
+                {
+                    "cutoffValue": 46,
+                    "rewardId": 32
+                },
+                {
+                    "cutoffValue": 50,
+                    "rewardId": 42
+                },
+                {
+                    "cutoffValue": 54,
+                    "rewardId": 64
+                },
+                {
+                    "cutoffValue": 58,
+                    "rewardId": 57
+                },
+                {
+                    "cutoffValue": 64,
+                    "rewardId": 0
+                },
+                {
+                    "cutoffValue": 68,
+                    "rewardId": 14
+                },
+                {
+                    "cutoffValue": 74,
+                    "rewardId": 22
+                },
+                {
+                    "cutoffValue": 80,
+                    "rewardId": 26
+                },
+                {
+                    "cutoffValue": 86,
+                    "rewardId": 31
+                },
+                {
+                    "cutoffValue": 88,
+                    "rewardId": 45
+                },
+                {
+                    "cutoffValue": 94,
+                    "rewardId": 55
+                },
+                {
+                    "cutoffValue": 100,
+                    "rewardId": 59
+                }
+            ]
+        },
+        {
+            "type": 3,
             "name": "Acessórios Maiores",
-            "percentages": [1,2,3,4,5,9,10,15,16,21,22,27,28,34,35,40,41,46,47,52,53,57,58,60,61,67,68,72,73,77,78,82,83,87,88,89,90,94,95,96,97,98,99,100],
-            "prizes": [27,37,38,49,47,48,50,60,61,62,10,23,24,30,2,58,17,28,56,52,4,29]
+            "probability": [
+                {
+                    "cutoffValue": 2,
+                    "rewardId": 27
+                },
+                {
+                    "cutoffValue": 4,
+                    "rewardId": 37
+                },
+                {
+                    "cutoffValue": 9,
+                    "rewardId": 38
+                },
+                {
+                    "cutoffValue": 15,
+                    "rewardId": 49
+                },
+                {
+                    "cutoffValue": 21,
+                    "rewardId": 47
+                },
+                {
+                    "cutoffValue": 27,
+                    "rewardId": 48
+                },
+                {
+                    "cutoffValue": 34,
+                    "rewardId": 50
+                },
+                {
+                    "cutoffValue": 40,
+                    "rewardId": 60
+                },
+                {
+                    "cutoffValue": 46,
+                    "rewardId": 61
+                },
+                {
+                    "cutoffValue": 52,
+                    "rewardId": 62
+                },
+                {
+                    "cutoffValue": 57,
+                    "rewardId": 10
+                },
+                {
+                    "cutoffValue": 60,
+                    "rewardId": 23
+                },
+                {
+                    "cutoffValue": 67,
+                    "rewardId": 24
+                },
+                {
+                    "cutoffValue": 72,
+                    "rewardId": 30
+                },
+                {
+                    "cutoffValue": 77,
+                    "rewardId": 2
+                },
+                {
+                    "cutoffValue": 82,
+                    "rewardId": 58
+                },
+                {
+                    "cutoffValue": 87,
+                    "rewardId": 17
+                },
+                {
+                    "cutoffValue": 89,
+                    "rewardId": 28
+                },
+                {
+                    "cutoffValue": 94,
+                    "rewardId": 56
+                },
+                {
+                    "cutoffValue": 96,
+                    "rewardId": 52
+                },
+                {
+                    "cutoffValue": 98,
+                    "rewardId": 4
+                },
+                {
+                    "cutoffValue": 100,
+                    "rewardId": 29
+                }
+            ]
         }
     ]
 }
