@@ -17,6 +17,7 @@ import core.race.command
 import core.reward.command
 import core.help.command
 import core.magic_accessories.command
+import core.chaos_cards.command
 
 def configure():
     load_dotenv()

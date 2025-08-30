@@ -1,0 +1,226 @@
+{
+    "cards":[
+        {
+            "id": 0,
+            "name": "Abismo",
+            "effect": "Receba redução de dano.",
+            "desc": "As profundezas do mar o protegem. Você recebe redução 10 a um tipo de dano definido aleatoriamente."
+        },
+        {
+            "id": 1,
+            "name": "Amigo",
+            "effect": "Um de seus parceiros o trai.",
+            "desc": "Um de seus parceiros racionais irá traí-lo no pior momento possível (fornecendo seu benefício para um inimigo ou fazendo outra coisa, a critério do mestre). A traição ocorre em no máximo um ano."
+        },
+        {
+            "id": 2,
+            "name": "Anel",
+            "effect": "+5 pontos de mana",
+            "desc": "Um aro de energia colorida surge ao seu redor e então desaparece. Você recebe +5 pontos de mana permanentemente."
+        },
+        {
+            "id": 3, 
+            "name": "Árvore",
+            "effect": "+10 pontos de vida",
+            "desc": "A árvore da vida fortalece seu corpo. Você recebe +10 PV permanentemente."
+        },
+        {
+            "id": 4, 
+            "name": "Coração",
+            "effect": "+1 em um atributo a sua escolha",
+            "desc": "ocê recebe +1 em um atributo a sua escolha permanentemente."
+        },
+        {
+            "id": 5, 
+            "name": "Crânio",
+            "effect": "Enfrente cópia sombria",
+            "desc": "Uma versão feita de sombras de você surge e o ataca. A sombra tem as mesmas estatísticas que você e é imune a qualquer ataque que não seja desferido por você. Seus amigos podem ajudá-lo fornecendo bônus."
+        },
+        {
+            "id": 6, 
+            "name": "Donzela",
+            "effect": "Derrote um monstro e suba de nível",
+            "desc": "Uma bela mulher (ou homem) de sua raça surge e o chama. Se você for na direção da mulher, ela se transforma em um monstro com nível de desafio igual ao seu nível -1. Se você vencer o monstro sozinho, sobe de nível imediatamente. Se o monstro vencê-lo, deixa-o inconsciente e desaparece."
+        },
+        {
+            "id": 7, 
+            "name": "Fogo",
+            "effect": "Ressuscite quando morrer",
+            "desc": "Uma chama queima dentro de seu peito. Ela não machuca — em vez disso, se você morrer, voltará à vida com todos os seus PV e PM restaurados. A chama então se apaga."
+        },
+        {
+            "id": 8, 
+            "name": "Gema",
+            "effect": "Receba tesouro mundano",
+            "desc": "Role 10 vezes na coluna “Maior” da Tabela 8-2: Riquezas."
+        },
+        {
+            "id": 9, 
+            "name": "Lua",
+            "effect": "Receba 1d4 Desejos",
+            "desc": "A carta aparece como uma lua cheia (quatro Desejos), nova (três), crescente (dois) ou minguante (um Desejo). Os Desejos devem ser usados até o fim da cena."
+        },
+        {
+            "id": 10, 
+            "name": "Martelo",
+            "effect": "Perca todos os itens mágicos",
+            "desc": "Um martelo de energia surge na sua frente e bate contra o chão. A onda de choque destrói todos os itens mágicos que estiverem com você."
+        },
+        {
+            "id": 11, 
+            "name": "Noite",
+            "effect": "-1 em todos os testes de resistência",
+            "desc": "Você sofre -1 em todos os testes de resistência permanentemente. Se for um devoto de Tenebra ou um morto-vivo, em vez disso role uma arma mágica maior. Se não gostar do resultado, você pode rolar uma segunda vez."
+        },
+        {
+            "id": 12, 
+            "name": "Presas",
+            "effect": "Perca dinheiro e itens mundanos",
+            "desc": "Todo o dinheiro e itens mundanos que você possui — não apenas aqueles que estão com você — viram pó."
+        },
+        {
+            "id": 13, 
+            "name": "Servo",
+            "effect": "Receba os serviços de um espírito",
+            "desc": "O servo é alguém que morreu com uma dívida de honra. Ele vai se redimir servindo-o até seus serviços não serem mais requisitados. O servo é um parceiro veterano de um tipo a sua escolha."
+        },
+        {
+            "id": 14, 
+            "name": "Sol",
+            "effect": "Receba uma arma mágica maior",
+            "desc": "Role uma arma mágica maior. Se não gostar do resultado, você pode rolar uma segunda vez. Se você for um devoto de Tenebra ou um morto-vivo, em vez disso sofre -1 em todos os testes de resistência permanentemente."
+        },
+        {
+            "id": 15, 
+            "name": "Tentáculo",
+            "effect": "-1 em um atributo aleatório",
+            "desc": "A visão enlouquecedora dos tentáculos impõe -1 em um atributo permanentemente. Para definir o atributo, role 1d6, sendo “1” Força, “2” Destreza e assim por diante."
+        },
+        {
+            "id": 16, 
+            "name": "Tolo",
+            "effect": "Perca 10.000 XP e saque outra carta",
+            "desc": "Você perde 10.000 XP e saca outra carta. Esse efeito pode fazer com que você perca um nível, mas não pode reduzi-lo a menos de 0 XP."
+        },
+        {
+            "id": 17, 
+            "name": "Trono",
+            "effect": "+2 em Diplomacia e um feudo",
+            "desc": "Você recebe +2 em Diplomacia permanentemente e se torna o senhor por direito de um pequeno feudo. O mestre decide onde o feudo fica. Em termos de jogo, você recebe os benefícios do poder Título, do cavaleiro."
+        },
+        {
+            "id": 18, 
+            "name": "Vizir",
+            "effect": "Receba a resposta para uma pergunta",
+            "desc": "Você recebe a resposta para uma pergunta qualquer. A resposta pode ser tão precisa ou vaga quanto o mestre decidir, mas nunca será mentirosa. Este benefício deve ser usado em até um ano."
+        },
+        {
+            "id": 19, 
+            "name": "Nada",
+            "effect": "Escape de um perigo qualquer",
+            "desc": "Uma das forças primordiais da Criação surge para protegê-lo de qualquer ameaça. Em termos de jogo, quando você usa este benefício, qualquer ataque ou efeito contra você é anulado e você recebe imunidade a tudo por uma rodada. Este benefício deve ser usado em no máximo um ano."
+        },
+        {
+            "id": 20, 
+            "name": "Vazio",
+            "effect": "Sua alma deixa seu corpo",
+            "desc": "Sua alma é transportada para o vazio entre os Planos. Seu corpo continua funcionando, mas em coma. Cabe aos outros personagens descobrir como salvá-lo! Converse com o mestre para construir um novo personagem ou jogar com um NPC amigo do grupo enquanto seu personagem original estiver preso."
+        },
+        {
+            "id": 21, 
+            "name": "Curinga",
+            "effect": "Ganhe 10.000 XP ou saque mais duas cartas",
+            "desc": "Você escolhe entre ganhar poder pessoal (em termos de jogo, 10.000 XP) ou sacar mais duas cartas. A escolha é óbvia. Ou não?"
+        }
+    ],
+    "table": [
+        {
+            "cutoffValue": 5,
+            "rewardId": 0
+        },
+        {
+            "cutoffValue": 9,
+            "rewardId": 1
+        },
+        {
+            "cutoffValue": 14,
+            "rewardId": 2
+        },
+        {
+            "cutoffValue": 19,
+            "rewardId": 3
+        },
+        {
+            "cutoffValue": 24,
+            "rewardId": 4
+        },
+        {
+            "cutoffValue": 28,
+            "rewardId": 5
+        },
+        {
+            "cutoffValue": 33,
+            "rewardId": 6
+        },
+        {
+            "cutoffValue": 38,
+            "rewardId": 7
+        },
+        {
+            "cutoffValue": 43,
+            "rewardId": 8
+        },
+        {
+            "cutoffValue": 48,
+            "rewardId": 9
+        },
+        {
+            "cutoffValue": 52,
+            "rewardId": 10
+        },
+        {
+            "cutoffValue": 56,
+            "rewardId": 11
+        },
+        {
+            "cutoffValue": 60,
+            "rewardId": 12
+        },
+        {
+            "cutoffValue": 65,
+            "rewardId": 13
+        },
+        {
+            "cutoffValue": 70,
+            "rewardId": 14
+        },
+        {
+            "cutoffValue": 75,
+            "rewardId": 15
+        },
+        {
+            "cutoffValue": 80,
+            "rewardId": 16
+        },
+        {
+            "cutoffValue": 85,
+            "rewardId": 17
+        },
+        {
+            "cutoffValue": 90,
+            "rewardId": 18
+        },
+        {
+            "cutoffValue": 94,
+            "rewardId": 19
+        },
+        {
+            "cutoffValue": 98,
+            "rewardId": 20
+        },
+        {
+            "cutoffValue": 100,
+            "rewardId": 21
+        }
+    ]
+}
