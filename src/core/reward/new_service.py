@@ -1,5 +1,4 @@
 import os
-import discord
 import json
 import random
 
@@ -15,7 +14,7 @@ async def get_treasure(id):
     # d100 = random.randrange(1, 100)
     d100 = 100
     if not ndObject:
-        return None
+        return embed_fail()
 
     choseReward = None
     for item in ndObject["reward"]:
@@ -26,8 +25,8 @@ async def get_treasure(id):
     if(choseReward == None):
         return embed_fail()  
 
+    wealthRolls = roll_number_of_wealth(choseReward=choseReward)
     if(choseReward["description"].get("wealth") is not None):
-        wealthRolls = roll_number_of_wealth(choseReward=choseReward)
         wealthReward = 0
         treasures = []
         for _ in range(wealthRolls):
