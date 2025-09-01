@@ -1,0 +1,122 @@
+[
+    {
+        "id": 0,
+        "name": "Armadura de Couro",
+        "defense": 2,
+        "penalty": 0,
+        "spaces": 2,
+        "cost":"T$ 20",
+        "type": "Armadura leve",
+        "desc": "O peitoral desta armadura é feito de couro curtido em óleo fervente, para ficar mais rígido, enquanto as demais partes são feitas de couro flexível."
+    },
+    {
+        "id": 1,
+        "name": "Armadura Brunea",
+        "defense": 5,
+        "penalty": 2,
+        "spaces": 5,
+        "cost": "T$ 50",
+        "type": "Armadura Pesada",
+        "desc": "Colete de couro coberto com plaquetas de metal sobrepostas, como escamas de um peixe. Por ser barata de produzir, é a armadura mais utilizada no Reinado por soldados de infantaria e guardas de castelo."
+    },
+    {
+        "id": 2,
+        "name": "Armadura Completa",
+        "defense": 10,
+        "penalty": 5,
+        "spaces": 5,
+        "cost": "T$ 3.000",
+        "type": "Armadura Pesada",
+        "desc": "A mais forte e pesada das armaduras, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro. Inclui uma túnica acolchoada para ser usada sob as placas. Correias e fivelas distribuem o peso da armadura pelo corpo inteiro."
+    },
+    {
+        "id": 3,
+        "name": "Cota de malha",
+        "defense": 6,
+        "penalty": 2,
+        "spaces": 5,
+        "cost":"T$ 150",
+        "type":"Armadura Pesada",
+        "desc": "Longa veste de anéis metálicos interligados, formando uma malha flexível e resistente, que vai até os joelhos."
+    },
+    {
+        "id": 4,
+        "name": "Armadura de Couraça",
+        "defense": 5,
+        "penalty": 4,
+        "spaces": 2,
+        "cost":"T$ 500",
+        "type":"Armadura leve",
+        "desc": "A mais robusta das armaduras leves, formada por uma placa metálica que protege o peito e as costas, presa sobre um casaco de couro."
+    },
+    {
+        "id": 5,
+        "name": "Armadura de Couro Batido",
+        "defense": 3,
+        "penalty": 1,
+        "spaces": 2,
+        "cost":"T$ 35",
+        "type":"Armadura leve",
+        "desc": "Versão mais pesada da armadura de couro, reforçada com rebites de metal."
+    },
+    {
+        "id": 6,
+        "name": "Escudo Leve",
+        "defense": 1,
+        "penalty": 1,
+        "spaces": 1,
+        "cost":"T$ 5",
+        "type": "Escudos",
+        "desc": "Tipicamente feito de madeira, este escudo é amarrado no antebraço, deixando a mão livre. Você pode carregar um objeto na mão que empunha o escudo, mas não manusear uma arma."
+    },
+    {
+        "id": 7,
+        "name": "Escudo Pesado",
+        "defense": 2,
+        "penalty": 2,
+        "spaces": 2,
+        "cost":"T$ 15",
+        "type":"Escudos",
+        "desc": "Normalmente feito de aço, este escudo é preso ao antebraço e também deve ser empunhado com firmeza, impedindo o usuário de usar aquela mão."
+    },
+    {
+        "id": 8,
+        "name": "Gibão de Peles",
+        "defense": 4,
+        "penalty": 3,
+        "spaces": 2,
+        "cost":"T$ 25",
+        "type":"Armadura leve",
+        "desc": "Usada principalmente por bárbaros e selvagens, esta armadura é formada por várias camadas de peles e couro de animais."
+    },
+    {
+        "id":9, 
+        "name": "Loriga segmentada",
+        "defense": 7,
+        "penalty": 3,
+        "spaces": 5,
+        "cost":"T$ 250",
+        "type":"Armadura Pesada",
+        "desc": "Composta por tiras horizontais de metal, esta armadura pesada é muito utilizada por legionários do Império de Tauron."
+    },
+    {
+        "id": 10,
+        "name": "Meia armadura",
+        "defense": 8,
+        "penalty": 4,
+        "spaces": 5,
+        "cost":"T$ 600",
+        "type":"Armadura Pesada",
+        "desc": "Uma cota de malha reforçada com placas de metal."
+    },
+    {
+        "id": 11,
+        "name": "Armadura Acolchoada",
+        "defense": 1,
+        "penalty": 0,
+        "spaces": 2,
+        "cost":"T$ 5",
+        "type":"Armadura leve",
+        "desc": "Uma túnica almofadada feita em linho ou lã. É a armadura mais leve, mas protege todo o corpo, fornecendo +2 em Fortitude."
+    }
+]
