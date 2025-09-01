@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "name": "Bolsa de pó",
+        "desc": "Uma bolsa com pó multicolorido, fabricado a partir das pétalas trituradas de flores que nascem apenas na Pondsmânia. Quando lança uma magia de encantamento ou ilusão, você recebe +2 PM para gastar em aprimoramentos."
+    },
+    {
+        "id": 1,
+        "name": "Cajado arcano",
+        "desc": "Um cajado típico, feito de madeira de boa qualidade e entalhado com runas. O limite de PM que você pode gastar em magias arcanas e a CD para resistir a elas aumentam em +1. Para fornecer seus benefícios, um cajado precisa ser empunhado com as duas mãos. Ele pode ser usado como arma, com as estatísticas de um bordão."
+    },
+    {
+        "id": 2,
+        "name": "Cetro elemental",
+        "desc": "Este cetro possui uma pedra preciosa em sua ponta: esmeralda (ácido), topázio (eletricidade), rubi (fogo) ou safira (frio). Quando lança uma magia que causa dano do tipo da pedra, o dano aumenta em um dado do mesmo tipo."
+    },
+    {
+        "id": 3,
+        "name": "Costela de lich",
+        "desc": "Esta varinha é feita a partir do osso de um morto-vivo. Quando lança uma magia, ela causa +1d6 pontos de dano de trevas. Se estiver empunhando esta varinha você não recupera PV por efeitos mágicos de cura."
+    },
+    {
+        "id": 4,
+        "name": "Dedo de ente",
+        "desc": "Uma varinha feita da madeira de uma árvore senciente. Sempre que gastar pelo menos 1 PM para lançar uma magia, role 1d4. Com um resultado 4, você recupera 1 PM."
+    },
+    {
+        "id": 5, 
+        "name": "Luva de ferro",
+        "desc": "Um conjunto de dedais interligados por correntes. Suas magias arcanas pessoais que concedem bônus na Defesa ou em testes de resistências têm esse bônus aumentado em +1."
+    },
+    {
+        "id": 6, 
+        "name": "Medalhão de prata",
+        "desc": "Gravado com uma runa pessoal do conjurador, este medalhão de prata diminui em -1 PM o custo de magias de alcance pessoal."
+    },
+    {
+        "id": 7,
+        "name": "Orbe cristalino",
+        "desc": "Esta esfera perfeita concentra seu poder mágico. O limite de PM que você pode gastar em magias arcanas aumenta em +1."
+    },
+    {
+        "id": 8,
+        "name": "Tomo hermético",
+        "desc": "Um livro de tratados que aumentam a sua compreensão sobre uma escola de magia específica. A CD para resistir a suas magias arcanas dessa escola aumenta em +2."
+    },
+    {
+        "id": 9,
+        "name": "Varinha arcana",
+        "desc": "Uma varinha típica, feita de madeira de boa qualidade e entalhada com runas. A CD para resistir a suas magias arcanas aumenta em +1."
+    }
+]

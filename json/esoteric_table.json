@@ -1,0 +1,42 @@
+[
+    {
+        "cutoffValue": 10,
+        "rewardId": 0
+    },
+    {
+        "cutoffValue": 25,
+        "rewardId": 1
+    },
+    {
+        "cutoffValue": 35,
+        "rewardId": 2
+    },
+    {
+        "cutoffValue": 42,
+        "rewardId": 3
+    },
+    {
+        "cutoffValue": 50,
+        "rewardId": 4
+    },
+    {
+        "cutoffValue": 55,
+        "rewardId": 5
+    },
+    {
+        "cutoffValue": 65,
+        "rewardId": 6
+    },
+    {
+        "cutoffValue": 75,
+        "rewardId": 7
+    },
+    {
+        "cutoffValue": 85,
+        "rewardId": 8
+    },
+    {
+        "cutoffValue": 100,
+        "rewardId": 9
+    }
+]
