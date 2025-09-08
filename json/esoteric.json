@@ -2,51 +2,99 @@
     {
         "id": 0,
         "name": "Bolsa de pó",
-        "desc": "Uma bolsa com pó multicolorido, fabricado a partir das pétalas trituradas de flores que nascem apenas na Pondsmânia. Quando lança uma magia de encantamento ou ilusão, você recebe +2 PM para gastar em aprimoramentos."
+        "desc": "Uma bolsa com pó multicolorido, fabricado a partir das pétalas trituradas de flores que nascem apenas na Pondsmânia. Quando lança uma magia de encantamento ou ilusão, você recebe +2 PM para gastar em aprimoramentos.",
+        "cost": "T$ 300",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 1,
         "name": "Cajado arcano",
-        "desc": "Um cajado típico, feito de madeira de boa qualidade e entalhado com runas. O limite de PM que você pode gastar em magias arcanas e a CD para resistir a elas aumentam em +1. Para fornecer seus benefícios, um cajado precisa ser empunhado com as duas mãos. Ele pode ser usado como arma, com as estatísticas de um bordão."
+        "desc": "Um cajado típico, feito de madeira de boa qualidade e entalhado com runas. O limite de PM que você pode gastar em magias arcanas e a CD para resistir a elas aumentam em +1. Para fornecer seus benefícios, um cajado precisa ser empunhado com as duas mãos. Ele pode ser usado como arma, com as estatísticas de um bordão.",
+        "cost": "T$ 1.000",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 2,
         "name": "Cetro elemental",
-        "desc": "Este cetro possui uma pedra preciosa em sua ponta: esmeralda (ácido), topázio (eletricidade), rubi (fogo) ou safira (frio). Quando lança uma magia que causa dano do tipo da pedra, o dano aumenta em um dado do mesmo tipo."
+        "desc": "Este cetro possui uma pedra preciosa em sua ponta: esmeralda (ácido), topázio (eletricidade), rubi (fogo) ou safira (frio). Quando lança uma magia que causa dano do tipo da pedra, o dano aumenta em um dado do mesmo tipo.",
+        "cost": "T$ 750",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 3,
         "name": "Costela de lich",
-        "desc": "Esta varinha é feita a partir do osso de um morto-vivo. Quando lança uma magia, ela causa +1d6 pontos de dano de trevas. Se estiver empunhando esta varinha você não recupera PV por efeitos mágicos de cura."
+        "desc": "Esta varinha é feita a partir do osso de um morto-vivo. Quando lança uma magia, ela causa +1d6 pontos de dano de trevas. Se estiver empunhando esta varinha você não recupera PV por efeitos mágicos de cura.",
+        "cost": "T$ 300",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 4,
         "name": "Dedo de ente",
-        "desc": "Uma varinha feita da madeira de uma árvore senciente. Sempre que gastar pelo menos 1 PM para lançar uma magia, role 1d4. Com um resultado 4, você recupera 1 PM."
+        "desc": "Uma varinha feita da madeira de uma árvore senciente. Sempre que gastar pelo menos 1 PM para lançar uma magia, role 1d4. Com um resultado 4, você recupera 1 PM.",
+        "cost": "T$ 200",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 5, 
         "name": "Luva de ferro",
-        "desc": "Um conjunto de dedais interligados por correntes. Suas magias arcanas pessoais que concedem bônus na Defesa ou em testes de resistências têm esse bônus aumentado em +1."
+        "desc": "Um conjunto de dedais interligados por correntes. Suas magias arcanas pessoais que concedem bônus na Defesa ou em testes de resistências têm esse bônus aumentado em +1.",
+        "cost": "T$ 150",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 6, 
         "name": "Medalhão de prata",
-        "desc": "Gravado com uma runa pessoal do conjurador, este medalhão de prata diminui em -1 PM o custo de magias de alcance pessoal."
+        "desc": "Gravado com uma runa pessoal do conjurador, este medalhão de prata diminui em -1 PM o custo de magias de alcance pessoal.",
+        "cost": "T$ 750",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 7,
         "name": "Orbe cristalino",
-        "desc": "Esta esfera perfeita concentra seu poder mágico. O limite de PM que você pode gastar em magias arcanas aumenta em +1."
+        "desc": "Esta esfera perfeita concentra seu poder mágico. O limite de PM que você pode gastar em magias arcanas aumenta em +1.",
+        "cost": "T$ 750",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 8,
         "name": "Tomo hermético",
-        "desc": "Um livro de tratados que aumentam a sua compreensão sobre uma escola de magia específica. A CD para resistir a suas magias arcanas dessa escola aumenta em +2."
+        "desc": "Um livro de tratados que aumentam a sua compreensão sobre uma escola de magia específica. A CD para resistir a suas magias arcanas dessa escola aumenta em +2.",
+        "cost": "T$ 1.500",
+        "footer": "Tormenta20 - Jogo do Ano"
     },
     {
         "id": 9,
         "name": "Varinha arcana",
-        "desc": "Uma varinha típica, feita de madeira de boa qualidade e entalhada com runas. A CD para resistir a suas magias arcanas aumenta em +1."
+        "desc": "Uma varinha típica, feita de madeira de boa qualidade e entalhada com runas. A CD para resistir a suas magias arcanas aumenta em +1.",
+        "cost": "T$ 100",
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 10,
+        "name": "Cajado das marés",
+        "desc": "Este *cajado arcano glacial* é feito de coral azul e conchas. Você recebe deslocamento de natação 9m (se já possui deslocamento de natação, ele aumenta em +3m). Além disso, você pode gastar uma ação de movimento e 2 PM para conjurar um redemoinho que empurra todos os inimigos adjacentes 4,5m para longe de você (Ref CD Int evita).",
+        "cost": "T$ 27.000",
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 11,
+        "name": "Cálice sagrado",
+        "desc": "Este cálice pode ser luxuoso ou humilde — de ouro e adornado com gemas, ou de barro e feitio rústico —, conforme a divindade à qual foi consagrado. O custo de suas magias divinas diminui em -2 PM e todos os efeitos variáveis delas aumentam em +1 por dado.",
+        "cost": "T$ 150.000",
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 12,
+        "name": "Relógio do arcanista",
+        "desc": "Este relógio de bolso com corpo de prata possui símbolos arcanos no lugar de números em seu mostrador, e permite manipular o tempo necessário para lançar magias arcanas. Quando lança uma magia arcana com execução de movimento, padrão ou completa, você pode gastar +4 PM para lançá-la como uma ação livre. Se você possuir o poder Magia Acelerada, em vez disso o custo para usá-lo diminui em -2 PM.",
+        "cost": "T$ 60.000",
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 13,
+        "name": "Varinha milenar",
+        "desc": "Um esotérico ancestral, que já foi usado por diversos arquimagos ao longo da história artoniana… e absorveu um pouco do poder de cada um deles. A *varinha milenar* conta como uma varinha arcana, mas aumenta a CD para resistir a suas magias arcanas em +4 e aumenta todos os dados de dano de suas magias arcanas em um passo. É um item poderoso, mas exigente: se um inimigo passar em um teste de resistência contra uma magia sua, você perde 1 PV por PM gasto na magia.",
+        "cost": "T$ 200.000",
+        "footer": "Heróis de Arton v1.0"
     }
 ]
