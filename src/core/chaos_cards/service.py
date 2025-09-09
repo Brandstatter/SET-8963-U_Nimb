@@ -7,29 +7,28 @@ import math
 json_path = os.path.join("json", "chaos_cards.json")
 CARDS_JSON = json.load(open(json_path, encoding='utf-8'))
 
+json_path = os.path.join("json", "chaos_cards_table.json")
+TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
+
 async def draw_cards(card_qtd):
-    cards = []
+    cards = set()
     
-    for card in range(card_qtd):
+    while len(cards) < card_qtd:
         d100 = random.randrange(1, 100)
-        percentages = CARDS_JSON['percentages']
-        index = 0
-
-        while d100 > percentages[index]:
-            index += 1
-        index = int(math.floor(index/2))
-
-        cards.append(CARDS_JSON['cards'][index]['id'])
-
+        for item in TABLE_JSON:
+            if d100 <= item['cutoffValue']:
+                cards.add(item['rewardId'])
+                break 
+    
     embed = await embed_card(cards)
     return embed
 
-async def embed_card(id_list):
+async def embed_card(id_set):
     name = "Cartas sacadas"
     description = ""
 
-    for id in id_list:
-        card = f'## {CARDS_JSON["cards"][id]["name"]}\n {CARDS_JSON["cards"][id]["effect"]} \n {CARDS_JSON["cards"][id]["desc"]} \n\n'
+    for id in id_set:
+        card = f'## {CARDS_JSON[id]["name"]}\n {CARDS_JSON[id]["effect"]} \n {CARDS_JSON[id]["desc"]} \n\n'
         description = description + card
 
     embed = discord.Embed(
@@ -38,3 +37,5 @@ async def embed_card(id_list):
     color=discord.Color.random())
 
     return embed
+    
+    
