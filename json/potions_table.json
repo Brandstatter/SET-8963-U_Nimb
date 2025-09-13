@@ -1,0 +1,150 @@
+[
+    {
+        "cutoffValue": 1,
+        "rewardId": 0
+    },
+    {
+        "cutoffValue": 3,
+        "rewardId": 1
+    },
+    {
+        "cutoffValue": 6,
+        "rewardId": 2
+    },
+    {
+        "cutoffValue": 7,
+        "rewardId": 3
+    },
+    {
+        "cutoffValue": 15,
+        "rewardId": 4
+    },
+    {
+        "cutoffValue": 18,
+        "rewardId": 5
+    },
+    {
+        "cutoffValue": 20,
+        "rewardId": 6
+    },
+    {
+        "cutoffValue": 24,
+        "rewardId": 7
+    },
+    {
+        "cutoffValue": 26,
+        "rewardId": 8
+    },
+    {
+        "cutoffValue": 28,
+        "rewardId": 9
+    },
+    {
+        "cutoffValue": 30,
+        "rewardId": 10
+    },
+    {
+        "cutoffValue": 32,
+        "rewardId": 11
+    },
+    {
+        "cutoffValue": 33,
+        "rewardId": 12
+    },
+    {
+        "cutoffValue": 34,
+        "rewardId": 13
+    },
+    {
+        "cutoffValue": 35,
+        "rewardId": 14
+    },
+    {
+        "cutoffValue": 36,
+        "rewardId": 15
+    },
+    {
+        "cutoffValue": 38,
+        "rewardId": 16
+    },
+    {
+        "cutoffValue": 40,
+        "rewardId": 17
+    },
+    {
+        "cutoffValue": 42,
+        "rewardId": 18
+    },
+    {
+        "cutoffValue": 43,
+        "rewardId": 19
+    },
+    {
+        "cutoffValue": 49,
+        "rewardId": 20
+    },
+    {
+        "cutoffValue": 51,
+        "rewardId": 21
+    },
+    {
+        "cutoffValue": 53,
+        "rewardId": 22
+    },
+    {
+        "cutoffValue": 62,
+        "rewardId": 23
+    },
+    {
+        "cutoffValue": 66,
+        "rewardId": 24
+    },
+    {
+        "cutoffValue": 68,
+        "rewardId": 25
+    },
+    {
+        "cutoffValue": 70,
+        "rewardId": 26
+    },
+    {
+        "cutoffValue": 75,
+        "rewardId": 27
+    },
+    {
+        "cutoffValue": 77,
+        "rewardId": 28
+    },
+    {
+        "cutoffValue": 79,
+        "rewardId": 29
+    },
+    {
+        "cutoffValue": 80,
+        "rewardId": 30
+    },
+    {
+        "cutoffValue": 82,
+        "rewardId": 31
+    },
+    {
+        "cutoffValue": 88,
+        "rewardId": 32
+    },
+    {
+        "cutoffValue": 89,
+        "rewardId": 33
+    },
+    {
+        "cutoffValue": 92,
+        "rewardId": 34
+    },
+    {
+        "cutoffValue": 96,
+        "rewardId": 35
+    },
+    {
+        "cutoffValue": 100,
+        "rewardId": 36
+    }
+]

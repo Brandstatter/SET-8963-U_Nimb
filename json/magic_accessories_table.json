@@ -1,0 +1,280 @@
+[
+    {
+        "type": 1,
+        "name": "Acessórios Menores",
+        "probability": [
+            {
+                "cutoffValue": 2,
+                "rewardId": 9
+            },
+            {
+                "cutoffValue": 7,
+                "rewardId": 11
+            },
+            {
+                "cutoffValue": 12,
+                "rewardId": 25
+            },
+            {
+                "cutoffValue": 14,
+                "rewardId": 33
+            },
+            {
+                "cutoffValue": 19,
+                "rewardId": 35
+            },
+            {
+                "cutoffValue": 24,
+                "rewardId": 36
+            },
+            {
+                "cutoffValue": 29,
+                "rewardId": 46
+            },
+            {
+                "cutoffValue": 34,
+                "rewardId": 51
+            },
+            {
+                "cutoffValue": 40,
+                "rewardId": 18
+            },
+            {
+                "cutoffValue": 46,
+                "rewardId": 40
+            },
+            {
+                "cutoffValue":52,
+                "rewardId": 41
+            },
+            {
+                "cutoffValue": 59,
+                "rewardId": 43
+            },
+            {
+                "cutoffValue": 65,
+                "rewardId": 44
+            },
+            {
+                "cutoffValue": 71,
+                "rewardId": 54
+            },
+            {
+                "cutoffValue": 77,
+                "rewardId": 63
+            },
+            {
+                "cutoffValue": 82,
+                "rewardId": 21
+            },
+            {
+                "cutoffValue": 84,
+                "rewardId": 34
+            },
+            {
+                "cutoffValue": 89,
+                "rewardId": 39
+            },
+            {
+                "cutoffValue": 96,
+                "rewardId": 3
+            },
+            {
+                "cutoffValue": 98,
+                "rewardId": 8
+            },
+            {
+                "cutoffValue": 100,
+                "rewardId": 53
+            }
+        ]
+    },
+    {
+        "type": 2,
+        "name": "Acessórios Médios",
+        "probability": [
+            {
+                "cutoffValue": 4,
+                "rewardId": 7
+            },
+            {
+                "cutoffValue": 8,
+                "rewardId": 12
+            },
+            {
+                "cutoffValue": 10,
+                "rewardId": 20
+            },
+            {
+                "cutoffValue": 14,
+                "rewardId": 13
+            },
+            {
+                "cutoffValue": 18,
+                "rewardId": 16
+            },
+            {
+                "cutoffValue": 24,
+                "rewardId": 1
+            },
+            {
+                "cutoffValue": 30,
+                "rewardId": 5
+            },
+            {
+                "cutoffValue": 34,
+                "rewardId": 6
+            },
+            {
+                "cutoffValue": 38,
+                "rewardId": 15
+            },
+            {
+                "cutoffValue": 42,
+                "rewardId": 19
+            },
+            {
+                "cutoffValue": 46,
+                "rewardId": 32
+            },
+            {
+                "cutoffValue": 50,
+                "rewardId": 42
+            },
+            {
+                "cutoffValue": 54,
+                "rewardId": 64
+            },
+            {
+                "cutoffValue": 58,
+                "rewardId": 57
+            },
+            {
+                "cutoffValue": 64,
+                "rewardId": 0
+            },
+            {
+                "cutoffValue": 68,
+                "rewardId": 14
+            },
+            {
+                "cutoffValue": 74,
+                "rewardId": 22
+            },
+            {
+                "cutoffValue": 80,
+                "rewardId": 26
+            },
+            {
+                "cutoffValue": 86,
+                "rewardId": 31
+            },
+            {
+                "cutoffValue": 88,
+                "rewardId": 45
+            },
+            {
+                "cutoffValue": 94,
+                "rewardId": 55
+            },
+            {
+                "cutoffValue": 100,
+                "rewardId": 59
+            }
+        ]
+    },
+    {
+        "type": 3,
+        "name": "Acessórios Maiores",
+        "probability": [
+            {
+                "cutoffValue": 2,
+                "rewardId": 27
+            },
+            {
+                "cutoffValue": 4,
+                "rewardId": 37
+            },
+            {
+                "cutoffValue": 9,
+                "rewardId": 38
+            },
+            {
+                "cutoffValue": 15,
+                "rewardId": 49
+            },
+            {
+                "cutoffValue": 21,
+                "rewardId": 47
+            },
+            {
+                "cutoffValue": 27,
+                "rewardId": 48
+            },
+            {
+                "cutoffValue": 34,
+                "rewardId": 50
+            },
+            {
+                "cutoffValue": 40,
+                "rewardId": 60
+            },
+            {
+                "cutoffValue": 46,
+                "rewardId": 61
+            },
+            {
+                "cutoffValue": 52,
+                "rewardId": 62
+            },
+            {
+                "cutoffValue": 57,
+                "rewardId": 10
+            },
+            {
+                "cutoffValue": 60,
+                "rewardId": 23
+            },
+            {
+                "cutoffValue": 67,
+                "rewardId": 24
+            },
+            {
+                "cutoffValue": 72,
+                "rewardId": 30
+            },
+            {
+                "cutoffValue": 77,
+                "rewardId": 2
+            },
+            {
+                "cutoffValue": 82,
+                "rewardId": 58
+            },
+            {
+                "cutoffValue": 87,
+                "rewardId": 17
+            },
+            {
+                "cutoffValue": 89,
+                "rewardId": 28
+            },
+            {
+                "cutoffValue": 94,
+                "rewardId": 56
+            },
+            {
+                "cutoffValue": 96,
+                "rewardId": 52
+            },
+            {
+                "cutoffValue": 98,
+                "rewardId": 4
+            },
+            {
+                "cutoffValue": 100,
+                "rewardId": 29
+            }
+        ]
+    }
+]
