@@ -31,7 +31,7 @@ async def get_treasure(id):
         for _ in range(wealthRolls):
             treasureSelected = get_selected_wealth(choseReward=choseReward)
             d100 = random.randrange(1, 100)
-            if(choseReward["description"]["wealth"]["plusRolls"]):
+            if(choseReward["description"]["wealth"]["incentive"]):
                 d100 = min(100, int(d100 * 1.2))
 
             treasure = None

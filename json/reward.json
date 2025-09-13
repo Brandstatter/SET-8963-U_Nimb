@@ -20,7 +20,7 @@
                 "description": {
                     "numberOfRolls": 1,
                     "chosenDie": 4,
-                    "multiplier":  100,
+                    "multiplier": 100,
                     "currencyType": "TC"
                 }
             },
@@ -29,11 +29,11 @@
                 "description": {
                     "numberOfRolls": 1,
                     "chosenDie": 6,
-                    "multiplier":  10,
+                    "multiplier": 10,
                     "currencyType": "T$"
                 }
             }
-        ] 
+        ]
     },
     {
         "nd": "1/2",
@@ -104,6 +104,266 @@
                     "wealth": {
                         "type": 1,
                         "bonus": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "nd": "2",
+        "reward": [
+            {
+                "cutoff": 15,
+                "description": null
+            },
+            {
+                "cutoff": 55,
+                "description": {
+                    "numberOfRolls": 3,
+                    "chosenDie": 10,
+                    "multiplier": 10,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 85,
+                "description": {
+                    "numberOfRolls": 2,
+                    "chosenDie": 4,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 95,
+                "description": {
+                    "numberOfRolls": 2,
+                    "chosenDie": 6,
+                    "bonus": 1,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 100,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 1,
+                    "wealth": {
+                        "type": 1,
+                        "bonus": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "nd": "3",
+        "reward": [
+            {
+                "cutoff": 10,
+                "description": null
+            },
+            {
+                "cutoff": 20,
+                "description": {
+                    "numberOfRolls": 4,
+                    "chosenDie": 12,
+                    "multiplier": 10,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 60,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 4,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 90,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 8,
+                    "multiplier": 10,
+                    "currencyType": "TO"
+                }
+            },
+            {
+                "cutoff": 100,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 3,
+                    "wealth": {
+                        "type": 1,
+                        "bonus": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "nd": "4",
+        "reward": [
+            {
+                "cutoff": 10,
+                "description": null
+            },
+            {
+                "cutoff": 50,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 6,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 80,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 12,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 90,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 1,
+                    "wealth": {
+                        "type": 1,
+                        "incentive": true,
+                        "bonus": 0
+                    }
+                }
+            },
+            {
+                "cutoff": 100,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 3,
+                    "wealth": {
+                        "type": 1,
+                        "incentive": true,
+                        "bonus": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "nd": "5",
+        "reward": [
+            {
+                "cutoff": 15,
+                "description": null
+            },
+            {
+                "cutoff": 65,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 8,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 95,
+                "description": {
+                    "numberOfRolls": 3,
+                    "chosenDie": 4,
+                    "multiplier": 10,
+                    "currencyType": "TO"
+                }
+            },
+            {
+                "cutoff": 100,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 1,
+                    "wealth": {
+                        "type": 2,
+                        "bonus": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "nd": "6",
+        "reward": [
+            {
+                "cutoff": 15,
+                "description": null
+            },
+            {
+                "cutoff": 60,
+                "description": {
+                    "numberOfRolls": 2,
+                    "chosenDie": 6,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 90,
+                "description": {
+                    "numberOfRolls": 2,
+                    "chosenDie": 10,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 100,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 3,
+                    "wealth": {
+                        "type": 1,
+                        "bonus": 1
+                    }
+                }
+            }
+        ]
+    },
+        {
+        "nd": "7",
+        "reward": [
+            {
+                "cutoff": 10,
+                "description": null
+            },
+            {
+                "cutoff": 60,
+                "description": {
+                    "numberOfRolls": 2,
+                    "chosenDie": 8,
+                    "multiplier": 100,
+                    "currencyType": "T$"
+                }
+            },
+            {
+                "cutoff": 90,
+                "description": {
+                    "numberOfRolls": 2,
+                    "chosenDie": 12,
+                    "multiplier": 10,
+                    "currencyType": "TO"
+                }
+            },
+            {
+                "cutoff": 100,
+                "description": {
+                    "numberOfRolls": 1,
+                    "chosenDie": 4,
+                    "wealth": {
+                        "type": 1,
+                        "bonus": 1
                     }
                 }
             }
