@@ -79,17 +79,6 @@
                 ]
             },
             {
-                "cutoffValue": 99,
-                "dice": 8,
-                "numberOfRolls": 2,
-                "bonus": 100,
-                "examples": [
-                    "Opala negra ou tapa-olho com um olho falso de safira (1/2)", 
-                    "luva bordada e adornada com gemas ou pingente de opala vermelha com corrente de ouro (1)",
-                    "lingote de ouro ou pintura antiga (2)"
-                ]
-            },
-            {
                 "cutoffValue": 100,
                 "dice": 10,
                 "numberOfRolls": 4,
