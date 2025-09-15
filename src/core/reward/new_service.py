@@ -11,8 +11,7 @@ WEALTH_JSON = json.load(open(os.path.join("json", "treasure_reward.json"), encod
 
 async def get_treasure(id):
     ndObject = next((obj for obj in REWARD_JSON if obj["nd"] == id), None)
-    # d100 = random.randrange(1, 100)
-    d100 = 100
+    d100 = random.randrange(1, 100)
     if not ndObject:
         return embed_fail()
 
@@ -25,13 +24,15 @@ async def get_treasure(id):
     if(choseReward == None):
         return embed_fail()  
 
-    wealthRolls = roll_number_of_wealth(choseReward=choseReward)
     if(choseReward["description"].get("wealth") is not None):
+        wealthRolls = roll_number_of_wealth(choseReward=choseReward)
         wealthReward = 0
         treasures = []
         for _ in range(wealthRolls):
             treasureSelected = get_selected_wealth(choseReward=choseReward)
             d100 = random.randrange(1, 100)
+            if(choseReward["description"]["wealth"]["incentive"]):
+                d100 = min(100, int(d100 * 1.2))
 
             treasure = None
             for item in treasureSelected["probability"]:
