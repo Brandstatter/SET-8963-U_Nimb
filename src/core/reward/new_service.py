@@ -21,7 +21,7 @@ async def get_treasure(id):
             choseReward = item
             break
 
-    if(choseReward == None):
+    if(choseReward["description"] == None):
         return embed_fail()  
 
     if(choseReward["description"].get("wealth") is not None):
