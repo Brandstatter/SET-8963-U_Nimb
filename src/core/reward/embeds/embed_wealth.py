@@ -41,7 +41,7 @@ def rollsEmbed(index, treasure):
     equation = f"d{dice}x{numberOfRolls} -> {rollsStr} = {totalSum} * {bonus} = {totalSum + bonus}" 
 
     embed = discord.Embed(
-        title=f"Jogada: {index}",
+        title=f"Jogada: {index + 1}",
         description=f"{equation}",
         color=discord.Color.random()
     )

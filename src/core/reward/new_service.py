@@ -7,7 +7,7 @@ from core.reward.embeds.embed_money import embed_money
 from core.reward.embeds.embed_fail import embed_fail
 
 REWARD_JSON = json.load(open(os.path.join("json", "reward.json"), encoding="utf-8"))
-WEALTH_JSON = json.load(open(os.path.join("json", "treasure_reward.json"), encoding="utf-8"))
+WEALTH_JSON = json.load(open(os.path.join("json", "treasureReward.json"), encoding="utf-8"))
 
 async def get_treasure(id):
     ndObject = next((obj for obj in REWARD_JSON if obj["nd"] == id), None)
