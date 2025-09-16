@@ -16,5 +16,6 @@ async def slash_money(ctx: discord.ApplicationContext,
     
     reward = await get_treasure(nd)
     return await ctx.respond(embed = reward)
+
     # embed = await get_percent(options.index(nd))
     # await ctx.respond(embed = embed)
