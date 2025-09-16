@@ -2,7 +2,7 @@ import discord
 
 from core.reward.treasure_enum import TreasureEnum
 
-def embed_wealth(choseReward, treasures, rolls):
+def embed_wealth(choseReward, treasures, rolls, d100Main, d100Wealth):
     embeds = []
     wealthType = choseReward["description"]["wealth"]["type"]
 
@@ -11,8 +11,13 @@ def embed_wealth(choseReward, treasures, rolls):
         description=None,
         color=discord.Color.random() 
     )
-
+    embed.add_field(name="d100 Tesouro", value=d100Main, inline=False)
+    embed.add_field(name="d100 Riqueza", value=d100Wealth, inline=False)
     embed.add_field(name="Número de riquezas", value=rolls, inline=False)
+    if(choseReward["description"]["wealth"].get("incentive")):
+        embed.add_field(name="+ 20%", value="Sim", inline=False)
+    else:
+        embed.add_field(name="+ 20%", value="Não", inline=False)
 
     totalSum = 0
     for index, item in enumerate(treasures):
