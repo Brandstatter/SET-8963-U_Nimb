@@ -2,7 +2,7 @@ import discord
 
 class Paginator(discord.ui.View):
     def __init__(self, embeds):
-        super().__init__(timeout=180) # Adiciona um tempo limite para a interação
+        super().__init__(timeout=180)
         self.embeds = embeds
         self.page = len(embeds) - 1
         self.update_buttons()
