@@ -15,7 +15,8 @@ def embed_money(choseReward, rolled_dice, d100):
     embed = discord.Embed(
         title="Prêmio",
         description=f"{equation}",
-        color=discord.Color.random()
+        color=discord.Color.random(),
+        image="https://media.istockphoto.com/id/165418688/pt/foto/moedas-de-ouro.webp?a=1&b=1&s=612x612&w=0&k=20&c=_GmLZGwYwTmTEJDpSps31BVLG_8cn6WXLVx358Zrh_M="
     )
 
     fields = [
