@@ -10,6 +10,7 @@ treasureJsonPath = os.path.join("json", "moneyReward.json")
 MONEY_JSON = json.load(open(moneyJsonPath, encoding='utf-8'))
 TREASURE_JSON = json.load(open(treasureJsonPath, encoding='utf-8'))
 
+
 # Rolls D100 and get the type of reward relative to index.
 async def get_percent(id):
     d100 = random.randrange(1,100)
@@ -21,7 +22,6 @@ async def get_percent(id):
         index += 1
     # Halfes index and round to the lowest number to get index of the reward.
     index = int(math.floor(index/2))
-    print(index)
     if MONEY_JSON[id]['treasureType'][index] == 0:
         embed = await get_money(id, d100, index)
         return embed
@@ -166,3 +166,12 @@ async def embed_treasure(id, d100, reward, values, index):
     )
     reward.set_image(url = MONEY_JSON[id]["link"])
     return reward
+
+
+async def embed_money11_new(choseReward):
+    return None
+
+
+
+
+    
