@@ -11,8 +11,7 @@ WEALTH_JSON = json.load(open(os.path.join("json", "treasureReward.json"), encodi
 
 async def get_treasure(id):
     ndObject = next((obj for obj in REWARD_JSON if obj["nd"] == id), None)
-    # d100Main = random.randrange(1, 100)
-    d100Main = 99
+    d100Main = random.randrange(1, 100)
     if not ndObject:
         return embed_fail()
 
