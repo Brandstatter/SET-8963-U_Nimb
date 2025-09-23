@@ -13,7 +13,7 @@ async def sync(ctx):
         await ctx.respond("Você não tem permissão para usar este comando!", ephemeral=True)
         return
 
-    await ctx.defer(ephemeral=True) # Responde "pensando..." de forma privada
+    await ctx.defer(ephemeral=True)
     try:
         await client.sync_commands()
         print("Comandos sincronizados com sucesso.")
