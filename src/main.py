@@ -8,6 +8,7 @@ from discord.ui import View
 from dotenv import load_dotenv
 from clientConfig import client
 
+import core.sync.command
 import core.reward.command
 import core.conditions.command
 import core.magic.command
@@ -18,6 +19,7 @@ import core.reward.command
 import core.help.command
 import core.magic_accessories.command
 import core.chaos_cards.command
+import core.potions.command
 
 def configure():
     load_dotenv()
@@ -51,8 +53,7 @@ async def on_guild_remove(guild):
     with open(json_path, 'w') as outputFile:
         json.dump(data, outputFile, indent=4)
 
-# TODO Add slash commands
-# TODO Improve design of the help function
+
    
 configure()
 client.run(os.getenv('clientID'))
