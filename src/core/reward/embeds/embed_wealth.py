@@ -13,7 +13,6 @@ def embed_wealth(choseReward, treasures, rolls, d100Main, d100Wealth):
         image="https://media.istockphoto.com/id/1705567435/pt/foto/treasury-hall-treasure-trove-of-gold-coins-and-chests-and-treasure-boxes-pile-up-treasuries.jpg?s=612x612&w=0&k=20&c=tJutkYQP40vE8ymqi66stHLXfRK3d4Pm56wpFjEMsQw="
     )
     embed.add_field(name="d100 Tesouro", value=d100Main, inline=False)
-    embed.add_field(name="d100 Riqueza", value=d100Wealth, inline=False)
     embed.add_field(name="Número de riquezas", value=rolls, inline=False)
 
     if(choseReward["description"]["wealth"].get("incentive")):

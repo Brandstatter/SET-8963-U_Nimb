@@ -72,13 +72,14 @@ async def get_treasure(id):
 def roll_number_of_wealth(choseReward):
     numberOfRolls = choseReward["description"]["numberOfRolls"]
     chosenDie = choseReward["description"]["chosenDie"]
-    
+    bonus = choseReward["description"]["wealth"]["bonus"]
+
     wealth_rolls = 0
     for _ in range(numberOfRolls):
 
         wealth_rolls += random.randint(1, chosenDie)
 
-    return wealth_rolls
+    return wealth_rolls + bonus
 
 def get_selected_wealth(choseReward):
     wealthType = choseReward["description"]["wealth"]["type"]
