@@ -1,9 +1,8 @@
 import discord
 
 from clientConfig import client
-from core.reward.service import get_percent
-from core.reward.new_service import get_treasure, embed_fail
-from core.reward.Paginator import Paginator
+from core.reward.service import get_treasure, embed_fail
+from core.reward.embeds.paginator import paginator
 
 options = ['1/4', '1/2', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
 
@@ -17,7 +16,7 @@ async def slash_money(ctx: discord.ApplicationContext,
     
     reward = await get_treasure(nd)
     if(isinstance(reward, list)):
-        view = Paginator(reward)
+        view = paginator(reward)
         return await ctx.respond(embed=reward[len(reward) - 1], view=view)
     
     return await ctx.respond(embed = reward)

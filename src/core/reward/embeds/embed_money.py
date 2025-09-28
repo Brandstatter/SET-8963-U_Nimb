@@ -10,7 +10,7 @@ def embed_money(choseReward, rolled_dice, d100):
     totalSumPlusBonus = totalSum * bonus 
 
     rolls_str = " + ".join(str(r) for r in rolled_dice)
-    equation = f"d{die_type}x{number_of_rolls} -> {rolls_str} = {totalSum} * {bonus} = {totalSumPlusBonus}"
+    equation = f"{number_of_rolls}d{die_type} -> `{rolls_str}` = {totalSum} * {bonus} = {totalSumPlusBonus}"
 
     embed = discord.Embed(
         title="Prêmio",
@@ -21,9 +21,8 @@ def embed_money(choseReward, rolled_dice, d100):
 
     fields = [
         ("D100", d100),
-        ("Dados lançados", f"`{rolls_str}`"),
         ("Bônus", choseReward["description"]["multiplier"]),
-        ("Resultado do prêmio", f"{totalSumPlusBonus} {currencyType}")
+        ("Resultado do prêmio", f"{currencyType} {totalSumPlusBonus}")
     ]
 
     for name, value in fields:
