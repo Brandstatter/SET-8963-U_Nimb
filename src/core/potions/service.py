@@ -16,7 +16,7 @@ async def get_potion(qtd):
     x = 0
 
     while x < qtd:
-        d100 = random.randrange(1, 100)
+        d100 = random.randrange(1, 101)
         for item in TABLE_JSON:
             if d100 <= item['cutoffValue']:
                 potion_ids.append(item['rewardId'])
@@ -26,7 +26,7 @@ async def get_potion(qtd):
     return embed
 
 async def embed_potion(ids):
-    ids = [4, 4, 4, 4]
+
     name = "Poções encontradas"
 
     embed = discord.Embed(
@@ -36,7 +36,6 @@ async def embed_potion(ids):
     )
 
     for id in ids:
-        print(id)
         embed.add_field(name=f"{POTION_JSON[id]['name']}", value=f"{POTION_JSON[id]['desc']}\n **Valor**: {POTION_JSON[id]['cost']}", inline=False)
 
     return embed

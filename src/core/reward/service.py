@@ -11,7 +11,7 @@ WEALTH_JSON = json.load(open(os.path.join("json", "treasureReward.json"), encodi
 
 async def get_treasure(id):
     ndObject = next((obj for obj in REWARD_JSON if obj["nd"] == id), None)
-    d100Main = random.randrange(1, 100)
+    d100Main = random.randrange(1, 101)
     if not ndObject:
         return embed_fail()
 
@@ -30,7 +30,7 @@ async def get_treasure(id):
         treasures = []
         for _ in range(wealthRolls):
             treasureSelected = get_selected_wealth(choseReward=choseReward)
-            d100Wealth = random.randrange(1, 100)
+            d100Wealth = random.randrange(1, 101)
             if choseReward["description"]["wealth"].get("incentive") is not None:
                 d100Wealth = min(100, int(d100Wealth * 1.2))
 
@@ -51,7 +51,7 @@ async def get_treasure(id):
 
             rolls = []
             for _ in range(numberOfRolls):
-                wealthValue = random.randrange(1, dice)
+                wealthValue = random.randrange(1, dice + 1)
                 wealthReward += wealthValue
                 
                 rolls.append(wealthValue)
@@ -63,7 +63,7 @@ async def get_treasure(id):
 
     rolledDice = []
     for _ in range(choseReward["description"]["numberOfRolls"]):
-        rollDice = random.randrange(1, choseReward["description"]["chosenDie"])
+        rollDice = random.randrange(1, choseReward["description"]["chosenDie"] + 1)
         rolledDice.append(rollDice)
 
     return embed_money(choseReward=choseReward, rolled_dice=rolledDice, d100=d100Main)

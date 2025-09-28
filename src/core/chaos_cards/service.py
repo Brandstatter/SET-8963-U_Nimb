@@ -14,7 +14,7 @@ async def draw_cards(card_qtd):
     cards = set()
     
     while len(cards) < card_qtd:
-        d100 = random.randrange(1, 100)
+        d100 = random.randrange(1, 101)
         for item in TABLE_JSON:
             if d100 <= item['cutoffValue']:
                 cards.add(item['rewardId'])

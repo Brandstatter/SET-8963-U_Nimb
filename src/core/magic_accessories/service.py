@@ -39,7 +39,7 @@ async def accessory_autocomplete(ctx: discord.AutocompleteContext):
     return options[:25]
 
 async def roll_accessory(table):
-    d100 = random.randrange(1,100)
+    d100 = random.randrange(1,101)
 
     for item in TABLE_JSON[table]['probability']:
             if d100 <= item['cutoffValue']:

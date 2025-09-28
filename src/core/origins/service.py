@@ -7,7 +7,6 @@ from unidecode import unidecode
 json_path = os.path.join("json", "origins.json")
 ORIGINS_JSON = json.load(open(json_path, encoding='utf-8'))
 
-# TODO: Refact this function.
 async def slash_search(chosen_origin):
     for origin in ORIGINS_JSON:
         if (origin['name'] == chosen_origin):
