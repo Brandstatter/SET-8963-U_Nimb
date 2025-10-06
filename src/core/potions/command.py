@@ -11,5 +11,5 @@ async def slash_potion(ctx,
                        ):
     if quantidade > 10:
         await ctx.respond("Limite de criação de poções execedido. Limite maximo: 10 poções")
-    embed = await get_potion(quantidade)
+    embed = await get_potion(quantidade, False)
     await ctx.respond(embed = embed)

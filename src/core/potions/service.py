@@ -10,13 +10,15 @@ POTION_JSON = json.load(open(json_path, encoding='utf-8'))
 json_path = os.path.join("json", "potions_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
-async def get_potion(qtd):
+async def get_potion(qtd, bonus):
 
     potion_ids = []
     x = 0
-
+    
     while x < qtd:
         d100 = random.randrange(1, 101)
+        if bonus:
+            d100 = min(100, int(d100 * 1.2))
         for item in TABLE_JSON:
             if d100 <= item['cutoffValue']:
                 potion_ids.append(item['rewardId'])

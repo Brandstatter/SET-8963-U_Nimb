@@ -11,6 +11,7 @@ from clientConfig import client
 import core.sync.command
 import core.reward.command
 import core.conditions.command
+import core.dice.comand
 import core.magic.command
 import core.origins.command
 import core.quality.command
