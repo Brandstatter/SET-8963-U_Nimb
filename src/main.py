@@ -18,6 +18,8 @@ import core.quality.command
 import core.race.command
 import core.reward.command
 import core.help.command
+import core.itens.command
+import core.equipament.command
 import core.magic_accessories.command
 import core.chaos_cards.command
 import core.potions.command

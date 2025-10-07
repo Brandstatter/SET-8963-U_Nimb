@@ -1,5 +1,3 @@
-import discord
-
 from clientConfig import client
 from core.itens.service import get_itens
 
