@@ -3,8 +3,8 @@ from clientConfig import client
 from core.dice.service import roll_dice, range_roll
 
 @client.slash_command(
-    name = "dados",
-    description = "Rolagem de dados."
+    name = "dado",
+    description = "Rola dados de acordo com parametros passados pelo jogador."
 )
 async def slash_dice(
     ctx,

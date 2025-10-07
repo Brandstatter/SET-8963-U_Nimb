@@ -5,7 +5,7 @@ from core.origins.service import slash_search, embed_origin, origins_autocomplet
 
 @client.slash_command(
     name = "origens",
-    description = "Informa beneficios e itens da origem selecionada."
+    description = "Retorna informações sobre a origem escolhida."
 )
 async def slash_origins(ctx,
     origem: str = discord.Option(str, "Escolha uma origem.", autocomplete=origins_autocomplete)                 

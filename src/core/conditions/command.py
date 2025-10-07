@@ -5,7 +5,7 @@ from core.conditions.service import slash_search, embed_condition, condition_aut
 
 @client.slash_command(
     name = "condições",
-    description = "Envia embed com informações sobre a condição selecionada."
+    description = "Retorna informações sobre condição escolhida."
 )
 async def slash_conditions(
     ctx, 

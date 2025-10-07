@@ -6,7 +6,7 @@ from core.race.service import embed_race
 options = ['Humano', 'Anão', 'Dahllan', 'Elfo', 'Goblin', 'Lefou', 'Minotauro', 'Qareen', 'Golem', 'Hynne', 'Kliren', 'Medusa', 'Osteon', 'Sereia/Tritão', 'Sílfide', 'Suraggel', 'Trog', 'Eiradaan', 'Galokk', 'Meio-Elfo', 'Sátiro']
 @client.slash_command(
     name = "races",
-    description = "Retorna atributos e habilidades da raça selecionada.",
+    description = "Retorna informações sobre a raça escolhida.",
 )
 async def slash_race(ctx,
     race_option : str = discord.Option(str, choices = options)

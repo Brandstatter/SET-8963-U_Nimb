@@ -5,7 +5,7 @@ from core.magic_accessories.service import search_accessories, embed_accessory, 
 
 @client.slash_command(
     name="busca_acessorio",
-    description="Busca um acessorio magico."
+    description="Retorna informações sobre o acessorio magico escolhido."
 ) 
 async def search_accessory_slash_command(
     ctx,
@@ -23,7 +23,7 @@ async def search_accessory_slash_command(
 
 @client.slash_command(
     name="rolar_acessorio",
-    description="Busca um acessorio magico."
+    description="Gera uma recompensa com base nas tabelas 8-13, 8-14 e 8-15 de Acessórios de Tormenta20"
 ) 
 async def search_accessory_slash_command(
     ctx,

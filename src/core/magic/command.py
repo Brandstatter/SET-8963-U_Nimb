@@ -7,8 +7,9 @@ from core.magic.service import embed_magic, search_magic, magicAutoComplete
 # Random Magic
 @client.slash_command(
     name="random_magic",
-    description="Busca uma magia aleatoriamente.",
-) 
+    description="Retorna uma magia aleatoria.",
+)
+#TODO change function name
 async def random_magic_slash_command(ctx):
     embed = await embed_magic(random.randrange(0, 227))
     return await ctx.respond(embed = embed)
