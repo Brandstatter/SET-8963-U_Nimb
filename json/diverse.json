@@ -1,0 +1,1208 @@
+[
+    {
+        "id": 0,
+        "name": "Água benta",
+        "desc": "Produzida com a magia Abençoar Alimentos, esta água sagrada é um poderoso recurso na luta contra o mal. Para usar a água benta, você gasta uma ação padrão e escolhe um morto-vivo ou abissal em alcance curto (a água benta é inofensiva contra outras criaturas). O alvo sofre 2d10 pontos de dano de luz (Reflexos CD Sab reduz à metade).",
+        "cost": "T$ 10",
+        "type": "Equipamento de aventura",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 1,
+        "name": "Algemas",
+        "desc": "Um par de algemas para criaturas Médias. Prender uma criatura que não esteja indefesa exige empunhar a algema, agarrar o alvo (veja “Manobras de Combate”, no Capítulo 5) e vencer um novo teste de agarrar contra ela. Você pode prender os dois pulsos da pessoa (-5 em testes que exijam o uso das mãos, impede conjuração) ou um dos pulsos dela em um objeto imóvel adjacente, caso haja, para impedir que ela se mova. Escapar das algemas exige uma ação completa e um teste de Acrobacia contra CD 30 ou de Força contra CD 25 — ou ter as chaves...",
+        "cost": "T$ 15",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 2,
+        "name": "Arpéu",
+        "desc": "Um gancho de aço amarrado na ponta de uma corda para se fixar em muros, janelas, parapeitos de prédios... Prender um arpéu exige um teste de Pontaria (CD 15). Subir um muro com a ajuda de uma corda fornece +5 no teste de Atletismo.",
+        "cost": "T$ 5",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 3,
+        "name": "Bandoleira de poções",
+        "desc": "Um cinto de couro com bolsos que comportam pequenos frascos. Se você estiver vestindo uma bandoleira, pode sacar itens alquímicos e poções como uma ação livre.",
+        "cost": "T$ 20",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 4,
+        "name": "Barraca",
+        "desc": "Esta barraca de lona conta como um saco de dormir para duas pessoas e fornece +2 em testes de Sobrevivência para acampar.",
+        "cost": "T$ 10",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 5,
+        "name": "Corda",
+        "desc": "Um rolo com 10 metros de corda de cânhamo, o mesmo tipo usado em navios. Possui diversas utilidades: pode ajudar a descer um buraco ou muro (+5 em testes de Atletismo nessas situações), amarrar pessoas etc. Dar um nó firme ou especial (por exemplo, capaz de deslizar, se desfazer com um puxão etc.) exige um teste de Destreza (CD 15). Arrebentar a corda exige 2 pontos de dano de corte ou uma ação padrão e um teste de Força (CD 20).",
+        "cost": "T$ 1",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 6,
+        "name": "Espelho",
+        "desc": "Este pequeno espelho possui diversas utilidades: observar cantos, fazer sinais de luz e, claro, garantir que você esteja apresentável.",
+        "cost": "T$ 10",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 7,
+        "name": "Lampião",
+        "desc": "Um cilindro com uma alça e duas portinholas. Uma chama alimentada por óleo é acesa dentro do cilindro e uma das portinholas aberta deixa a luz sair. Acender um lampião é uma ação padrão e sua luz ilumina um raio com 15m. Carregar um lampião com óleo é uma ação padrão e ele dura uma cena.",
+        "cost": "T$ 7",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 8,
+        "name": "Mochila",
+        "desc": "Uma bolsa de lona com tiras para ser carregada nas costas. Não conta como item vestido.",
+        "cost": "T$ 2",
+        "type": "Equipamento de aventura",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 9,
+        "name": "Mochila de aventureiro",
+        "desc": "Feita de couro resistente, esta mochila é repleta de bolsos para prender equipamento. Vestir uma mochila de aventureiro aumenta sua capacidade de carga em 2 espaços (ela própria não gasta um espaço).",
+        "cost": "T$ 50",
+        "type": "Equipamento de aventura",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 10,
+        "name": "Óleo",
+        "desc": "Um frasco com óleo inflamável para lampião. Você pode atirar o frasco em uma criatura em alcance curto com uma ação padrão. Se ela sofrer dano de fogo até o fim do seu próximo turno, sofre 1d6 pontos de dano extra e fica em chamas.",
+        "cost": "T$ 0,1",
+        "type": "Equipamento de aventura",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 11,
+        "name": "Organizador de pergaminhos",
+        "desc": "Um estojo de madeira ou couro rígido. Se você estiver vestindo um organizador de pergaminhos, pode sacar pergaminhos como uma ação livre.",
+        "cost": "T$ 25",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 12,
+        "name": "Pé de cabra",
+        "desc": "Esta barra de ferro fornece +5 em testes de Força para abrir portas, janelas e baús fechados. Um pé de cabra pode ser usado como arma, com as estatísticas de uma clava.",
+        "cost": "T$ 2",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 13,
+        "name": "Saco de dormir",
+        "desc": "Um colchão com uma coberta fina o bastante para ser enrolada e amarrada, é especialmente útil para aventureiros, que nunca sabem onde vão passar a noite. Dormir ao relento sem um acampamento e um saco de dormir diminui sua recuperação de PV e PM (veja a página 106).",
+        "cost": "T$ 1",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 14,
+        "name": "Símbolo sagrado",
+        "desc": "Um medalhão de madeira ou metal com o símbolo de uma divindade. Se você estiver vestindo (normalmente com uma corrente ao redor do pescoço) ou empunhando o símbolo sagrado de um deus do qual é devoto, recebe +1 em testes de resistência.",
+        "cost": "T$ 5",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 15,
+        "name": "Tocha",
+        "desc": "Um bastão de madeira com algum combustível na ponta (geralmente trapos embebidos em parafina). Acender uma tocha é uma ação padrão. Ela ilumina um raio de 9m e dura uma cena. Pode ser usada como uma arma simples leve (dano 1d4 de impacto mais 1 de fogo, crítico x2).",
+        "cost": "T$ 0,1",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 16,
+        "name": "Vara de madeira (3m)",
+        "desc": "Uma haste com 3m de comprimento. Útil para alcançar pontos distantes, mas frágil demais para servir como arma.",
+        "cost": "T$ 0,2",
+        "type": "Equipamento de aventura",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 17,
+        "name": "Alaúde élfico",
+        "desc": "Feito com madeira de alta qualidade e manufatura delicada, este alaúde gera notas vívidas e emocionantes. Enquanto empunha este item, você pode usar a habilidade Inspiração como uma ação de movimento. Conta como um instrumento musical.",
+        "cost": "T$ 300",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 18,
+        "name": "Coleção de livros",
+        "desc": "Uma pequena coleção de tomos e tratados sobre um assunto. Fornece +1 em Conhecimento, Guerra, Misticismo, Nobreza ou Religião (definido quando o item é comprado ou fabricado).",
+        "cost": "T$ 75",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 19,
+        "name": "Equipamento de viagem",
+        "desc": "Um saco de lona contendo instrumentos úteis para sobreviver nos ermos, como pederneira (pedra para fazer fogo), panelas e talheres para cozinhar, anzól e linha para pescar e uma pequena pá. Um personagem sem este item sofre -5 em testes de Sobrevivência para fazer um acampamento. Não inclui saco de dormir ou barraca.",
+        "cost": "T$ 10",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 20,
+        "name": "Estojo de disfarces",
+        "desc": "Um conjunto de cosméticos, tintas para cabelo e algumas próteses simples (como bigodes e narizes falsos). Um personagem sem este item sofre -5 em testes de Enganação para disfarce.",
+        "cost": "T$ 50",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 21,
+        "name": "Flauta mística",
+        "desc": "Um instrumento delicado, repleto de runas e pequenas gemas místicas. Um bardo que empunhe este item aumenta a CD para resistir às magias lançadas por ele em +1. Conta como um instrumento musical.",
+        "cost": "T$ 150",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 22,
+        "name": "Gazua",
+        "desc": "Uma barra fina de ferro, com a ponta torta ou em forma de gancho. Um personagem sem este item sofre -5 em testes de Ladinagem para abrir fechaduras.",
+        "cost": "T$ 5",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 23,
+        "name": "Instrumentos de «ofício»",
+        "desc": "Existe uma versão deste item para cada perícia de Ofício. Por exemplo, martelo, pregos e serrote para Ofício (carpinteiro), pergaminhos em branco, tinta e pena para Ofício (escriba) e assim por diante. Um personagem sem os instrumentos de seu Ofício sofre -5 nessa perícia.",
+        "cost": "T$ 30",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 24,
+        "name": "Instrumento musical",
+        "desc": "Um instrumento típico, como um bandolim, flauta ou lira. Veja o quadro acima para as regras deste item.",
+        "cost": "T$ 35",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 25,
+        "name": "Luneta",
+        "desc": "Este instrumento valioso consiste de um cilindro metálico com duas lentes. Fornece +5 em testes de Percepção para observar coisas em alcance longo ou além.",
+        "cost": "T$ 100",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 26,
+        "name": "Maleta de medicamentos",
+        "desc": "Caixa de madeira com ervas, unguentos, bandagens e outros materiais úteis. Um personagem sem este item sofre -5 em Cura.",
+        "cost": "T$ 50",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 27,
+        "name": "Sela",
+        "desc": "Uma peça de couro e pelego colocada sobre o lombo da montaria, sobre a qual o cavaleiro se senta. Inclui arreios para conduzir o animal. Um personagem montado em uma montaria sem sela sofre -5 em testes de Cavalgar. Usada no animal, a sela não ocupa espaço de carga do personagem.",
+        "cost": "T$ 20",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 28,
+        "name": "Tambor das profundezas",
+        "desc": "Um instrumento típico de anões de Doherimm, capaz de sons graves e retumbantes. Enquanto empunha este item, o alcance da habilidade Inspiração e de qualquer Música de Bardo é dobrado. Conta como um instrumento musical.",
+        "cost": "T$ 80",
+        "type": "Ferramentas",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 29,
+        "name": "Andrajos de aldeão",
+        "desc": "Roupas típicas de camponês. Consiste de camisa larga e calças soltas ou blusa e saia e não inclui botas — os mais pobres andam descalços. Fornece +2 em testes de Investigação para interrogar (ninguém se importa com o que um aldeão escuta) e, se você possuir o poder Aparência Inofensiva, a CD para resistir a ele aumenta em +2. Porém, impõe -2 em perícias baseadas em Carisma contra pessoas que se importam com classe social.",
+        "cost": "T$ 1",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 30,
+        "name": "Bandana",
+        "desc": "Um lenço tipicamente usado por bandidos e piratas. Fornece +1 em Intimidação.",
+        "cost": "T$ 5",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 31,
+        "name": "Botas reforçadas",
+        "desc": "Grossas e resistentes, estas botas de cano alto protegem contra perigos do terreno. Aumentam seu deslocamento em +1,5m se ele for reduzido por terreno difícil (após a redução).",
+        "cost": "T$ 20",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 32,
+        "name": "Camisa bufante",
+        "desc": "Blusa colorida, com mangas e golas longas e encrespadas. Fornece +1 em Atuação.",
+        "cost": "T$ 25",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 33,
+        "name": "Capa esvoaçante",
+        "desc": "Favorita entre heróis ousados, esta capa de seda produz movimentos amplos e chamativos, que fornecem +1 em Enganação.",
+        "cost": "T$ 25",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 34,
+        "name": "Capa pesada",
+        "desc": "Uma capa de couro grossa e resistente. Protege e aquece o corpo, fornecendo +1 em Fortitude.",
+        "cost": "T$ 15",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 35,
+        "name": "Casaco longo",
+        "desc": "Feito de peles ou couro grosso forrado com lã, e impermeabilizado com óleo, este casaco é quente e pesado. Fornece +5 em testes de Fortitude para resistir a efeitos de frio, mas impõe penalidade de armadura de -2.",
+        "cost": "T$ 20",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 36,
+        "name": "Chapéu arcano",
+        "desc": "Com pinturas e bordados de símbolos místicos, este chapéu pontudo ajuda a canalizar energias mágicas. Ele fornece +1 ponto de mana, mas apenas se você possuir a habilidade de classe Caminho do Arcanista.",
+        "cost": "T$ 50",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 37,
+        "name": "Enfeite de elmo",
+        "desc": "Um adorno chamativo, como crina de cavalo, plumas, asas ou um totem de animal. Fornece resistência a medo +2.",
+        "cost": "T$ 15",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 38,
+        "name": "Farrapos de ermitão",
+        "desc": "Trapos “adornados” com plantas e raízes. Uma pessoa vestindo farrapos de ermitão não parece muito civilizada, e sofre -2 em Diplomacia e em testes de Investigação para interrogar. Entretanto, recebe +2 em Adestramento.",
+        "cost": "T$ 1",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 39,
+        "name": "Gorro de ervas",
+        "desc": "Formado por duas camadas de tecido, este chapéu é preenchido com ervas preparadas para auxiliar a concentração do usuário. Fornece +1 em Vontade.",
+        "cost": "T$ 75",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 40,
+        "name": "Luva de pelica",
+        "desc": "Estas luvas delicadas preservam o tato e impedem que o suor deixe os dedos escorregadios. Fornecem +1 em Ladinagem.",
+        "cost": "T$ 5",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 41,
+        "name": "Manopla",
+        "desc": "Luva metálica que permite socos mais perigosos — o dano de seus ataques desarmados torna-se letal. Uma manopla conta como uma arma para receber melhorias e encantos para usá-los em seus ataques desarmados.",
+        "cost": "T$ 10",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 42,
+        "name": "Manto camuflado",
+        "desc": "Um manto camuflado é feito para um tipo de terreno específico (veja a habilidade Explorador, na página 51). Por exemplo, um manto camuflado para floresta pode ser verde e marrom e coberto de folhas, enquanto um manto urbano pode ser cinza ou negro. Usar um manto camuflado no terreno correto fornece +2 em Furtividade.",
+        "cost": "T$ 12",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 43,
+        "name": "Manto eclesiástico",
+        "desc": "Um manto típico de igrejas e templos. Fornece +1 em Religião.",
+        "cost": "T$ 20",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 44,
+        "name": "Robe místico",
+        "desc": "Um manto longo, adornado com temas arcanos. Fornece +1 em Misticismo.",
+        "cost": "T$ 50",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 45,
+        "name": "Sapatos de camurça",
+        "desc": "Leves e resistentes, aprimoram o equilíbrio e a firmeza dos pés, fornecendo +1 em Acrobacia.",
+        "cost": "T$ 8",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 46,
+        "name": "Tabardo",
+        "desc": "Uma peça de tecido usada como um colete, cobrindo o peito e as costas. Geralmente ostenta a heráldica de um reino, igreja, casa nobre ou ordem de cavaleiros. Fornece +1 em Diplomacia.",
+        "cost": "T$ 10",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 47,
+        "name": "Traje da corte",
+        "desc": "Roupas de luxo, feitas sob medida e adequadas à nobreza e realeza. Inclui algumas joias, como aneis e colares. Em certos ambientes (um baile, um salão de palácio), um personagem que não esteja vestindo este item sofre -5 em perícias baseadas em Carisma.",
+        "cost": "T$ 100",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 48,
+        "name": "Traje de viajante",
+        "desc": "Inclui botas, calças ou saias, cinto, camisa de linho e capa com capuz. A roupa padrão de aventureiros.",
+        "cost": "T$ 10",
+        "type": "Vestuário",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 49,
+        "name": "Veste de seda",
+        "desc": "Esta roupa leve e elegante deixa seus movimentos os mais livres possíveis. Fornece +1 em Reflexos.",
+        "cost": "T$ 25",
+        "type": "Vestuário",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 50,
+        "name": "Bolsa de pó",
+        "desc": "Uma bolsa com pó multicolorido, fabricado a partir das pétalas trituradas de flores que nascem apenas na Pondsmânia. Quando lança uma magia de encantamento ou ilusão, você recebe +2 PM para gastar em aprimoramentos.",
+        "cost": "T$ 300",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 51,
+        "name": "Cajado arcano",
+        "desc": "Um cajado típico, feito de madeira de boa qualidade e entalhado com runas. O limite de PM que você pode gastar em magias arcanas e a CD para resistir a elas aumentam em +1. Para fornecer seus benefícios, um cajado precisa ser empunhado com as duas mãos. Ele pode ser usado como arma, com as estatísticas de um bordão.",
+        "cost": "T$ 1.000",
+        "type": "Esotéricos",
+        "space": 2,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 52,
+        "name": "Cetro elemental",
+        "desc": "Este cetro possui uma pedra preciosa em sua ponta: esmeralda (ácido), topázio (eletricidade), rubi (fogo) ou safira (frio). Quando lança uma magia que causa dano do tipo da pedra, o dano aumenta em um dado do mesmo tipo.",
+        "cost": "T$ 750",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 53,
+        "name": "Costela de lich",
+        "desc": "Esta varinha é feita a partir do osso de um morto-vivo. Quando lança uma magia, ela causa +1d6 pontos de dano de trevas. Se estiver empunhando esta varinha você não recupera PV por efeitos mágicos de cura.",
+        "cost": "T$ 300",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 54,
+        "name": "Dedo de ente",
+        "desc": "Uma varinha feita da madeira de uma árvore senciente. Sempre que gastar pelo menos 1 PM para lançar uma magia, role 1d4. Com um resultado 4, você recupera 1 PM.",
+        "cost": "T$ 200",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 55,
+        "name": "Luva de ferro",
+        "desc": "Um conjunto de dedais interligados por correntes. Suas magias arcanas pessoais que concedem bônus na Defesa ou em testes de resistências têm esse bônus aumentado em +1.",
+        "cost": "T$ 150",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 56,
+        "name": "Medalhão de prata",
+        "desc": "Gravado com uma runa pessoal do conjurador, este medalhão de prata diminui em -1 PM o custo de magias de alcance pessoal.",
+        "cost": "T$ 750",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 57,
+        "name": "Orbe cristalino",
+        "desc": "Esta esfera perfeita concentra seu poder mágico. O limite de PM que você pode gastar em magias arcanas aumenta em +1.",
+        "cost": "T$ 750",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 58,
+        "name": "Tomo hermético",
+        "desc": "Um livro de tratados que aumentam a sua compreensão sobre uma escola de magia específica. A CD para resistir a suas magias arcanas dessa escola aumenta em +2.",
+        "cost": "T$ 1.500",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 59,
+        "name": "Varinha arcana",
+        "desc": "Uma varinha típica, feita de madeira de boa qualidade e entalhada com runas. A CD para resistir a suas magias arcanas aumenta em +1.",
+        "cost": "T$ 100",
+        "type": "Esotéricos",
+        "space": 1,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 60,
+        "name": "Ácido",
+        "desc": "Frasco de vidro contendo um ácido alquímico altamente corrosivo. Para usar o ácido, você gasta uma ação padrão e escolhe uma criatura em alcance curto. Essa criatura sofre 2d4 pontos de dano de ácido (Reflexos CD Des reduz à metade).",
+        "cost": "T$ 10",
+        "type": "Alquímicos / Preparados",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 61,
+        "name": "Bálsamo restaurador",
+        "desc": "Uma pasta verde e fedorenta, feita de ervas medicinais. Usá-la é uma ação completa e recupera 2d4 pontos de vida.",
+        "cost": "T$ 10",
+        "type": "Alquímicos / Preparados",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 62,
+        "name": "Bomba",
+        "desc": "Uma granada rudimentar. Para usar a bomba, você precisa empunhá-la, gastar uma ação de movimento para acender seu pavio e uma ação padrão para arremessá-la em um ponto em alcance curto. Criaturas a até 3m desse ponto sofrem 6d6 pontos de dano de impacto (Reflexos CD Des reduz à metade).",
+        "cost": "T$ 50",
+        "type": "Alquímicos / Preparados",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 63,
+        "name": "Cosmético",
+        "desc": "Perfume ou maquiagem. Usá-lo é uma ação completa e fornece +2 em testes de perícias baseadas em Carisma até o fim da cena.",
+        "cost": "T$ 30",
+        "type": "Alquímicos / Preparados",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 64,
+        "name": "Elixir do amor",
+        "desc": "Um humanoide que beba este líquido adocicado fica apaixonado pela primeira criatura que enxergar (condição enfeitiçado; Vontade CD Car anula). O efeito dura 1d3 dias.",
+        "cost": "T$ 100",
+        "type": "Alquímicos / Preparados",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 65,
+        "name": "Essência de mana",
+        "desc": "Esta poção feita de ervas raras e compostos alquímicos recupera energia pessoal. Beber a essência de mana é uma ação padrão e recupera 1d4 pontos de mana.",
+        "cost": "T$ 50",
+        "type": "Alquímicos / Preparados",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 66,
+        "name": "Fogo alquímico",
+        "desc": "Frasco de cerâmica contendo uma substância que entra em combustão em contato com o ar. Para usar o fogo alquímico, você gasta uma ação padrão e escolhe uma criatura em alcance curto. Essa criatura sofre 1d6 pontos de dano de fogo e fica em chamas. Um teste de Reflexos (CD Des) reduz o dano à metade e evita as chamas.",
+        "cost": "T$ 10",
+        "type": "Alquímicos / Preparados",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 67,
+        "name": "Pó do desaparecimento",
+        "desc": "Uma criatura ou objeto coberto por este pó torna-se invisível (como em Invisibilidade) por 2d6 rodadas. O usuário não sabe quando a invisibilidade vai terminar.",
+        "cost": "T$ 100",
+        "type": "Alquímicos / Preparados",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 68,
+        "name": "Baga-de-fogo",
+        "desc": "Pequeno fruto vermelho, apreciado por seu sabor picante. Usado como catalisador, adiciona +1d6 de dano de fogo a magias.",
+        "cost": "T$ 30",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 69,
+        "name": "Dente-de-dragão",
+        "desc": "Uma flor comum em regiões montanhosas, especialmente nas Sanguinárias, possui formato parecido com uma presa de monstro. Suas propriedades místicas aumentam o dano de magias em um dado do mesmo tipo.",
+        "cost": "T$ 45",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 70,
+        "name": "Essência abissal",
+        "desc": "Um líquido espesso, produzido através do sangue de criaturas demoníacas. Aumenta os dados de dano de magias de fogo em uma categoria — d4 para d6, d6 para d8, d8 para d10 e d10 para d12 (o máximo).",
+        "cost": "T$ 150",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 71,
+        "name": "Líquen lilás",
+        "desc": "Esta estranha planta tem aspecto cristalino e cresce em abundância na região das Uivantes. Adiciona +1d6 de dano de frio a magias.",
+        "cost": "T$ 30",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 72,
+        "name": "Musgo púrpura",
+        "desc": "Encontrado em florestas fechadas, esse fungo cintilante possui propriedades que fornecem +2 na CD de magias de ilusão.",
+        "cost": "T$ 45",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 73,
+        "name": "Ossos de monstro",
+        "desc": "Pequenas falanges de criaturas monstruosas, tratadas com óleos alquímicos. Fornece +2 na CD de magias de necromancia.",
+        "cost": "T$ 45",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 74,
+        "name": "Pó de cristal",
+        "desc": "Uma pitada de pó de um mineral cristalino puro, como quartzo ou topázio. Diminui o custo de magias de encantamento em -1 PM.",
+        "cost": "T$ 30",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 75,
+        "name": "Pó de giz",
+        "desc": "Calcário esmagado em pó, uma substância comum que, usada como catalisador, diminui o custo de magias de convocação em -1 PM",
+        "cost": "T$ 30",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 76,
+        "name": "Ramo verdejante",
+        "desc": "Esta combinação de ervas potencializa magias de cura, aumentando sua cura em +1 PV por dado.",
+        "cost": "T$ 45",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 77,
+        "name": "Saco de sal",
+        "desc": "Um pequeno saco de couro com sal marinho. Fornece +2 na CD de magias de abjuração.",
+        "cost": "T$ 45",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 78,
+        "name": "Seixo de âmbar",
+        "desc": "Essa “gema” feita de seiva de árvore fossilizada diminui o custo de magias de transmutação em -1 PM.",
+        "cost": "T$ 30",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 79,
+        "name": "Terra de cemitério",
+        "desc": "Um punhado de terra cinzenta, colhida à noite de um cemitério. Adiciona +1d6 de dano de trevas a magias.",
+        "cost": "T$ 30",
+        "type": "Alquímicos / Catalisadores",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 80,
+        "name": "Beladona",
+        "desc": "Planta extremamente tóxica que afeta o sistema nervoso da vítima. Ingestão, vítima fica paralisada (lenta) por 3 rodadas. A CD para fabricar e para resistir a este veneno aumenta em +5.",
+        "cost": "T$ 1.500",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 81,
+        "name": "Bruma sonolenta",
+        "desc": "Um gás sonífero. Inalação, vítima fica inconsciente (enjoada por 1 rodada).",
+        "cost": "T$ 150",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 82,
+        "name": "Cicuta",
+        "desc": "Planta cuja ingestão pode causar náusea, dores e até morte. Ingestão, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+        "cost": "T$ 60",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 83,
+        "name": "Essência de sombra",
+        "desc": "Produzido a partir de compostos alquímicos que canalizam energia de trevas. Contato, vítima fica debilitada (fraca).",
+        "cost": "T$ 100",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 84,
+        "name": "Névoa tóxica",
+        "desc": "Este gás verde queima e corrói a pele e os pulmões. Inalação, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+        "cost": "T$ 30",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 85,
+        "name": "Peçonha comum",
+        "desc": "Veneno típico, extraído de animais ou plantas tóxicas. Contato, perde 1d12 PV.",
+        "cost": "T$ 15",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 86,
+        "name": "Peçonha concentrada",
+        "desc": "Dose concentrada da peçonha comum. Contato, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+        "cost": "T$ 90",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 87,
+        "name": "Peçonha potente",
+        "desc": "Veneno poderoso, extraído de animais ou plantas perigosos. Contato, perde 2d12 PV por rodada durante 3 rodadas (perde 2d12 PV).",
+        "cost": "T$ 600",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 88,
+        "name": "Pó de lich",
+        "desc": "Veneno letal, usado para assassinar alvos poderosos. Ingestão, perde 4d12 PV por rodada durante 5 rodadas (perde 4d12 PV). A CD para fabricar e para resistir a este veneno aumenta em +5.",
+        "cost": "T$ 3.000",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 89,
+        "name": "Riso de Nimb",
+        "desc": "Este gás púrpura faz a vítima rir descontroladamente e agir de forma caótica. Inalação, vítima fica confusa (lenta por 1 rodada).",
+        "cost": "T$ 150",
+        "type": "Alquímicos / Venenos",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 90,
+        "name": "Batata valkariana",
+        "desc": "Batatas cortadas em tiras e mergulhadas em óleo fervente. Gordurentas e pouco nutritivas, são o tipo de prato que só é servido numa metrópole como Valkaria. Apesar disso, são gostosas e deixam qualquer um empolgado. Você recebe +1d6 em um teste a sua escolha realizado até o fim do dia. Para não esquecer, deixe 1d6 em cima da sua ficha. De preferência, amarelo.",
+        "cost": "T$ 2",
+        "type": "Alimentação",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 91,
+        "name": "Gorad quente",
+        "desc": "Gorad e leite, servidos quentes. Não tem erro. O gorad ativa o cérebro, fornecendo +2 PM temporários.",
+        "cost": "T$ 18",
+        "type": "Alimentação",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 92,
+        "name": "Macarrão de Yuvalin",
+        "desc": "Yuvalin é uma cidade mineradora em Zakharov, na fronteira com as Montanhas Uivantes. Seus habitantes criaram este prato reforçado (macarrão, bacon e creme de leite!) para encarar suas árduas jornadas de trabalho nas minas. Delicioso, o prato se espalhou por outras cidades e reinos. Você recebe +5 PV temporários.",
+        "cost": "T$ 6",
+        "type": "Alimentação",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 93,
+        "name": "Prato do aventureiro",
+        "desc": "Um cozido de galinha com legumes, esta é uma refeição simples, mas nutritiva. Em sua próxima noite de sono, você aumenta a sua recuperação de pontos de vida em +1 por nível.",
+        "cost": "T$ 1",
+        "type": "Alimentação",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 94,
+        "name": "Ração de viagem",
+        "desc": "Própria para viagens, uma porção desta ração alimenta uma pessoa por um dia. É feita de alimentos conservados, como carne defumada, frutas secas, pão, queijo e biscoitos. Se mantida seca dura bastante, mas quando molhada se estraga em 24 horas.",
+        "cost": "T$ 0,5",
+        "type": "Alimentação",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 95,
+        "name": "Refeição comum",
+        "desc": "Uma refeição típica inclui pão, queijo, cozido de carne ou galinha com legumes e uma caneca de bebida, geralmente cidra, vinho ou cerveja.",
+        "cost": "T$ 0,3",
+        "type": "Alimentação",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 96,
+        "name": "Sopa de peixe",
+        "desc": "Um cozido de peixe com verduras. É um prato humilde, mas garante um descanso relaxante. Em sua próxima noite de sono, você aumenta a sua recuperação de pontos de mana em +1 por nível.",
+        "cost": "T$ 1",
+        "type": "Alimentação",
+        "space": 0.5,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 97,
+        "name": "Alforje",
+        "desc": "Sacos de couro feitos para serem presos em uma sela. Permitem que um parceiro montaria carregue até 10 espaços de item para você.",
+        "cost": "T$ 30",
+        "type": "Animais",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 98,
+        "name": "Cão de caça",
+        "desc": "Este cachorro valente e leal pode ser usado como parceiro perseguidor por personagens treinados em Adestramento ou montaria por personagens Pequenos e Minúsculos.",
+        "cost": "T$ 150",
+        "type": "Animais",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 99,
+        "name": "Cavalo",
+        "desc": "A montaria mais comum no Reinado. Pode ser usado como parceiro montaria (veja a página 262). Cavalos sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate. Cavalos de guerra dispensam esse teste.",
+        "cost": "T$ 75",
+        "type": "Animais",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 100,
+        "name": "Cavalo de guerra",
+        "desc": "A montaria mais comum no Reinado. Pode ser usado como parceiro montaria (veja a página 262). Cavalos sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate. Cavalos de guerra dispensam esse teste.",
+        "cost": "T$ 400",
+        "type": "Animais",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 101,
+        "name": "Estábulo",
+        "desc": "Inclui alimentação para o animal.",
+        "cost": "T$ 0,1 (por dia)",
+        "type": "Animais",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 102,
+        "name": "Pônei",
+        "desc": "A montaria mais comum entre raças Pequenas. Pode ser usado como parceiro montaria(veja a página 262). Pôneis sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate. Pôneis de guerra dispensam esse teste.",
+        "cost": "T$ 5",
+        "type": "Animais",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 103,
+        "name": "Pônei de guerra",
+        "desc": "A montaria mais comum entre raças Pequenas. Pode ser usado como parceiro montaria(veja a página 262). Pôneis sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate. Pôneis de guerra dispensam esse teste.",
+        "cost": "T$ 30",
+        "type": "Animais",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 104,
+        "name": "Trobo",
+        "desc": "Estas enormes aves, também chamadas de pássaros-touros, são parecidas com avestruzes com chifres, couro e cascos. Não têm asas. Possuem poucas penas, que servem apenas como ornamento. Muito dóceis, trobos são usados em áreas rurais como animais de carga e tração, mas também podem ser usados como montaria (veja a página 262).",
+        "cost": "T$ 60",
+        "type": "Animais",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 105,
+        "name": "Balão goblin",
+        "desc": "Feito de imensas bolsas de couro e outros tecidos remendados, com uma gôndola parecida com um grande cesto, o balão goblin é um engenho tecnológico sem igual em Arton. Um balão tem tamanho Enorme, deslocamento voo 12m, Defesa 5 (+ Des do baloeiro), 100 PV e pode carregar até 8 criaturas Médias ou 160 espaços. Ao contrário do que possa parecer, quedas de balões raramente são fatais. Quando o balão perde mais da metade de seus PV, começa a perder ar e flutua lentamente na direção do solo. Cada ocupante sofre 4d6 pontos de dano de impacto (Ref CD 15 reduz à metade). Um balão só cai de forma perigosa caso perca todos os seus PV. Neste caso, os ocupantes sofrem dano normal pela queda, de acordo com a altura. Remendar um balão em pleno voo exige uma ação completa e um teste de Ofício (artesão) contra CD 15. Se você passar no teste, recupera 1d8 PV do balão.",
+        "cost": "T$ 200",
+        "type": "Veículos",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 106,
+        "name": "Carroça",
+        "desc": "Veículo de duas ou quatro rodas, aberto, normalmente usado para transportar cargas pesadas. É puxada por dois cavalos ou um trobo. Inclui os arreios necessários para controlar os animais. Uma carroça tem tamanho Grande, deslocamento 9m, Defesa 8 (+ Des do condutor), 50 PV e pode carregar até 4 criaturas Médias ou 80 espaços.",
+        "cost": "T$ 150",
+        "type": "Veículos",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 107,
+        "name": "Carruagem",
+        "desc": "Veículo de quatro rodas, capaz de transportar até quatro pessoas em uma cabine fechada, mais dois condutores do lado de fora. É puxada por dois cavalos ou um trobo. Inclui os arreios necessários para controlar os animais. Tem as mesmas estatísticas de uma carroça, mas fornece cobertura leve a seus passageiros.",
+        "cost": "T$ 500",
+        "type": "Veículos",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 108,
+        "name": "Canoa",
+        "desc": "Construída a partir de um único tronco de árvore, é a mais simples das embarcações. Tem as mesmas estatísticas de uma carroça, mas com deslocamento de natação.",
+        "cost": "T$ 70",
+        "type": "Veículos",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 109,
+        "name": "Veleiro",
+        "desc": "Com três mastros, é o típico navio de viagem, muito popular entre mercadores.",
+        "cost": "T$ 10.000",
+        "type": "Veículos",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 110,
+        "name": "Estadia comum",
+        "desc": "Um espaço no salão comunal. Se tiver sorte, o taverneiro deixará a lareira acesa para que você não passe frio. Pelo menos não ficará sozinho — pulgas e ratos lhe farão companhia. A refeição consiste de pão, sopa e água. Recupera 1 PV e 1 PM por nível.",
+        "cost": "T$ 0,5 (por noite)",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 111,
+        "name": "Estadia confortável",
+        "desc": "Um quarto pequeno, mas privativo, com uma cama com colchão de palha e um baú para guardar seus pertences. A refeição inclui pão, queijo, cozido de galinha com legumes e cerveja ou vinho (aguado). Recupera 2 PV e 2 PM por nível",
+        "cost": "T$ 4 (por noite)",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 112,
+        "name": "Estadia luxuosa",
+        "desc": "Um quarto grande, com colchão de algodão ou penas, cortinas nas janelas, uma bacia de água quente para banho e outros luxos. A refeição inclui carne, frutas, doces e uma taça de vinho de boa safra. Acomodações desta categoria estão disponíveis apenas nas melhores estalagens, normalmente apenas em cidades e metrópoles. Recupera 3 PV e 3 PM por nível.",
+        "cost": "T$ 20 (por noite)",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 113,
+        "name": "Condução terrestre",
+        "desc": "Inclui viagens terrestres (em carroças), marítimas (em navios) ou aéreas (balões goblins). Viajar em balões goblins é arriscado: a cada 100 km há 1 chance em 20 de queda (não fatal).",
+        "cost": "T$ 0,5 (por km)",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 114,
+        "name": "Condução marítima",
+        "desc": "Inclui viagens terrestres (em carroças), marítimas (em navios) ou aéreas (balões goblins). Viajar em balões goblins é arriscado: a cada 100 km há 1 chance em 20 de queda (não fatal).",
+        "cost": "T$ 0,1 (por km)",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 115,
+        "name": "Condução aérea",
+        "desc": "Inclui viagens terrestres (em carroças), marítimas (em navios) ou aéreas (balões goblins). Viajar em balões goblins é arriscado: a cada 100 km há 1 chance em 20 de queda (não fatal).",
+        "cost": "T$ 10 (por km)",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 116,
+        "name": "Curandeiro",
+        "desc": "O preço para você receber cuidados prolongados ou tratamento contra uma doença ou veneno (veja a página 117). Isso considera que você vai até a casa do curandeiro ou onde quer que ele receba seus pacientes — curandeiros não aceitam acompanhar aventureiros em suas jornadas.",
+        "cost": "T$ 5",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 117,
+        "name": "Magia 1º círculo",
+        "desc": "Este é o preço para lançar uma magia em uma situação comum. Ou seja, você vai até o conjurador e lançar a magia não oferece risco para ele. Se você pedir ao conjurador para acompanhá-lo numa aventura, a resposta padrão será “não, obrigado”.",
+        "cost": "T$ 10",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 118,
+        "name": "Magia 2º círculo",
+        "desc": "Este é o preço para lançar uma magia em uma situação comum. Ou seja, você vai até o conjurador e lançar a magia não oferece risco para ele. Se você pedir ao conjurador para acompanhá-lo numa aventura, a resposta padrão será “não, obrigado”.",
+        "cost": "T$ 90",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 119,
+        "name": "Magia 3º círculo",
+        "desc": "Este é o preço para lançar uma magia em uma situação comum. Ou seja, você vai até o conjurador e lançar a magia não oferece risco para ele. Se você pedir ao conjurador para acompanhá-lo numa aventura, a resposta padrão será “não, obrigado”.",
+        "cost": "T$ 360",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 120,
+        "name": "Mensageiro",
+        "desc": "Inclui mensagens entregues a pé, por cavaleiros ou navios.",
+        "cost": "T$ 0,5 (por km)",
+        "type": "Serviços",
+        "space": null,
+        "footer": "Tormenta20 - Jogo do Ano"
+    },
+    {
+        "id": 121,
+        "name": "Ábaco",
+        "desc": null,
+        "cost": "T$ 45",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 122,
+        "name": "Ampulheta",
+        "desc": null,
+        "cost": "T$ 45",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 123,
+        "name": "Aparelho de chá",
+        "desc": null,
+        "cost": "T$ 30",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 124,
+        "name": "Astrolábio",
+        "desc": null,
+        "cost": "T$ 90",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 125,
+        "name": "Armação para mochila",
+        "desc": null,
+        "cost": "T$ 50",
+        "type": "Equipamento de Aventura",
+        "space": null,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 126,
+        "name": "Asas do texugo",
+        "desc": null,
+        "cost": "T$ 200",
+        "type": "Equipamento de Aventura",
+        "space": 2,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 127,
+        "name": "Bainha adornada",
+        "desc": null,
+        "cost": "T$ 100",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 128,
+        "name": "Bússola",
+        "desc": null,
+        "cost": "T$ 45",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 129,
+        "name": "Cinto de utilidades",
+        "desc": null,
+        "cost": "T$ 50",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 130,
+        "name": "Condecoração militar",
+        "desc": null,
+        "cost": null,
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 131,
+        "name": "Dente falso",
+        "desc": null,
+        "cost": "T$ 300",
+        "type": "Equipamento de Aventura",
+        "space": null,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 132,
+        "name": "Diagrama anatômico",
+        "desc": null,
+        "cost": "T$ 75",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    },
+    {
+        "id": 133,
+        "name": "Espelho refletor",
+        "desc": null,
+        "cost": "T$ 45",
+        "type": "Equipamento de Aventura",
+        "space": 1,
+        "footer": "Heróis de Arton v1.0"
+    }
+]

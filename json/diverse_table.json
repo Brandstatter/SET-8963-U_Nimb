@@ -1,0 +1,198 @@
+[
+    {
+        "cutoffValue": 2,
+        "rewardId": 60
+    },
+    {
+        "cutoffValue": 4,
+        "rewardId": 0
+    },
+    {
+        "cutoffValue": 5,
+        "rewardId": 17
+    },
+    {
+        "cutoffValue": 6,
+        "rewardId": 1
+    },
+    {
+        "cutoffValue": 8,
+        "rewardId": 68
+    },
+    {
+        "cutoffValue": 23,
+        "rewardId": 61
+    },
+    {
+        "cutoffValue": 24,
+        "rewardId": 30
+    },
+    {
+        "cutoffValue": 25,
+        "rewardId": 3
+    },
+    {
+        "cutoffValue": 30,
+        "rewardId": 62
+    },
+    {
+        "cutoffValue": 31,
+        "rewardId": 31
+    },
+    {
+        "cutoffValue": 32,
+        "rewardId": 32
+    },
+    {
+        "cutoffValue": 33,
+        "rewardId": 33
+    },
+    {
+        "cutoffValue": 34,
+        "rewardId": 34
+    },
+    {
+        "cutoffValue": 35,
+        "rewardId": 35
+    },
+    {
+        "cutoffValue": 36,
+        "rewardId": 36
+    },
+    {
+        "cutoffValue": 38,
+        "rewardId": 18
+    },
+    {
+        "cutoffValue": 40,
+        "rewardId": 63
+    },
+    {
+        "cutoffValue": 42,
+        "rewardId": 69
+    },
+    {
+        "cutoffValue": 43,
+        "rewardId": 37
+    },
+    {
+        "cutoffValue": 44,
+        "rewardId": 64
+    },
+    {
+        "cutoffValue": 46,
+        "rewardId": 19
+    },
+    {
+        "cutoffValue": 56,
+        "rewardId": 65
+    },
+    {
+        "cutoffValue": 57,
+        "rewardId": 20
+    },
+    {
+        "cutoffValue": 58,
+        "rewardId": 38
+    },
+    {
+        "cutoffValue": 59,
+        "rewardId": 21
+    },
+    {
+        "cutoffValue": 66,
+        "rewardId": 66
+    },
+    {
+        "cutoffValue": 67,
+        "rewardId": 39
+    },
+    {
+        "cutoffValue": 69,
+        "rewardId": 71
+    },
+    {
+        "cutoffValue": 70,
+        "rewardId": 25
+    },
+    {
+        "cutoffValue": 71,
+        "rewardId": 40
+    },
+    {
+        "cutoffValue": 73,
+        "rewardId": 26
+    },
+    {
+        "cutoffValue": 74,
+        "rewardId": 41
+    },
+    {
+        "cutoffValue": 75,
+        "rewardId": 43
+    },
+    {
+        "cutoffValue": 78,
+        "rewardId": 9
+    },
+    {
+        "cutoffValue": 80,
+        "rewardId": 72
+    },
+    {
+        "cutoffValue": 81,
+        "rewardId": 11
+    },
+    {
+        "cutoffValue": 83,
+        "rewardId": 73
+    },
+    {
+        "cutoffValue": 85,
+        "rewardId": 74
+    },
+    {
+        "cutoffValue": 87,
+        "rewardId": 75
+    },
+    {
+        "cutoffValue": 88,
+        "rewardId": 67
+    },
+    {
+        "cutoffValue": 89,
+        "rewardId": 44
+    },
+    {
+        "cutoffValue": 91,
+        "rewardId": 77
+    },
+    {
+        "cutoffValue": 92,
+        "rewardId": 45
+    },
+    {
+        "cutoffValue": 94,
+        "rewardId": 78
+    },
+    {
+        "cutoffValue": 95,
+        "rewardId": 27
+    },
+    {
+        "cutoffValue": 96,
+        "rewardId": 46
+    },
+    {
+        "cutoffValue": 97,
+        "rewardId": 47
+    },
+    {
+        "cutoffValue": 99,
+        "rewardId": 79
+    },
+    {
+        "cutoffValue": 100,
+        "rewardId": 49
+    }
+]
