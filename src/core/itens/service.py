@@ -19,11 +19,16 @@ async def get_itens():
 
 
 async def embed_item(id):
+
+    item = ITENS_JSON[id]
     
     embed = discord.Embed(
-        title = f"{ITENS_JSON[id]['name']}",
-        description= f"**{ITENS_JSON[id]['type']}** \n **Espaço no inventario: **{str(ITENS_JSON[id]['space'])} | **Valor: **{ITENS_JSON[id]['cost']} \n {ITENS_JSON[id]['desc']}",
+        title = f"{item['name']}",
+        description= f"**{item['type']}**",
         color=discord.Color.random()
     )
+
+    embed.add_field(name="Características", value= f"**Espaço no inventario: **{str(item['space'])} | **Valor: **{item['cost']}", inline=False)
+    embed.add_field(name="Descrição", value= item['desc'], inline=False)
 
     return embed
