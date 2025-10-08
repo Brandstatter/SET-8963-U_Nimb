@@ -17,6 +17,11 @@ async def get_esoteric():
         if d100 <= item['cutoffValue']:
             return await embed_esoteric(item['rewardId'])
         
+async def search_esoteric(chosen_esoteric: str):
+    for esoteric in ESOTERIC_JSON:
+        if(esoteric["name"] == chosen_esoteric):
+            return esoteric["id"]
+        
 
 async def embed_esoteric(id):
 
@@ -29,3 +34,11 @@ async def embed_esoteric(id):
     )
 
     return embed
+
+async def esotericAutoComplete(ctx: discord.AutocompleteContext):    
+    query = ctx.value.lower()
+    options = [
+        esoteric["name"] for esoteric in ESOTERIC_JSON
+        if query in esoteric["name"].lower()
+    ]
+    return options[:25]
