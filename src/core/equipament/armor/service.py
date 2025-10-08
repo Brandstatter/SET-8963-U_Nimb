@@ -20,10 +20,15 @@ async def get_armor():
 
 async def embed_armor(id):
 
+    armor = ARMOR_JSON[id]
+
     embed = discord.Embed(
-        title = f"{ARMOR_JSON[id]['name']}",
-        description= f"**{ARMOR_JSON[id]['type']}** \n **Penalidade de Armadura: **{str(ARMOR_JSON[id]['penalty'])} | **Bônus na Defesa: **{str(ARMOR_JSON[id]['defense'])} \n **Espaço no inventario: **{str(ARMOR_JSON[id]['spaces'])} | **Valor: **{ARMOR_JSON[id]['cost']} \n {ARMOR_JSON[id]['desc']}",
+        title = f"{armor['name']}",
+        description= f"**{armor['type']}**",
         color=discord.Color.random()
     )
+
+    embed.add_field(name="Características", value=f"**Penalidade de Armadura: **{str(armor['penalty'])} | **Bônus na Defesa: **{str(armor['defense'])} \n **Espaço no inventario: **{str(armor['spaces'])} | **Valor: **{armor['cost']}", inline=False)
+    embed.add_field(name="Descrição", value= armor['desc'], inline=False)
 
     return embed
