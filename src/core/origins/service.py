@@ -4,7 +4,7 @@ import discord
 
 from unidecode import unidecode
 
-json_path = os.path.join("json", "origins.json")
+json_path = os.path.join("json", "origins/origins.json")
 ORIGINS_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def slash_search(chosen_origin):

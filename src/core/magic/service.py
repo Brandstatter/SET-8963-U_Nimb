@@ -8,7 +8,7 @@ import json
 from unidecode import unidecode
 from discord.ui import View
 
-json_path = os.path.join("json", "magics.json")
+json_path = os.path.join("json", "magic/magics.json")
 MAG_JSON = json.load(open(json_path, encoding='utf-8'))
 
 

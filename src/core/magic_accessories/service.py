@@ -6,10 +6,10 @@ import math
 
 from discord.ui import View
 
-json_path = os.path.join("json", "magic_accessories.json")
+json_path = os.path.join("json", "magic_accessories/magic_accessories.json")
 ACESSORIES_JSON = json.load(open(json_path, encoding='utf-8'))
 
-json_path = os.path.join("json", "magic_accessories_table.json")
+json_path = os.path.join("json", "magic_accessories/magic_accessories_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def search_accessories(chosen: str):

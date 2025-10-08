@@ -3,10 +3,10 @@ import discord
 import json
 import random
 
-json_path = os.path.join("json", "armor.json")
+json_path = os.path.join("json", "equipament/armor.json")
 ARMOR_JSON = json.load(open(json_path, encoding='utf-8'))
 
-json_path = os.path.join("json", "armor_table.json")
+json_path = os.path.join("json", "equipament/armor_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def get_armor():

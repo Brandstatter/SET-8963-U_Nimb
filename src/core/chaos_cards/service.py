@@ -2,12 +2,11 @@ import os
 import discord
 import json
 import random
-import math
 
-json_path = os.path.join("json", "chaos_cards.json")
+json_path = os.path.join("json", "chaos_cards/chaos_cards.json")
 CARDS_JSON = json.load(open(json_path, encoding='utf-8'))
 
-json_path = os.path.join("json", "chaos_cards_table.json")
+json_path = os.path.join("json", "chaos_cards/chaos_cards_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def draw_cards(card_qtd):

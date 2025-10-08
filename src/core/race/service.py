@@ -3,7 +3,7 @@ import os
 import discord
 import json
 
-json_path = os.path.join("json", "detail_races.json")
+json_path = os.path.join("json", "races/races.json")
 RACES_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def embed_race(ctx, id):

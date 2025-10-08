@@ -4,10 +4,10 @@ import json
 import random
 import asyncio
 
-json_path = os.path.join("json", "potions.json")
+json_path = os.path.join("json", "potions/potions.json")
 POTION_JSON = json.load(open(json_path, encoding='utf-8'))
 
-json_path = os.path.join("json", "potions_table.json")
+json_path = os.path.join("json", "potions/potions_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def get_potion(qtd, bonus):

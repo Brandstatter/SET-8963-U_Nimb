@@ -1,5 +1,5 @@
 from clientConfig import client
-from core.equipament.service import get_armor
+from core.equipament.armor.service import get_armor
 
 @client.slash_command(
     name = "gerar_armadura",

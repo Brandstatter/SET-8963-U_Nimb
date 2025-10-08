@@ -3,10 +3,10 @@ import discord
 import json
 import random
 
-json_path = os.path.join("json", "diverse.json")
+json_path = os.path.join("json", "itens/diverse.json")
 ITENS_JSON = json.load(open(json_path, encoding='utf-8'))
 
-json_path = os.path.join("json", "diverse_table.json")
+json_path = os.path.join("json", "itens/diverse_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
 async def get_itens():
