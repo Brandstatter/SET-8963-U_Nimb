@@ -9,7 +9,7 @@ ESOTERIC_JSON = json.load(open(json_path, encoding='utf-8'))
 json_path = os.path.join("json", "equipament/esoteric_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
-async def get_esoteric():
+async def generate_esoteric():
 
     d100 = random.randint(1, 100)
 

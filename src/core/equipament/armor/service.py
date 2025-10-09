@@ -9,7 +9,7 @@ ARMOR_JSON = json.load(open(json_path, encoding='utf-8'))
 json_path = os.path.join("json", "equipament/armor_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
-async def get_armor():
+async def generate_armor():
     
     d100 = random.randint(1, 100)
 

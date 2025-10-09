@@ -9,7 +9,7 @@ WEAPON_JSON = json.load(open(json_path, encoding='utf-8'))
 json_path = os.path.join("json", "equipament/weapon_table.json")
 TABLE_JSON = json.load(open(json_path, encoding='utf-8'))
 
-async def get_weapon():
+async def generate_weapon():
 
     d100 = random.randint(1, 100)
 

@@ -1,20 +1,20 @@
 import discord
 
 from clientConfig import client
-from core.equipament.armor.service import get_armor, search_armor, armorAutoComplete, embed_armor
-from core.equipament.weapon.service import get_weapon, search_weapon, weaponAutoComplete, embed_weapon
-from core.equipament.esoteric.service import get_esoteric, search_esoteric, esotericAutoComplete, embed_esoteric
-from core.equipament.equipament.service import get_type
+from core.equipament.armor.service import generate_armor, search_armor, armorAutoComplete, embed_armor
+from core.equipament.weapon.service import generate_weapon, search_weapon, weaponAutoComplete, embed_weapon
+from core.equipament.esoteric.service import generate_esoteric, search_esoteric, esotericAutoComplete, embed_esoteric
+from core.equipament.service import get_type
 
 @client.slash_command(
     name = "gerar_armadura",
     description = "Gera uma armadura com base na 'Tabela 8-4: Equipamento' de Tormenta20",
     guild_ids=[563153398392684554] 
 )
-async def armor(
+async def generate_armor(
     ctx
 ):
-    embed = await get_armor()
+    embed = await generate_armor()
     return await ctx.respond(embed = embed)
 
 @client.slash_command(
@@ -22,7 +22,7 @@ async def armor(
     description="Retorna informação do item armadura escolhido.",
     guild_ids=[563153398392684554] 
 )
-async def searchArmor(
+async def search_armor(
     ctx,
     armadura: str = discord.Option(
         description="Nome do item.",
@@ -41,10 +41,10 @@ async def searchArmor(
     description = "Gera uma arma com base na 'Tabela 8-4: Equipamento' de Tormenta20",
     guild_ids=[563153398392684554] 
 )
-async def weapon(
+async def generate_weapon(
     ctx
 ):
-    embed = await get_weapon()
+    embed = await generate_weapon()
     return await ctx.respond(embed = embed)
 
 @client.slash_command(
@@ -52,7 +52,7 @@ async def weapon(
     description="Retorna informação do item arma escolhido.",
     guild_ids=[563153398392684554] 
 )
-async def searchWeapon(
+async def search_weapon(
     ctx,
     arma: str = discord.Option(
         description="Nome do item.",
@@ -71,10 +71,10 @@ async def searchWeapon(
     description = "Gera um item esoterico com base na 'Tabela 8-4: Equipamento' de Tormenta20",
     guild_ids=[563153398392684554] 
 )
-async def esoteric(
+async def generate_esoteric(
     ctx
 ):
-    embed = await get_esoteric()
+    embed = await generate_esoteric()
     return await ctx.respond(embed = embed)
 
 @client.slash_command(
@@ -82,7 +82,7 @@ async def esoteric(
     description="Retorna informação do item esoterico escolhido.",
     guild_ids=[563153398392684554] 
 )
-async def searchEsoteric(
+async def search_esoteric(
     ctx,
     esoterico: str = discord.Option(
         description="Nome do item.",
@@ -101,7 +101,7 @@ async def searchEsoteric(
     description="Gera uma recompensa de equipamento com base na descrição da pagina 330 de Tormenta20.",
     guild_ids=[563153398392684554] 
 )
-async def equipament(
+async def generate_equipament(
     ctx
     ):
     embed = await get_type()
