@@ -17,6 +17,10 @@ async def get_weapon():
         if d100 <= item['cutoffValue']:
             return await embed_weapon(item['rewardId'])
         
+async def search_weapon(chosen_weapon: str):
+    for weapon in WEAPON_JSON:
+        if(weapon["name"] == chosen_weapon):
+            return weapon["id"]
 
 async def embed_weapon(id):
 
@@ -51,3 +55,10 @@ async def embed_weapon(id):
 
     return embed
 
+async def weaponAutoComplete(ctx: discord.AutocompleteContext):    
+    query = ctx.value.lower()
+    options = [
+        weapon["name"] for weapon in WEAPON_JSON
+        if query in weapon["name"].lower()
+    ]
+    return options[:25]
