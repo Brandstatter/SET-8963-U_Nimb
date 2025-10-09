@@ -4,6 +4,7 @@ from clientConfig import client
 from core.equipament.armor.service import get_armor, search_armor, armorAutoComplete, embed_armor
 from core.equipament.weapon.service import get_weapon, search_weapon, weaponAutoComplete, embed_weapon
 from core.equipament.esoteric.service import get_esoteric, search_esoteric, esotericAutoComplete, embed_esoteric
+from core.equipament.equipament.service import get_type
 
 @client.slash_command(
     name = "gerar_armadura",
@@ -14,36 +15,6 @@ async def armor(
     ctx
 ):
     embed = await get_armor()
-    return await ctx.respond(embed = embed)
-
-@client.slash_command(
-    name = "busca_arma",
-    description="Retorna informação do item arma escolhido.",
-    guild_ids=[563153398392684554] 
-)
-async def searchWeapon(
-    ctx,
-    arma: str = discord.Option(
-        description="Nome do item.",
-        autocomplete=weaponAutoComplete,
-    )
-):
-    id = await search_weapon(arma)
-    if(id == None):
-        return await ctx.respond("Essa arma não existe")
-
-    embed = await embed_weapon(id)
-    return await ctx.respond(embed = embed)
-
-@client.slash_command(
-    name = "gerar_arma",
-    description = "Gera uma arma com base na 'Tabela 8-4: Equipamento' de Tormenta20",
-    guild_ids=[563153398392684554] 
-)
-async def weapons(
-    ctx
-):
-    embed = await get_weapon()
     return await ctx.respond(embed = embed)
 
 @client.slash_command(
@@ -63,6 +34,36 @@ async def searchArmor(
         return await ctx.respond("Essa armadura não existe")
 
     embed = await embed_armor(id)
+    return await ctx.respond(embed = embed)
+
+@client.slash_command(
+    name = "gerar_arma",
+    description = "Gera uma arma com base na 'Tabela 8-4: Equipamento' de Tormenta20",
+    guild_ids=[563153398392684554] 
+)
+async def weapon(
+    ctx
+):
+    embed = await get_weapon()
+    return await ctx.respond(embed = embed)
+
+@client.slash_command(
+    name = "busca_arma",
+    description="Retorna informação do item arma escolhido.",
+    guild_ids=[563153398392684554] 
+)
+async def searchWeapon(
+    ctx,
+    arma: str = discord.Option(
+        description="Nome do item.",
+        autocomplete=weaponAutoComplete,
+    )
+):
+    id = await search_weapon(arma)
+    if(id == None):
+        return await ctx.respond("Essa arma não existe")
+
+    embed = await embed_weapon(id)
     return await ctx.respond(embed = embed)
 
 @client.slash_command(
@@ -93,4 +94,15 @@ async def searchEsoteric(
         return await ctx.respond("Esse item não existe")
 
     embed = await embed_esoteric(id)
+    return await ctx.respond(embed = embed)
+
+@client.slash_command(
+    name = "gera_equipamento",
+    description="Gera uma recompensa de equipamento com base na descrição da pagina 330 de Tormenta20.",
+    guild_ids=[563153398392684554] 
+)
+async def equipament(
+    ctx
+    ):
+    embed = await get_type()
     return await ctx.respond(embed = embed)

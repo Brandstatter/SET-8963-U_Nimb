@@ -22,7 +22,6 @@ async def search_esoteric(chosen_esoteric: str):
         if(esoteric["name"] == chosen_esoteric):
             return esoteric["id"]
         
-
 async def embed_esoteric(id):
 
     esoteric = ESOTERIC_JSON[id]
