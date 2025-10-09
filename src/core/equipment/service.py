@@ -1,8 +1,8 @@
 import random
 
-from core.equipament.armor.service import generate_armor
-from core.equipament.weapon.service import generate_weapon
-from core.equipament.esoteric.service import generate_esoteric
+from core.equipment.armor.service import generate_armor
+from core.equipment.weapon.service import generate_weapon
+from core.equipment.esoteric.service import generate_esoteric
 
 async def get_type():
 

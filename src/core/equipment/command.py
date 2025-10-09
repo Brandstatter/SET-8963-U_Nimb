@@ -1,10 +1,10 @@
 import discord
 
 from clientConfig import client
-from core.equipament.armor.service import generate_armor, search_armor, armorAutoComplete, embed_armor
-from core.equipament.weapon.service import generate_weapon, search_weapon, weaponAutoComplete, embed_weapon
-from core.equipament.esoteric.service import generate_esoteric, search_esoteric, esotericAutoComplete, embed_esoteric
-from core.equipament.service import get_type
+from core.equipment.armor.service import generate_armor, search_armor, armorAutoComplete, embed_armor
+from core.equipment.weapon.service import generate_weapon, search_weapon, weaponAutoComplete, embed_weapon
+from core.equipment.esoteric.service import generate_esoteric, search_esoteric, esotericAutoComplete, embed_esoteric
+from core.equipment.service import get_type
 
 @client.slash_command(
     name = "gerar_armadura",
@@ -101,7 +101,7 @@ async def search_esoteric(
     description="Gera uma recompensa de equipamento com base na descrição da pagina 330 de Tormenta20.",
     guild_ids=[563153398392684554] 
 )
-async def generate_equipament(
+async def generate_equipment(
     ctx
     ):
     embed = await get_type()
