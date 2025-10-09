@@ -17,6 +17,10 @@ async def get_armor():
         if d100 <= item['cutoffValue']:
             return await embed_armor(item['rewardId'])
         
+async def search_armor(chosen_armor: str):
+    for armor in ARMOR_JSON:
+        if(armor["name"] == chosen_armor):
+            return armor["id"]
 
 async def embed_armor(id):
 
@@ -32,3 +36,11 @@ async def embed_armor(id):
     embed.add_field(name="Descrição", value= armor['desc'], inline=False)
 
     return embed
+
+async def armorAutoComplete(ctx: discord.AutocompleteContext):    
+    query = ctx.value.lower()
+    options = [
+        armor["name"] for armor in ARMOR_JSON
+        if query in armor["name"].lower()
+    ]
+    return options[:25]
