@@ -1,0 +1,165 @@
+[
+    {
+        "improvment_type": "Weapon",
+        "table": [
+            {
+                "cutoffValue": 10,
+                "rewardId": 3
+            },
+            {
+                "cutoffValue": 13,
+                "rewardId": 4
+            },
+            {
+                "cutoffValue": 23,
+                "rewardId": 6
+            },
+            {
+                "cutoffValue": 26,
+                "rewardId": 7
+            },
+            {
+                "cutoffValue": 36,
+                "rewardId": 8
+            },
+            {
+                "cutoffValue": 39,
+                "rewardId": 10
+            },
+            {
+                "cutoffValue": 44,
+                "rewardId": 12
+            },
+            {
+                "cutoffValue": 48,
+                "rewardId": 15
+            },
+            {
+                "cutoffValue": 53,
+                "rewardId": 17
+            },
+            {
+                "cutoffValue": 55,
+                "rewardId": 18
+            },
+            {
+                "cutoffValue": 65,
+                "rewardId": 19
+            },
+            {
+                "cutoffValue": 75,
+                "rewardId": 20
+            },
+            {
+                "cutoffValue": 80,
+                "rewardId": 21
+            },
+            {
+                "cutoffValue": 90,
+                "rewardId": 24
+            },
+            {
+                "cutoffValue": 100,
+                "rewardId": 25
+            }
+        ]
+    },
+    {
+        "improvment_type": "Armor",
+        "table": [
+            {
+                "cutoffValue": 15,
+                "rewardId": 1
+            },
+            {
+                "cutoffValue": 19,
+                "rewardId": 4
+            },
+            {
+                "cutoffValue": 23,
+                "rewardId": 7
+            },
+            {
+                "cutoffValue": 28,
+                "rewardId": 9
+            },
+            {
+                "cutoffValue": 32,
+                "rewardId": 10
+            },
+            {
+                "cutoffValue": 37,
+                "rewardId": [13, 14]
+            },
+            {
+                "cutoffValue": 40,
+                "rewardId": 18
+            },
+            {
+                "cutoffValue": 50,
+                "rewardId": 20
+            },
+            {
+                "cutoffValue": 55,
+                "rewardId": 23
+            },
+            {
+                "cutoffValue": 80,
+                "rewardId": 26
+            },
+            {
+                "cutoffValue": 90,
+                "rewardId": 27
+            },
+            {
+                "cutoffValue": 100,
+                "rewardId": 28
+            }
+        ]
+    },
+    {
+        "improvment_type": "Esoteric",
+        "table": [
+            {
+                "cutoffValue": 4,
+                "rewardId": 4
+            },
+            {
+                "cutoffValue": 19,
+                "rewardId": 5
+            },
+            {
+                "cutoffValue": 23,
+                "rewardId": 7
+            },
+            {
+                "cutoffValue": 27,
+                "rewardId": 10
+            },
+            {
+                "cutoffValue": 42,
+                "rewardId": 11
+            },
+            {
+                "cutoffValue": 57,
+                "rewardId": 16
+            },
+            {
+                "cutoffValue": 60,
+                "rewardId": 18
+            },
+            {
+                "cutoffValue": 69,
+                "rewardId": 20
+            },
+            {
+                "cutoffValue": 85,
+                "rewardId": 22
+            },
+            {
+                "cutoffValue": 100,
+                "rewardId": 29
+            }
+        ]
+    }
+]
