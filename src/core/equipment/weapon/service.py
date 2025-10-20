@@ -53,7 +53,7 @@ async def embed_weapon(id):
     embed.add_field(name= "Características", value= stats, inline= False)
     embed.add_field(name= "Descrição", value= weapon['desc'], inline= False)   
 
-    return embed
+    return embed, 0
 
 async def weaponAutoComplete(ctx: discord.AutocompleteContext):    
     query = ctx.value.lower()

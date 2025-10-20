@@ -32,7 +32,7 @@ async def embed_esoteric(id):
         color=discord.Color.random()
     )
 
-    return embed
+    return embed, 2
 
 async def esotericAutoComplete(ctx: discord.AutocompleteContext):    
     query = ctx.value.lower()

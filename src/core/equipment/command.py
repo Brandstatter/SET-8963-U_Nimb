@@ -4,6 +4,7 @@ from clientConfig import client
 from core.equipment.armor.service import generate_armor, search_armor, armorAutoComplete, embed_armor
 from core.equipment.weapon.service import generate_weapon, search_weapon, weaponAutoComplete, embed_weapon
 from core.equipment.esoteric.service import generate_esoteric, search_esoteric, esotericAutoComplete, embed_esoteric
+from core.equipment.superior.service import get_superior
 from core.equipment.service import get_type
 
 @client.slash_command(
@@ -105,4 +106,18 @@ async def generate_equipment(
     ctx
     ):
     embed = await get_type()
+    return await ctx.respond(embed = embed)
+
+@client.slash_command(
+    name = "teste",
+    description="teste",
+    guild_ids=[563153398392684554] 
+)
+async def generate_superior(
+    ctx
+    ):
+    embed, type = await get_type()
+    print(embed)
+    embed = await get_superior(embed, type)
+    print(embed)
     return await ctx.respond(embed = embed)

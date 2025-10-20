@@ -35,7 +35,7 @@ async def embed_armor(id):
     embed.add_field(name="Características", value=f"**Penalidade de Armadura: **{str(armor['penalty'])} | **Bônus na Defesa: **{str(armor['defense'])} \n **Espaço no inventario: **{str(armor['spaces'])} | **Valor: **{armor['cost']}", inline=False)
     embed.add_field(name="Descrição", value= armor['desc'], inline=False)
 
-    return embed
+    return embed, 1
 
 async def armorAutoComplete(ctx: discord.AutocompleteContext):    
     query = ctx.value.lower()
