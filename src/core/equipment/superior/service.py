@@ -14,7 +14,7 @@ async def special_material(embed, material_type):
 
     name = material['name_material']
     effect = material['effects'][material_type]['item_effect']
-    desc = material['desc']
+    desc = IMPROVEMENT_JSON[19]['desc']
 
     embed.add_field(
         name=f"Material Especial - {name}",
@@ -23,17 +23,29 @@ async def special_material(embed, material_type):
     return embed
 
 
-async def add_improvement(embed, improvement_id):
-    improvement = IMPROVEMENT_JSON[improvement_id]
+async def add_improvement(embed, improvement_id, item_type):
+    if type(improvement_id) == list:
+        print(embed.description)
+        if embed.description in ("**Escudos**"):
+            improvement = IMPROVEMENT_JSON[13]
+        else:
+            improvement = IMPROVEMENT_JSON[12]
+    else:
+        improvement = IMPROVEMENT_JSON[improvement_id]
+
+    print(embed.title)
+
     embed.add_field(
         name=improvement['name'],
         value=f"Efeito: {improvement['effect']}\n{improvement['desc']}"
     )
+
     return embed
 
 
 async def get_superior(embed, item_type):
     d100 = random.randint(1, 100)
+
     selected_reward = None
 
     for item in TABLE_JSON[item_type]['table']:
@@ -41,14 +53,7 @@ async def get_superior(embed, item_type):
             selected_reward = item['rewardId']
             break
 
-    if selected_reward is None:
-        embed.add_field(
-            name="Nenhuma melhoria encontrada",
-            value=f"(d100 = {d100})"
-        )
-        return embed
-
     if selected_reward == 19:
         return await special_material(embed, item_type)
     
-    return await add_improvement(embed, selected_reward)
+    return await add_improvement(embed, selected_reward, item_type)
