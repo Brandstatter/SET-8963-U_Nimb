@@ -109,15 +109,14 @@ async def generate_equipment(
     return await ctx.respond(embed = embed)
 
 @client.slash_command(
-    name = "teste",
-    description="teste",
+    name = "gera_item_superior",
+    description="Gera um equipamento e adiciona melhorias da Tabela 8-5: 'Itens Superiores' de Tormenta20.",
     guild_ids=[563153398392684554] 
 )
 async def generate_superior(
     ctx
     ):
     embed, type = await get_type()
-    print(embed)
-    embed = await get_superior(embed, type)
-    print(embed)
+    print(type)
+    embed = await get_superior(embed, type, 1)
     return await ctx.respond(embed = embed)

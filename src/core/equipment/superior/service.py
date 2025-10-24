@@ -1,5 +1,4 @@
 import os
-import discord
 import json
 import random
 
@@ -14,7 +13,7 @@ async def special_material(embed, material_type):
 
     name = material['name_material']
     effect = material['effects'][material_type]['item_effect']
-    desc = IMPROVEMENT_JSON[19]['desc']
+    desc = material['desc_material']
 
     embed.add_field(
         name=f"Material Especial - {name}",
@@ -22,18 +21,19 @@ async def special_material(embed, material_type):
     )
     return embed
 
-
 async def add_improvement(embed, improvement_id, item_type):
-    if type(improvement_id) == list:
-        print(embed.description)
-        if embed.description in ("**Escudos**"):
+
+    if isinstance(improvement_id, list):
+
+        if embed.description == "**Escudos**":
             improvement = IMPROVEMENT_JSON[13]
         else:
             improvement = IMPROVEMENT_JSON[12]
     else:
         improvement = IMPROVEMENT_JSON[improvement_id]
 
-    print(embed.title)
+    if improvement_id == 19:
+        return await special_material(embed, item_type)
 
     embed.add_field(
         name=improvement['name'],
@@ -42,18 +42,14 @@ async def add_improvement(embed, improvement_id, item_type):
 
     return embed
 
-
-async def get_superior(embed, item_type):
+async def get_superior(embed, item_type, qtd):
     d100 = random.randint(1, 100)
-
     selected_reward = None
 
     for item in TABLE_JSON[item_type]['table']:
+        print(f"D100 - {d100} cut off - {item['cutoffValue']} result - {d100 <= item['cutoffValue']}")
         if d100 <= item['cutoffValue']:
             selected_reward = item['rewardId']
             break
-
-    if selected_reward == 19:
-        return await special_material(embed, item_type)
     
     return await add_improvement(embed, selected_reward, item_type)
