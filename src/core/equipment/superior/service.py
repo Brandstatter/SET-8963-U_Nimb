@@ -17,8 +17,10 @@ async def special_material(embed, material_type):
 
     embed.add_field(
         name=f"Material Especial - {name}",
-        value=f"Efeito: {effect}\n{desc}"
+        value=f"Efeito: {effect}\n{desc}",
+        inline = False
     )
+
     return embed
 
 async def add_improvement(embed, improvement_id, item_type):
@@ -37,19 +39,25 @@ async def add_improvement(embed, improvement_id, item_type):
 
     embed.add_field(
         name=improvement['name'],
-        value=f"Efeito: {improvement['effect']}\n{improvement['desc']}"
+        value=f"Efeito: {improvement['effect']}\n{improvement['desc']}",
+        inline = False
     )
 
     return embed
 
 async def get_superior(embed, item_type, qtd):
-    d100 = random.randint(1, 100)
-    selected_reward = None
+    selected_reward = set()
 
-    for item in TABLE_JSON[item_type]['table']:
-        print(f"D100 - {d100} cut off - {item['cutoffValue']} result - {d100 <= item['cutoffValue']}")
-        if d100 <= item['cutoffValue']:
-            selected_reward = item['rewardId']
-            break
+    while len(selected_reward) < qtd:
+        d100 = random.randint(1, 100)
+
+        for item in TABLE_JSON[item_type]['table']:
+            if d100 <= item['cutoffValue']:
+                selected_reward.add(item['rewardId'])
+                break
     
-    return await add_improvement(embed, selected_reward, item_type)
+    for item in selected_reward:
+        embed = await add_improvement(embed, item, item_type)
+
+
+    return embed

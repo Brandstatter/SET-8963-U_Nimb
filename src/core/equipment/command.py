@@ -114,9 +114,13 @@ async def generate_equipment(
     guild_ids=[563153398392684554] 
 )
 async def generate_superior(
-    ctx
+    ctx,
+    quantidade: int = discord.Option(int,
+        description= "Quantidade de melhorias",
+        choices = [1, 2, 3, 4]
+    )
     ):
     embed, type = await get_type()
     print(type)
-    embed = await get_superior(embed, type, 1)
+    embed = await get_superior(embed, type, quantidade)
     return await ctx.respond(embed = embed)
