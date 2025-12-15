@@ -53,6 +53,11 @@ async def get_superior(embed, item_type, qtd):
 
         for item in TABLE_JSON[item_type]['table']:
             if d100 <= item['cutoffValue']:
+                print(item['rewardId'])
+                print(IMPROVEMENT_JSON[item['rewardId']]['required'])
+                if IMPROVEMENT_JSON[item['rewardId']]['required'] is not None:
+                    selected_reward.add(IMPROVEMENT_JSON[item['rewardId']]['required'])
+
                 selected_reward.add(item['rewardId'])
                 break
     

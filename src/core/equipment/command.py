@@ -121,6 +121,5 @@ async def generate_superior(
     )
     ):
     embed, type = await get_type()
-    print(type)
     embed = await get_superior(embed, type, quantidade)
     return await ctx.respond(embed = embed)
