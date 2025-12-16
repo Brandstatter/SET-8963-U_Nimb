@@ -53,16 +53,26 @@ async def get_superior(embed, item_type, qtd):
 
         for item in TABLE_JSON[item_type]['table']:
             if d100 <= item['cutoffValue']:
-                print(item['rewardId'])
-                print(IMPROVEMENT_JSON[item['rewardId']]['required'])
-                if IMPROVEMENT_JSON[item['rewardId']]['required'] is not None:
-                    selected_reward.add(IMPROVEMENT_JSON[item['rewardId']]['required'])
+                reward_id = item['rewardId']
+                print(reward_id)
 
-                selected_reward.add(item['rewardId'])
+                # If rewardId is a list, select one based on embed.description
+                if isinstance(reward_id, list):
+                    if embed.description == "**Escudos**":
+                        reward_id = reward_id[-1]  # last item
+                    else:
+                        reward_id = reward_id[0]   # default (or change if needed)
+                
+                selected_reward.add(reward_id)
+                print(selected_reward)
+                # Handle required improvement
+                required = IMPROVEMENT_JSON[reward_id]['required']
+                if required is not None:
+                    selected_reward.add(required)
+
                 break
-    
+
     for item in selected_reward:
         embed = await add_improvement(embed, item, item_type)
-
-
+    
     return embed
